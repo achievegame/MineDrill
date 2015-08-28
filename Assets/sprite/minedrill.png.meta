@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: cc95afb20fdb04d1980a5b684118fa61
+timeCreated: 1438079407
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: boy
+    21300002: brick1
+    21300004: navigation
+    21300006: navigaton_knob
+    21300008: Boy_defalut
+    21300010: boy_walking0001
+    21300012: boy_walking0002
+    21300014: boy_walking0003
+    21300016: boy_walking0004
+    21300018: boy_walking0005
+    21300020: boy_walking0006
+    21300022: boy_walking0007
+    21300024: boy_walking0008
+    21300026: boy_walking0009
+    21300028: boy_walking0010
+    21300030: boy_walking0011
+    21300032: boy_walking0012
+    21300034: brick
+    21300036: brick_back
+    21300038: brick_drilled_0
+    21300040: brick_drilled_1
+    21300042: brick_drilled_2
+    21300044: brick_drilled_2a
+    21300046: brick_drilled_3
+    21300048: brick_dt1
+    21300050: brick_dt2
+    21300052: brick_dt3
+    21300054: brick_dt4
+    21300056: brick_grass
+    21300058: brick_1
+    21300060: brick_dt5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Boy_defalut
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 842
+        width: 149
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 865
+        width: 123
+        height: 157
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0001
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0002
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0003
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0004
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0005
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0006
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0007
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0008
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0009
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0010
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0011
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boy_walking0012
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 842
+        width: 174
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 640
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_back
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 640
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_drilled_0
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 640
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_drilled_1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 640
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_drilled_2
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 640
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_drilled_2a
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 438
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_drilled_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 438
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_dt1
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 438
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_dt2
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 438
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_dt3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 438
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_dt4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 236
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_dt5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 236
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick_grass
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 236
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: navigation
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 331
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: navigaton_knob
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 336
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

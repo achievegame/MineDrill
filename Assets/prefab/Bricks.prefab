@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &114246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 404326}
+  - 114: {fileID: 11453164}
+  m_Layer: 12
+  m_Name: Bricks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404326
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11453164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745c49ad639af454fb68016d3477ffb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BrickFB: {fileID: 139844, guid: f96c47d007a6d49c8acbeb161be88b5d, type: 2}
+  S_Brick_Grass: {fileID: 21300056, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  NonDrilledBrick:
+  - {fileID: 21300034, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300048, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300050, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300052, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300054, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300060, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  DrilledBrick:
+  - {fileID: 21300038, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300040, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300042, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300044, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300046, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick: {fileID: 21300034, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_DT_1: {fileID: 21300048, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_DT_2: {fileID: 21300050, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_DT_3: {fileID: 21300052, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_DT_4: {fileID: 21300054, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_D_0: {fileID: 21300038, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_D_1: {fileID: 21300040, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_D_2: {fileID: 21300042, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_D_2a: {fileID: 21300044, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_D_3: {fileID: 21300046, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_Back: {fileID: 21300036, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 114246}
+  m_IsPrefabParent: 1

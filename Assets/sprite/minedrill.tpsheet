@@ -1,0 +1,39 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: minedrill.png (1024 x 1024)
+# $TexturePacker:SmartUpdate:6c575bc3a5c082a375f00984fdfe6aa8:3b38209d35b9037c0b86e4e21e8e206b:eb623f3f91896e5021fdf19e600a9362$
+#
+
+Boy_defalut;2;842;149;180;0.5;0.5
+boy;153;865;123;157;0.5;0.5
+boy_walking0001;278;842;174;180;0.5;0.5
+boy_walking0002;278;842;174;180;0.5;0.5
+boy_walking0003;278;842;174;180;0.5;0.5
+boy_walking0004;454;842;174;180;0.5;0.5
+boy_walking0005;454;842;174;180;0.5;0.5
+boy_walking0006;454;842;174;180;0.5;0.5
+boy_walking0007;630;842;174;180;0.5;0.5
+boy_walking0008;630;842;174;180;0.5;0.5
+boy_walking0009;630;842;174;180;0.5;0.5
+boy_walking0010;806;842;174;180;0.5;0.5
+boy_walking0011;806;842;174;180;0.5;0.5
+boy_walking0012;806;842;174;180;0.5;0.5
+brick;2;640;200;200;0.5;0.5
+brick_back;204;640;200;200;0.5;0.5
+brick_drilled_0;406;640;200;200;0.5;0.5
+brick_drilled_1;608;640;200;200;0.5;0.5
+brick_drilled_2;810;640;200;200;0.5;0.5
+brick_drilled_2a;2;438;200;200;0.5;0.5
+brick_drilled_3;204;438;200;200;0.5;0.5
+brick_dt1;406;438;200;200;0.5;0.5
+brick_dt2;608;438;200;200;0.5;0.5
+brick_dt3;810;438;200;200;0.5;0.5
+brick_dt4;2;236;200;200;0.5;0.5
+brick_dt5;204;236;200;200;0.5;0.5
+brick_grass;406;236;200;200;0.5;0.5
+navigation;608;331;105;105;0.5;0.5
+navigaton_knob;715;336;100;100;0.5;0.5

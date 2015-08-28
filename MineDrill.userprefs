@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../GoFish_Unity5/Assets/Scripts/game/ObstacleSpawnScript.cs">
+    <Files>
+      <File FileName="../GoFish_Unity5/Assets/Scripts/HUD/HUD.cs" Line="1" Column="1" />
+      <File FileName="../GoFish_Unity5/Assets/Scripts/Common/StoreNMission.cs" Line="436" Column="41" />
+      <File FileName="../GoFish_Unity5/Assets/Scripts/Common/Constants.cs" Line="7" Column="52" />
+      <File FileName="../GoFish_Unity5/Assets/Scripts/game/ObstacleSpawnScript.cs" Line="140" Column="3" />
+      <File FileName="../GoFish_Unity5/Assets/Scripts/tutorial/TutorialManager.cs" Line="142" Column="45" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
