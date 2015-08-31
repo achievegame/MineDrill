@@ -8,8 +8,9 @@ public class BrickManager : MonoBehaviour {
 	public const float GRID_WIDTH = 2f;
 	public const float GRID_HEIGHT = 2f;
 	public const float ONE_BY_GRID_WIDTH = 1 / GRID_WIDTH;
-	public const int ROW = 50;
+	public const int ROW = 160;
 	public const int COLUMN = 50;
+	public const int BRICK_TYPE_GROUP = 20;
 
 	[SerializeField]
 	private GameObject BrickFB;
@@ -19,17 +20,7 @@ public class BrickManager : MonoBehaviour {
 	public Sprite[] DrilledBrick;
 
 
-	public Sprite S_Brick;
-	public Sprite S_Brick_DT_1;
-	public Sprite S_Brick_DT_2;
-	public Sprite S_Brick_DT_3;
-	public Sprite S_Brick_DT_4;
-	public Sprite S_Brick_D_0;
-	public Sprite S_Brick_D_1;
-	public Sprite S_Brick_D_2;
-	public Sprite S_Brick_D_2a;
-	public Sprite S_Brick_D_3;
-	public Sprite S_Brick_Back;
+
 
 	private List<Brick> bricksList = new List<Brick>();
 
@@ -50,7 +41,7 @@ public class BrickManager : MonoBehaviour {
 			for(int j=0; j<COLUMN; j++){
 				brickGO = (GameObject)Instantiate(BrickFB);
 				brick = brickGO.GetComponent<Brick>();
-				brick.init(i*COLUMN+j,0,i*COLUMN+j<COLUMN ? "1011":"1111");
+				brick.init(i*COLUMN+j,0,getBrickType(i), i*COLUMN+j<COLUMN ? "1011":"1111");
 				brickGO.transform.SetParent(this.transform);
 				brickGO.layer = gameObject.layer;
 				brickGO.transform.localPosition = new Vector2((j-COLUMN/2)*GRID_WIDTH,-i*GRID_HEIGHT);
@@ -98,6 +89,26 @@ public class BrickManager : MonoBehaviour {
 			neighBrickId = brickId+COLUMN;
 			bricksList[neighBrickId].NeighbourChanged(RelativeDirection.Top);
 		}
+
+	}
+
+	private BrickType getBrickType(int columnIndex){
+		if (columnIndex < BRICK_TYPE_GROUP) {
+			return BrickType.A;
+		} else if (columnIndex < BRICK_TYPE_GROUP * 2) {
+			return BrickType.B;
+		} else if (columnIndex < BRICK_TYPE_GROUP * 3) {
+			return BrickType.C;
+		} else if (columnIndex < BRICK_TYPE_GROUP * 4) {
+			return BrickType.D;
+		} else if (columnIndex < BRICK_TYPE_GROUP * 5) {
+			return BrickType.E;
+		} else if (columnIndex < BRICK_TYPE_GROUP * 6) {
+			return BrickType.F;
+		} else if (columnIndex < BRICK_TYPE_GROUP * 7) {
+			return BrickType.G;
+		} else
+			return BrickType.H;
 
 	}
 }

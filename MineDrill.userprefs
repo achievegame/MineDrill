@@ -1,12 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../GoFish_Unity5/Assets/Scripts/game/ObstacleSpawnScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Game/Brick.cs">
     <Files>
-      <File FileName="../GoFish_Unity5/Assets/Scripts/HUD/HUD.cs" Line="1" Column="1" />
-      <File FileName="../GoFish_Unity5/Assets/Scripts/Common/StoreNMission.cs" Line="436" Column="41" />
-      <File FileName="../GoFish_Unity5/Assets/Scripts/Common/Constants.cs" Line="7" Column="52" />
-      <File FileName="../GoFish_Unity5/Assets/Scripts/game/ObstacleSpawnScript.cs" Line="140" Column="3" />
-      <File FileName="../GoFish_Unity5/Assets/Scripts/tutorial/TutorialManager.cs" Line="142" Column="45" />
+      <File FileName="Assets/script/Game/BrickManager.cs" Line="13" Column="40" />
+      <File FileName="Assets/script/Game/Brick.cs" Line="25" Column="10" />
+      <File FileName="Assets/script/Common/Constants.cs" Line="25" Column="2" />
+      <File FileName="Assets/script/HUD/NavigationKnob.cs" Line="10" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

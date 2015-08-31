@@ -32,14 +32,13 @@ public enum RelativeDirection{
 	Bottom
 }
 
-public enum Navigation{
-	None=-1,
-	Right,
-	RightUp,
-	Up,
-	LeftUp,
-	Left,
-	LeftDown,
-	Down,
-	RightDown
+public enum BrickType{
+	A=255,
+	B=235,
+	C=215,
+	D=195,
+	E=175,
+	F=155,
+	G=135,
+	H=115
 }

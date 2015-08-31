@@ -5,17 +5,19 @@ public class Brick : MonoBehaviour {
 
 	// Use this for initialization
 	private int id;
+	private BrickType brickType = BrickType.A;
 	private SpriteRenderer spr;
 	private int drilledAmount = 0;
 	private string neighbourCode = "1111";//right,top,left,bottom 1-NonDrilled Neighbour, 0-DrilledNeighbour
 
-	public void init(int id,int drilledAmount,string neighbourCode="1111"){
+	public void init(int id,int drilledAmount, BrickType brickType,string neighbourCode="1111"){
 		this.id = id;
 		this.drilledAmount = drilledAmount;
+		this.brickType = brickType;
 		this.neighbourCode = neighbourCode;
 		//set sprite using drilledAmount neighbourCode and BrickManager sprites
 		spr = GetComponent<SpriteRenderer> ();
-
+		spr.color = new Color ((float)brickType/255,(float)brickType/255,(float)brickType/255);
 		if (drilledAmount < 100) {
 			int nonDrilledSpriteIndex = drilledAmount/17;
 			if(nonDrilledSpriteIndex==0 && id < BrickManager.COLUMN){

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class NavigationKnob : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler{
 	private RectTransform knobRect;
 	private const float MAX_DISTANCE = 47;
-	private float MAX_DISTANCE_RATIO = 1f/MAX_DISTANCE;
+	//private float MAX_DISTANCE_RATIO = 1f/MAX_DISTANCE;
 	private float ONE_BY_45 = 1f / 45;
 	void Start(){
 		knobRect = transform as RectTransform;
