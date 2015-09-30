@@ -9,6 +9,7 @@ public class Brick : MonoBehaviour {
 	private SpriteRenderer spr;
 	private int drilledAmount = 0;
 	private string neighbourCode = "1111";//right,top,left,bottom 1-NonDrilled Neighbour, 0-DrilledNeighbour
+	private int drilledRate = 5;
 
 	public void init(int id,int drilledAmount, BrickType brickType,string neighbourCode="1111"){
 		this.id = id;
@@ -28,13 +29,16 @@ public class Brick : MonoBehaviour {
 		} else {
 			Drilled();
 		}
+		//calculate drilledrate
+		drilledRate=(int)(((int)this.brickType-115)*0.05f);
+		//Debug.Log (brickType+" : "+drilledRate);
 	}
 
 	public void StratDrilling(RelativeDirection drilledPostion){
 		if (drilledAmount < 100) {
-			drilledAmount+=5;//calculated by brick strength && drill machine strength
+			drilledAmount+=drilledRate;//calculated by brick strength && drill machine strength
 			int nonDrilledSpriteIndex = drilledAmount/17;
-			spr.sprite = BrickManager.current.NonDrilledBrick[nonDrilledSpriteIndex];
+			spr.sprite = BrickManager.current.NonDrilledBrick[Mathf.Min(nonDrilledSpriteIndex,5)];
 		} else {
 			setNeighCode(drilledPostion);
 			Drilled();
@@ -53,7 +57,7 @@ public class Brick : MonoBehaviour {
 		//change neighbourCode using neighD
 		//set sprite using neighbourCode and BrickManager sprites
 		setNeighCode (neighD);
-		if (drilledAmount == 100) {
+		if (drilledAmount >= 100) {
 			setDrilledSprite();
 		}
 	}

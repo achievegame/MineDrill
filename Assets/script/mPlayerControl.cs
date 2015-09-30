@@ -55,11 +55,7 @@ public class mPlayerControl : MonoBehaviour
 		float v = knobV.y;
 
 
-		if (h != 0 && grounded) {
-			anim.SetTrigger ("Walking");
-		} else {
-			anim.SetTrigger("Default");
-		}
+
 
 
 
@@ -77,17 +73,24 @@ public class mPlayerControl : MonoBehaviour
 
 		if (grounded && r2d.velocity == Vector2.zero) {
 			int columnNo = Mathf.FloorToInt(mTransform.position.x*BrickManager.ONE_BY_GRID_WIDTH+0.5f);
-			int rowNo = Mathf.FloorToInt(mTransform.position.y*BrickManager.ONE_BY_GRID_WIDTH+3.5f);//beneath box row
+			int rowNo = Mathf.FloorToInt(mTransform.position.y*BrickManager.ONE_BY_GRID_WIDTH+3.5f)-1;//beneath box row
 			//Debug.Log("rowNo:"+rowNo+" columnNo:"+columnNo);
 			if(v == -1 && h == 0){
 				mTransform.position = new Vector2(columnNo*BrickManager.GRID_WIDTH, mTransform.position.y);
 				BrickManager.current.Drilling(-rowNo,columnNo, RelativeDirection.Top);
+				anim.SetTrigger ("frontDrilling");
 			}else if(v==0 && h==1){
 				BrickManager.current.Drilling(-rowNo-1,columnNo+1, RelativeDirection.Left);
+				anim.SetTrigger ("sideDrilling");
 			}else if(v==0 && h==-1){
 				BrickManager.current.Drilling(-rowNo-1,columnNo-1, RelativeDirection.Right);
-			}				
-		}
+				anim.SetTrigger ("sideDrilling");
+			}			
+		}else if (h != 0 && grounded) {
+			anim.SetTrigger ("Walking");
+		} else {
+			anim.SetTrigger("Default");
+		}	
 	}
 	
 	void Flip ()

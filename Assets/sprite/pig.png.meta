@@ -1,0 +1,571 @@
+fileFormatVersion: 2
+guid: 95ef1ff05533946ddac83d2a843177c1
+timeCreated: 1443497682
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pig_fd_00025
+    21300002: pig_fd_00026
+    21300004: pig_fd_00027
+    21300006: pig_fd_00028
+    21300008: pig_fd_00029
+    21300010: pig_fd_00030
+    21300012: pig_fd_00031
+    21300014: pig_fd_00032
+    21300016: pig_fd_00033
+    21300018: pig_fd_00034
+    21300020: pig_fd_00035
+    21300022: pig_fd_00036
+    21300024: pig_ideal_00025
+    21300026: pig_ideal_00026
+    21300028: pig_ideal_00027
+    21300030: pig_ideal_00028
+    21300032: pig_ideal_00029
+    21300034: pig_ideal_00030
+    21300036: pig_ideal_00031
+    21300038: pig_ideal_00032
+    21300040: pig_ideal_00033
+    21300042: pig_ideal_00034
+    21300044: pig_ideal_00035
+    21300046: pig_ideal_00036
+    21300048: pig_ideal_00037
+    21300050: pig_ideal_00038
+    21300052: pig_ideal_00039
+    21300054: pig_ideal_00040
+    21300056: pig_ideal_00041
+    21300058: pig_ideal_00042
+    21300060: pig_ideal_00043
+    21300062: pig_ideal_00044
+    21300064: pig_ideal_00045
+    21300066: pig_ideal_00046
+    21300068: pig_ideal_00047
+    21300070: pig_ideal_00048
+    21300072: pig_ideal_00049
+    21300074: pig_ideal_00050
+    21300076: pig_ideal_00051
+    21300078: pig_ideal_00052
+    21300080: pig_ideal_00053
+    21300082: pig_ideal_00054
+    21300084: pig_ideal_00055
+    21300086: pig_ideal_00056
+    21300088: pig_ideal_00057
+    21300090: pig_ideal_00058
+    21300092: pig_ideal_00059
+    21300094: pig_ideal_00060
+    21300096: pig_ideal_00061
+    21300098: pig_ideal_00062
+    21300100: pig_ideal_00063
+    21300102: pig_ideal_00064
+    21300104: pig_ideal_00065
+    21300106: pig_ideal_00066
+    21300108: pig_ideal_00067
+    21300110: pig_ideal_00068
+    21300112: pig_ideal_00069
+    21300114: pig_ideal_00070
+    21300116: pig_ideal_00071
+    21300118: pig_ideal_00072
+    21300120: pig_sd_00025
+    21300122: pig_sd_00026
+    21300124: pig_sd_00027
+    21300126: pig_sd_00028
+    21300128: pig_sd_00029
+    21300130: pig_sd_00030
+    21300132: pig_sd_00031
+    21300134: pig_sd_00032
+    21300136: pig_sd_00033
+    21300138: pig_sd_00034
+    21300140: pig_sd_00035
+    21300142: pig_sd_00036
+    21300144: pig_sd_00037
+    21300146: pig_walkcycle_00025
+    21300148: pig_walkcycle_00026
+    21300150: pig_walkcycle_00027
+    21300152: pig_walkcycle_00028
+    21300154: pig_walkcycle_00029
+    21300156: pig_walkcycle_00030
+    21300158: pig_walkcycle_00031
+    21300160: pig_walkcycle_00032
+    21300162: pig_walkcycle_00033
+    21300164: pig_walkcycle_00034
+    21300166: pig_walkcycle_00035
+    21300168: pig_walkcycle_00036
+    21300170: pig_walkcycle_00037
+    21300172: pig_walkcycle_00038
+    21300174: pig_walkcycle_00039
+    21300176: pig_walkcycle_00040
+    21300178: pig_walkcycle_00041
+    21300180: pig_walkcycle_00042
+    21300182: pig_walkcycle_00043
+    21300184: pig_walkcycle_00044
+    21300186: pig_walkcycle_00045
+    21300188: pig_walkcycle_00046
+    21300190: pig_walkcycle_00047
+    21300192: pig_walkcycle_00048
+    21300194: pig_walkcycle_00049
+    21300196: pig_fd_001
+    21300198: pig_fd_002
+    21300200: pig_fd_003
+    21300202: pig_fd_004
+    21300204: pig_fd_005
+    21300206: pig_fd_006
+    21300208: pig_fd_007
+    21300210: pig_fd_008
+    21300212: pig_ideal_001
+    21300214: pig_ideal_0010
+    21300216: pig_ideal_0011
+    21300218: pig_ideal_0012
+    21300220: pig_ideal_002
+    21300222: pig_ideal_003
+    21300224: pig_ideal_004
+    21300226: pig_ideal_005
+    21300228: pig_ideal_006
+    21300230: pig_ideal_007
+    21300232: pig_ideal_008
+    21300234: pig_ideal_009
+    21300236: pig_sd_001
+    21300238: pig_sd_002
+    21300240: pig_sd_003
+    21300242: pig_sd_004
+    21300244: pig_sd_005
+    21300246: pig_sd_006
+    21300248: pig_sd_007
+    21300250: pig_sd_008
+    21300252: pig_walkcycle_001
+    21300254: pig_walkcycle_0010
+    21300256: pig_walkcycle_002
+    21300258: pig_walkcycle_003
+    21300260: pig_walkcycle_004
+    21300262: pig_walkcycle_005
+    21300264: pig_walkcycle_006
+    21300266: pig_walkcycle_007
+    21300268: pig_walkcycle_008
+    21300270: pig_walkcycle_009
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pig_fd_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_fd_002
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_fd_003
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_fd_004
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_fd_005
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_fd_006
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_fd_007
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_fd_008
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_0010
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_0011
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_0012
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_002
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_003
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_004
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_005
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_006
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_007
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_008
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_009
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_001
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_002
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_003
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_004
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_005
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_006
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_007
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_sd_008
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_0010
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_002
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_003
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_004
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_005
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_006
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_007
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_008
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_walkcycle_009
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
