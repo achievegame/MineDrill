@@ -33,12 +33,12 @@ public enum RelativeDirection{
 }
 
 public enum BrickType{
-	A=255,
-	B=235,
-	C=215,
-	D=195,
-	E=175,
-	F=155,
-	G=135,
-	H=115
+	A=0,
+	B,
+	C,
+	D,
+	E,
+	F,
+	G,
+	H
 }

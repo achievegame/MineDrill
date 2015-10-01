@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Brick : MonoBehaviour {
+	private static readonly int[] DRILLED_RATE = {3,1,-1,-3,-5,-7,-9,-11};
+	private static readonly float[] BRICK_COLOR = {1f,0.92f,0.84f,0.76f,0.68f,0.60f,0.52f,0.44f};
 
 	// Use this for initialization
 	private int id;
@@ -9,7 +11,6 @@ public class Brick : MonoBehaviour {
 	private SpriteRenderer spr;
 	private int drilledAmount = 0;
 	private string neighbourCode = "1111";//right,top,left,bottom 1-NonDrilled Neighbour, 0-DrilledNeighbour
-	private int drilledRate = 5;
 
 	public void init(int id,int drilledAmount, BrickType brickType,string neighbourCode="1111"){
 		this.id = id;
@@ -18,7 +19,7 @@ public class Brick : MonoBehaviour {
 		this.neighbourCode = neighbourCode;
 		//set sprite using drilledAmount neighbourCode and BrickManager sprites
 		spr = GetComponent<SpriteRenderer> ();
-		spr.color = new Color ((float)brickType/255,(float)brickType/255,(float)brickType/255);
+		spr.color = new Color (BRICK_COLOR[(int)brickType],BRICK_COLOR[(int)brickType],BRICK_COLOR[(int)brickType]);
 		if (drilledAmount < 100) {
 			int nonDrilledSpriteIndex = drilledAmount/17;
 			if(nonDrilledSpriteIndex==0 && id < BrickManager.COLUMN){
@@ -29,16 +30,13 @@ public class Brick : MonoBehaviour {
 		} else {
 			Drilled();
 		}
-		//calculate drilledrate
-		drilledRate=(int)(((int)this.brickType-115)*0.05f);
-		//Debug.Log (brickType+" : "+drilledRate);
 	}
 
 	public void StratDrilling(RelativeDirection drilledPostion){
 		if (drilledAmount < 100) {
-			drilledAmount+=drilledRate;//calculated by brick strength && drill machine strength
-			int nonDrilledSpriteIndex = drilledAmount/17;
-			spr.sprite = BrickManager.current.NonDrilledBrick[Mathf.Min(nonDrilledSpriteIndex,5)];
+			drilledAmount+=Mathf.Max(0,DRILLED_RATE[(int)brickType])+2;//calculated by brick strength && drill machine strength
+			int nonDrilledSpriteIndex = Mathf.Min(drilledAmount,100)/17;//may be 17,18,19
+			spr.sprite = BrickManager.current.NonDrilledBrick[nonDrilledSpriteIndex];
 		} else {
 			setNeighCode(drilledPostion);
 			Drilled();
