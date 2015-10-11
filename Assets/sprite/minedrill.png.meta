@@ -35,6 +35,15 @@ TextureImporter:
     21300056: brick_grass
     21300058: brick_1
     21300060: brick_dt5
+    21300062: coal
+    21300064: Coal
+    21300066: Copper
+    21300068: Diamond
+    21300070: Emerald
+    21300072: Gold
+    21300074: Iron
+    21300076: Ruby
+    21300078: Silver
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -68,6 +77,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -80,151 +90,91 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Boy_defalut
+    - name: Coal
       rect:
         serializedVersion: 2
         x: 2
-        y: 842
-        width: 149
-        height: 180
+        y: 944
+        width: 92
+        height: 78
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy
+    - name: Copper
       rect:
         serializedVersion: 2
-        x: 153
-        y: 865
-        width: 123
-        height: 157
+        x: 96
+        y: 948
+        width: 99
+        height: 74
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0001
+    - name: Diamond
       rect:
         serializedVersion: 2
-        x: 278
-        y: 842
-        width: 174
-        height: 180
+        x: 197
+        y: 920
+        width: 99
+        height: 102
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0002
+    - name: Emerald
       rect:
         serializedVersion: 2
-        x: 278
-        y: 842
-        width: 174
-        height: 180
+        x: 298
+        y: 946
+        width: 97
+        height: 76
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0003
+    - name: Gold
       rect:
         serializedVersion: 2
-        x: 278
-        y: 842
-        width: 174
-        height: 180
+        x: 397
+        y: 947
+        width: 106
+        height: 75
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0004
+    - name: Iron
       rect:
         serializedVersion: 2
-        x: 454
-        y: 842
-        width: 174
-        height: 180
+        x: 505
+        y: 939
+        width: 86
+        height: 83
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0005
+    - name: Ruby
       rect:
         serializedVersion: 2
-        x: 454
-        y: 842
-        width: 174
-        height: 180
+        x: 593
+        y: 946
+        width: 87
+        height: 76
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0006
+    - name: Silver
       rect:
         serializedVersion: 2
-        x: 454
-        y: 842
-        width: 174
-        height: 180
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0007
-      rect:
-        serializedVersion: 2
-        x: 630
-        y: 842
-        width: 174
-        height: 180
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0008
-      rect:
-        serializedVersion: 2
-        x: 630
-        y: 842
-        width: 174
-        height: 180
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0009
-      rect:
-        serializedVersion: 2
-        x: 630
-        y: 842
-        width: 174
-        height: 180
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0010
-      rect:
-        serializedVersion: 2
-        x: 806
-        y: 842
-        width: 174
-        height: 180
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0011
-      rect:
-        serializedVersion: 2
-        x: 806
-        y: 842
-        width: 174
-        height: 180
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: boy_walking0012
-      rect:
-        serializedVersion: 2
-        x: 806
-        y: 842
-        width: 174
-        height: 180
+        x: 682
+        y: 947
+        width: 100
+        height: 75
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: brick
       rect:
         serializedVersion: 2
-        x: 2
-        y: 640
+        x: 784
+        y: 822
         width: 200
         height: 200
       alignment: 0
@@ -233,8 +183,8 @@ TextureImporter:
     - name: brick_back
       rect:
         serializedVersion: 2
-        x: 204
-        y: 640
+        x: 2
+        y: 620
         width: 200
         height: 200
       alignment: 0
@@ -243,8 +193,8 @@ TextureImporter:
     - name: brick_drilled_0
       rect:
         serializedVersion: 2
-        x: 406
-        y: 640
+        x: 204
+        y: 620
         width: 200
         height: 200
       alignment: 0
@@ -253,8 +203,8 @@ TextureImporter:
     - name: brick_drilled_1
       rect:
         serializedVersion: 2
-        x: 608
-        y: 640
+        x: 406
+        y: 620
         width: 200
         height: 200
       alignment: 0
@@ -263,8 +213,8 @@ TextureImporter:
     - name: brick_drilled_2
       rect:
         serializedVersion: 2
-        x: 810
-        y: 640
+        x: 608
+        y: 620
         width: 200
         height: 200
       alignment: 0
@@ -273,8 +223,8 @@ TextureImporter:
     - name: brick_drilled_2a
       rect:
         serializedVersion: 2
-        x: 2
-        y: 438
+        x: 810
+        y: 620
         width: 200
         height: 200
       alignment: 0
@@ -283,8 +233,8 @@ TextureImporter:
     - name: brick_drilled_3
       rect:
         serializedVersion: 2
-        x: 204
-        y: 438
+        x: 2
+        y: 418
         width: 200
         height: 200
       alignment: 0
@@ -293,8 +243,8 @@ TextureImporter:
     - name: brick_dt1
       rect:
         serializedVersion: 2
-        x: 406
-        y: 438
+        x: 204
+        y: 418
         width: 200
         height: 200
       alignment: 0
@@ -303,8 +253,8 @@ TextureImporter:
     - name: brick_dt2
       rect:
         serializedVersion: 2
-        x: 608
-        y: 438
+        x: 406
+        y: 418
         width: 200
         height: 200
       alignment: 0
@@ -313,8 +263,8 @@ TextureImporter:
     - name: brick_dt3
       rect:
         serializedVersion: 2
-        x: 810
-        y: 438
+        x: 608
+        y: 418
         width: 200
         height: 200
       alignment: 0
@@ -323,8 +273,8 @@ TextureImporter:
     - name: brick_dt4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 236
+        x: 810
+        y: 418
         width: 200
         height: 200
       alignment: 0
@@ -333,8 +283,8 @@ TextureImporter:
     - name: brick_dt5
       rect:
         serializedVersion: 2
-        x: 204
-        y: 236
+        x: 2
+        y: 216
         width: 200
         height: 200
       alignment: 0
@@ -343,8 +293,8 @@ TextureImporter:
     - name: brick_grass
       rect:
         serializedVersion: 2
-        x: 406
-        y: 236
+        x: 204
+        y: 216
         width: 200
         height: 200
       alignment: 0
@@ -353,8 +303,8 @@ TextureImporter:
     - name: navigation
       rect:
         serializedVersion: 2
-        x: 608
-        y: 331
+        x: 406
+        y: 311
         width: 105
         height: 105
       alignment: 0
@@ -363,8 +313,8 @@ TextureImporter:
     - name: navigaton_knob
       rect:
         serializedVersion: 2
-        x: 715
-        y: 336
+        x: 513
+        y: 316
         width: 100
         height: 100
       alignment: 0

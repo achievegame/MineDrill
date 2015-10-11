@@ -285,6 +285,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 404326, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -315,8 +323,88 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 404326, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114246, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[0]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[1]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[2]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[3]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[4]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[5]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[6]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: minerals.Array.data[7]
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: mineralPF
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300064, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300066, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300074, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300078, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300070, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300072, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300076, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
+    - target: {fileID: 11453164, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
+      propertyPath: Minerals.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300068, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b4d844834792443d9f27750422f66d5, type: 2}
   m_IsPrefabParent: 0

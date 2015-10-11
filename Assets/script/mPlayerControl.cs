@@ -5,9 +5,6 @@ public class mPlayerControl : MonoBehaviour
 {
 	[HideInInspector]
 	public bool	facingRight = true;			// For determining which way the player is currently facing.
-	[HideInInspector]
-	public bool	jump = false;				// Condition for whether the player should jump.
-
 
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
@@ -33,7 +30,7 @@ public class mPlayerControl : MonoBehaviour
 	{
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
 		grounded = Physics2D.Linecast(mTransform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
-
+		//Debug.Log ("ground check:"+grounded);
 	}
 
 	void FixedUpdate ()
@@ -86,9 +83,11 @@ public class mPlayerControl : MonoBehaviour
 				BrickManager.current.Drilling(-rowNo-1,columnNo-1, RelativeDirection.Right);
 				anim.SetTrigger ("sideDrilling");
 			}			
+		} else if (!grounded && v !=-1) {
+			anim.SetTrigger ("Flying");
 		}else if (h != 0 && grounded) {
 			anim.SetTrigger ("Walking");
-		} else {
+		}else {
 			anim.SetTrigger("Default");
 		}	
 	}

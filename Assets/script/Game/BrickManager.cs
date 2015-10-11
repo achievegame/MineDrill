@@ -14,11 +14,14 @@ public class BrickManager : MonoBehaviour {
 
 	[SerializeField]
 	private GameObject BrickFB;
+	[SerializeField]
+	private GameObject mineralPF; 
 
 	public Sprite S_Brick_Grass;
 	public Sprite[] NonDrilledBrick;
 	public Sprite[] DrilledBrick;
 
+	public Sprite[] Minerals;
 
 
 
@@ -36,7 +39,9 @@ public class BrickManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		GameObject brickGO;
+		GameObject mineralGO;
 		Brick brick;
+		Mineral mnrl;
 		for (int i=0; i<ROW; i++) {
 			for(int j=0; j<COLUMN; j++){
 				brickGO = (GameObject)Instantiate(BrickFB);
@@ -46,6 +51,16 @@ public class BrickManager : MonoBehaviour {
 				brickGO.layer = gameObject.layer;
 				brickGO.transform.localPosition = new Vector2((j-COLUMN/2)*GRID_WIDTH,-i*GRID_HEIGHT);
 				bricksList.Add(brick);
+
+				//add minerals
+				if(Random.value <0.1f){
+					mineralGO = (GameObject)Instantiate(mineralPF);
+					mineralGO.transform.SetParent(brickGO.transform.parent);
+					mineralGO.transform.localPosition = brickGO.transform.localPosition;
+					mnrl = mineralGO.GetComponent<Mineral>();
+					mnrl.init((MineralType)Random.Range(0,8));
+					brick.mineral = mineralGO;
+				}
 			}
 		}	
 	}

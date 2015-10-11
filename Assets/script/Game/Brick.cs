@@ -11,6 +11,7 @@ public class Brick : MonoBehaviour {
 	private SpriteRenderer spr;
 	private int drilledAmount = 0;
 	private string neighbourCode = "1111";//right,top,left,bottom 1-NonDrilled Neighbour, 0-DrilledNeighbour
+	public GameObject mineral;
 
 	public void init(int id,int drilledAmount, BrickType brickType,string neighbourCode="1111"){
 		this.id = id;
@@ -49,6 +50,11 @@ public class Brick : MonoBehaviour {
 		//set sprite using neighbourCode and BrickManager sprites
 		Destroy(GetComponent<BoxCollider2D>());
 		setDrilledSprite ();
+		//if has minarls then drop it
+		if (mineral) {
+			Rigidbody2D r2d = (Rigidbody2D)mineral.GetComponent<Rigidbody2D> ();
+			r2d.isKinematic = false;
+		}
 	}
 
 	public void NeighbourChanged(RelativeDirection neighD){

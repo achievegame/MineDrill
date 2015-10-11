@@ -7,6 +7,7 @@ public class Constants {
 	public const string RESOURCELOCATION_PREFAB = "prefab/";
 	public const string RESOURCELOCATION_ANIMATION = "animations/Animation_";
 	public const string TAG_HUD = "HUD";
+	public const string TAG_PLAYER = "Player";
 	public const float GRID_WIDTH = 1.74f;
 	public const float GRID_HEIGHT = 1.65f;
 
@@ -41,4 +42,15 @@ public enum BrickType{
 	F,
 	G,
 	H
+}
+
+public enum MineralType{
+	Coal,
+	Copper,
+	Iron,
+	Silver,
+	Emerald,
+	Gold,
+	Ruby,
+	Diamond
 }
