@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<goldFishShop length="5" countPostFix="Gold Fish">
+	<shopElement name="Net Of Fish" price="1.99" count="7500" id="net_of_fish_vcp" />
+	<shopElement name="Bag Of Fish" price="2.99" count="15000" id="bag_of_fish_vcp" />
+	<shopElement name="Bowl Of Fish" price="7.99" count="45000" id="bowl_of_fish_vcp" />
+	<shopElement name="Tank Of Fish" price="11.99" count="90000" id="tank_of_fish_vcp" />
+	<shopElement name="Pond Of Fish" price="21.99" count="180000" id="pond_of_fish_vcp" />
+</goldFishShop>

@@ -1,0 +1,562 @@
+fileFormatVersion: 2
+guid: 0c57e2113c9314c7db4ff1c6eee93c86
+timeCreated: 1445680465
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cow_fd_001
+    21300002: cow_fd_002
+    21300004: cow_fd_003
+    21300006: cow_fd_004
+    21300008: cow_fd_005
+    21300010: cow_fd_006
+    21300012: cow_fd_007
+    21300014: cow_fd_008
+    21300016: cow_fly_001
+    21300018: cow_fly_002
+    21300020: cow_fly_003
+    21300022: cow_fly_004
+    21300024: cow_fly_005
+    21300026: cow_fly_006
+    21300028: cow_fly_007
+    21300030: cow_fly_008
+    21300032: cow_ideal_001
+    21300034: cow_ideal_0010
+    21300036: cow_ideal_0011
+    21300038: cow_ideal_0012
+    21300040: cow_ideal_002
+    21300042: cow_ideal_003
+    21300044: cow_ideal_004
+    21300046: cow_ideal_005
+    21300048: cow_ideal_006
+    21300050: cow_ideal_007
+    21300052: cow_ideal_008
+    21300054: cow_ideal_009
+    21300056: cow_sd_001
+    21300058: cow_sd_002
+    21300060: cow_sd_003
+    21300062: cow_sd_004
+    21300064: cow_sd_005
+    21300066: cow_sd_006
+    21300068: cow_sd_007
+    21300070: cow_sd_008
+    21300072: cow_walkcycle_001
+    21300074: cow_walkcycle_002
+    21300076: cow_walkcycle_003
+    21300078: cow_walkcycle_004
+    21300080: cow_walkcycle_005
+    21300082: cow_walkcycle_006
+    21300084: cow_walkcycle_007
+    21300086: cow_walkcycle_008
+    21300088: cow_walkcycle_009
+    21300090: cow_walkcycle_010
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cow_fd_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fd_002
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fd_003
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fd_004
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fd_005
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fd_006
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fd_007
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fd_008
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_001
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_002
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_003
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_004
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_005
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_006
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_007
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_fly_008
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_0010
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_0011
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_0012
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_002
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_004
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_005
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_006
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_007
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_008
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_009
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_002
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_003
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_004
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_005
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_006
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_007
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_sd_008
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_001
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_002
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_003
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_004
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_005
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_006
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_007
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_008
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_009
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_walkcycle_010
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

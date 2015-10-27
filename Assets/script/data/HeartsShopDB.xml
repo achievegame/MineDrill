@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<heartsShop length="3" countPostFix="Hearts">
+	<shopElement name="Round Of Hearts" price="2.99" count="10" id="round_of_hearts_vcp" />
+	<shopElement name="Box Of Hearts" price="12.99" count="50" id="box_of_hearts_vcp" />
+	<shopElement name="Chest Of Hearts" price="35.99" count="250" id="chest_of_hearts_vcp" />
+</heartsShop>

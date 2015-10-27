@@ -7,7 +7,16 @@ public class Constants {
 	public const string RESOURCELOCATION_PREFAB = "prefab/";
 	public const string RESOURCELOCATION_ANIMATION = "animations/Animation_";
 	public const string TAG_HUD = "HUD";
+	public const string TAG_HUD_MANAGER = "HUDManager";
 	public const string TAG_PLAYER = "Player";
+
+	public const string HUD_HEROES = "Heroes";
+	public const string HUD_BAG = "Bag";
+	public const string HUD_STORE = "Store";
+	public const string HUD_HUD = "HUD";
+	public const string HUD_PAUSE_SCREEN = "PauseScreen";
+
+
 	public const float GRID_WIDTH = 1.74f;
 	public const float GRID_HEIGHT = 1.65f;
 

@@ -4,30 +4,35 @@
 # To import these sprites into your Unity project, download "TexturePackerImporter":
 # http://www.codeandweb.com/texturepacker/unity
 #
-# Sprite sheet: minedrill.png (1024 x 1024)
-# $TexturePacker:SmartUpdate:f41523e860c80f329ad62f1958e5a016:9fb585463403c851f51a2c06594b9093:eb623f3f91896e5021fdf19e600a9362$
+# Sprite sheet: minedrill.png (1024 x 2048)
+# $TexturePacker:SmartUpdate:ecb08d173cb2db705c7476629911b1f1:b65c0f05c119dec9a6f44f112ee94f38:eb623f3f91896e5021fdf19e600a9362$
 #
 
-Coal;2;944;92;78;0.5;0.5
-Copper;96;948;99;74;0.5;0.5
-Diamond;197;920;99;102;0.5;0.5
-Emerald;298;946;97;76;0.5;0.5
-Gold;397;947;106;75;0.5;0.5
-Iron;505;939;86;83;0.5;0.5
-Ruby;593;946;87;76;0.5;0.5
-Silver;682;947;100;75;0.5;0.5
-brick;784;822;200;200;0.5;0.5
-brick_back;2;620;200;200;0.5;0.5
-brick_drilled_0;204;620;200;200;0.5;0.5
-brick_drilled_1;406;620;200;200;0.5;0.5
-brick_drilled_2;608;620;200;200;0.5;0.5
-brick_drilled_2a;810;620;200;200;0.5;0.5
-brick_drilled_3;2;418;200;200;0.5;0.5
-brick_dt1;204;418;200;200;0.5;0.5
-brick_dt2;406;418;200;200;0.5;0.5
-brick_dt3;608;418;200;200;0.5;0.5
-brick_dt4;810;418;200;200;0.5;0.5
-brick_dt5;2;216;200;200;0.5;0.5
-brick_grass;204;216;200;200;0.5;0.5
-navigation;406;311;105;105;0.5;0.5
-navigaton_knob;513;316;100;100;0.5;0.5
+Coal;2;1968;92;78;0.5;0.5
+Copper;96;1972;99;74;0.5;0.5
+Diamond;197;1944;99;102;0.5;0.5
+Emerald;298;1970;97;76;0.5;0.5
+Gold;397;1971;106;75;0.5;0.5
+Iron;505;1963;86;83;0.5;0.5
+Ruby;593;1970;87;76;0.5;0.5
+Silver;682;1971;100;75;0.5;0.5
+bear_ideal_001;2;1686;256;256;0.5;0.5
+brick;260;1742;200;200;0.5;0.5
+brick_back;462;1742;200;200;0.5;0.5
+brick_drilled_0;664;1742;200;200;0.5;0.5
+brick_drilled_1;2;1484;200;200;0.5;0.5
+brick_drilled_2;204;1484;200;200;0.5;0.5
+brick_drilled_2a;406;1484;200;200;0.5;0.5
+brick_drilled_3;608;1484;200;200;0.5;0.5
+brick_dt1;810;1484;200;200;0.5;0.5
+brick_dt2;2;1282;200;200;0.5;0.5
+brick_dt3;204;1282;200;200;0.5;0.5
+brick_dt4;406;1282;200;200;0.5;0.5
+brick_dt5;608;1282;200;200;0.5;0.5
+brick_grass;810;1282;200;200;0.5;0.5
+cow_ideal_001;2;1024;256;256;0.5;0.5
+dragon_ideal_001;260;1024;256;256;0.5;0.5
+navigation;518;1175;105;105;0.5;0.5
+navigaton_knob;625;1180;100;100;0.5;0.5
+pig_ideal_001;727;1024;256;256;0.5;0.5
+tiger_ideal_001;2;766;256;256;0.5;0.5

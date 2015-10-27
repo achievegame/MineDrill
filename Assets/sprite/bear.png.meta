@@ -1,0 +1,562 @@
+fileFormatVersion: 2
+guid: 6c6b4382b9ea3419d99d28967febc972
+timeCreated: 1445680566
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bear_fd_001
+    21300002: bear_fd_002
+    21300004: bear_fd_003
+    21300006: bear_fd_004
+    21300008: bear_fd_005
+    21300010: bear_fd_006
+    21300012: bear_fd_007
+    21300014: bear_fd_008
+    21300016: bear_fly_001
+    21300018: bear_fly_002
+    21300020: bear_fly_003
+    21300022: bear_fly_004
+    21300024: bear_fly_005
+    21300026: bear_fly_006
+    21300028: bear_fly_007
+    21300030: bear_fly_008
+    21300032: bear_ideal_001
+    21300034: bear_ideal_0010
+    21300036: bear_ideal_0011
+    21300038: bear_ideal_0012
+    21300040: bear_ideal_002
+    21300042: bear_ideal_003
+    21300044: bear_ideal_004
+    21300046: bear_ideal_005
+    21300048: bear_ideal_006
+    21300050: bear_ideal_007
+    21300052: bear_ideal_008
+    21300054: bear_ideal_009
+    21300056: bear_sd_001
+    21300058: bear_sd_002
+    21300060: bear_sd_003
+    21300062: bear_sd_004
+    21300064: bear_sd_005
+    21300066: bear_sd_006
+    21300068: bear_sd_007
+    21300070: bear_sd_008
+    21300072: bear_walkcycle_001
+    21300074: bear_walkcycle_0010
+    21300076: bear_walkcycle_002
+    21300078: bear_walkcycle_003
+    21300080: bear_walkcycle_004
+    21300082: bear_walkcycle_005
+    21300084: bear_walkcycle_006
+    21300086: bear_walkcycle_007
+    21300088: bear_walkcycle_008
+    21300090: bear_walkcycle_009
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bear_fd_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fd_002
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fd_003
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fd_004
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fd_005
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fd_006
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fd_007
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1790
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fd_008
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_001
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_002
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_003
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_004
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_005
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_006
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1532
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_007
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_fly_008
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_0010
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_0011
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_0012
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_002
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1274
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_004
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_005
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_006
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_007
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_008
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_009
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1016
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_002
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_003
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_004
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_005
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_006
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_007
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_sd_008
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_001
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_0010
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_002
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_003
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_004
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_005
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 500
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_006
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_007
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_008
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_walkcycle_009
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 242
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

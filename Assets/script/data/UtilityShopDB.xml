@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<utilitysShop length="2" countPostFix="" desc="yes">
+	<shopElement name="Dolphin" price="1500" count="x0" desc="Use Dolphin to save you and collect prize" id="dolphin_vg" />
+	<shopElement name="Dash Fish" price="600" count="x0" desc="Boost your fish" id="dash_fish_vg" />
+<!--	<shopElement name="I-up" price="3500" count="x0" desc="Extra life"/>-->
+</utilitysShop>

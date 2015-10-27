@@ -13,7 +13,7 @@ public class NavigationKnob : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 		knobRect = transform as RectTransform;
 	}
 	public Vector2 velocity(){
-		if (knobRect.localPosition == Vector3.zero) {
+		if (!knobRect || knobRect.localPosition == Vector3.zero) {
 			return Vector2.zero;
 		}
 		float angle = Mathf.Atan2 (knobRect.localPosition.y,knobRect.localPosition.x);
@@ -41,17 +41,6 @@ public class NavigationKnob : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 		}
 	}
 
-//	public float h {
-//		get {
-//			return knobRect.localPosition.x/MAX_DISTANCE;
-//		}
-//	}
-//
-//	public float v {
-//		get {
-//			return knobRect.localPosition.y/MAX_DISTANCE;
-//		}
-//	}
 
 	public void OnPointerUp (PointerEventData eventData)
 	{

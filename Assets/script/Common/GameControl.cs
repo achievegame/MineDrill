@@ -7,7 +7,7 @@ public class GameControl : MonoBehaviour
 	public HUD hud;
 
 	#region event
-	
+	public static event characterChanged OnCharecterChanged;
 	#endregion event
 
 
@@ -20,5 +20,13 @@ public class GameControl : MonoBehaviour
 		}
 
 		Input.multiTouchEnabled = false;
+	}
+
+	public void CharacterChanged(int index){
+		//characterIndex = index;
+		// it will set avatar for character
+		if (OnCharecterChanged != null) {
+			OnCharecterChanged(index);		
+		}
 	}
 }

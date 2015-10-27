@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Tiger
+  m_Controller: {fileID: 9100000, guid: e1b9078af1bd543769c07adbcca7ccb0, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 06238470caf8447d6bd6d1f7a723224e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d28a731b4e5dc4f34a9883fd95128607, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 456817addb2e342beacdff3cd54fb743, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1340766cf2ed34d4d9daa8cdc4459b25, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a5b972b98818344348a56981837a34d9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b4330e67fa0044d30922e119d77a7c04, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fd7573e4f9c8442b4a089f892c69b61b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 54dde9e31a1d343d2ad232add549f560, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fadc85ac4ea4a4200a231b6e23616f40, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0e4af9d52b578451c9e40a8242de4dc4, type: 2}

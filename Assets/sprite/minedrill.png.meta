@@ -44,6 +44,11 @@ TextureImporter:
     21300074: Iron
     21300076: Ruby
     21300078: Silver
+    21300080: bear_ideal_001
+    21300082: cow_ideal_001
+    21300084: dragon_ideal_001
+    21300086: pig_ideal_001
+    21300088: tiger_ideal_001
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -94,7 +99,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 944
+        y: 1968
         width: 92
         height: 78
       alignment: 0
@@ -104,7 +109,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 948
+        y: 1972
         width: 99
         height: 74
       alignment: 0
@@ -114,7 +119,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 197
-        y: 920
+        y: 1944
         width: 99
         height: 102
       alignment: 0
@@ -124,7 +129,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 298
-        y: 946
+        y: 1970
         width: 97
         height: 76
       alignment: 0
@@ -134,7 +139,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 397
-        y: 947
+        y: 1971
         width: 106
         height: 75
       alignment: 0
@@ -144,7 +149,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 505
-        y: 939
+        y: 1963
         width: 86
         height: 83
       alignment: 0
@@ -154,7 +159,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 593
-        y: 946
+        y: 1970
         width: 87
         height: 76
       alignment: 0
@@ -164,17 +169,27 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 682
-        y: 947
+        y: 1971
         width: 100
         height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1686
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: brick
       rect:
         serializedVersion: 2
-        x: 784
-        y: 822
+        x: 260
+        y: 1742
         width: 200
         height: 200
       alignment: 0
@@ -183,8 +198,8 @@ TextureImporter:
     - name: brick_back
       rect:
         serializedVersion: 2
-        x: 2
-        y: 620
+        x: 462
+        y: 1742
         width: 200
         height: 200
       alignment: 0
@@ -193,8 +208,8 @@ TextureImporter:
     - name: brick_drilled_0
       rect:
         serializedVersion: 2
-        x: 204
-        y: 620
+        x: 664
+        y: 1742
         width: 200
         height: 200
       alignment: 0
@@ -203,8 +218,8 @@ TextureImporter:
     - name: brick_drilled_1
       rect:
         serializedVersion: 2
-        x: 406
-        y: 620
+        x: 2
+        y: 1484
         width: 200
         height: 200
       alignment: 0
@@ -213,8 +228,8 @@ TextureImporter:
     - name: brick_drilled_2
       rect:
         serializedVersion: 2
-        x: 608
-        y: 620
+        x: 204
+        y: 1484
         width: 200
         height: 200
       alignment: 0
@@ -223,8 +238,8 @@ TextureImporter:
     - name: brick_drilled_2a
       rect:
         serializedVersion: 2
-        x: 810
-        y: 620
+        x: 406
+        y: 1484
         width: 200
         height: 200
       alignment: 0
@@ -233,8 +248,8 @@ TextureImporter:
     - name: brick_drilled_3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 418
+        x: 608
+        y: 1484
         width: 200
         height: 200
       alignment: 0
@@ -243,8 +258,8 @@ TextureImporter:
     - name: brick_dt1
       rect:
         serializedVersion: 2
-        x: 204
-        y: 418
+        x: 810
+        y: 1484
         width: 200
         height: 200
       alignment: 0
@@ -253,8 +268,8 @@ TextureImporter:
     - name: brick_dt2
       rect:
         serializedVersion: 2
-        x: 406
-        y: 418
+        x: 2
+        y: 1282
         width: 200
         height: 200
       alignment: 0
@@ -263,8 +278,8 @@ TextureImporter:
     - name: brick_dt3
       rect:
         serializedVersion: 2
-        x: 608
-        y: 418
+        x: 204
+        y: 1282
         width: 200
         height: 200
       alignment: 0
@@ -273,8 +288,8 @@ TextureImporter:
     - name: brick_dt4
       rect:
         serializedVersion: 2
-        x: 810
-        y: 418
+        x: 406
+        y: 1282
         width: 200
         height: 200
       alignment: 0
@@ -283,8 +298,8 @@ TextureImporter:
     - name: brick_dt5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 216
+        x: 608
+        y: 1282
         width: 200
         height: 200
       alignment: 0
@@ -293,18 +308,38 @@ TextureImporter:
     - name: brick_grass
       rect:
         serializedVersion: 2
-        x: 204
-        y: 216
+        x: 810
+        y: 1282
         width: 200
         height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cow_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dragon_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1024
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: navigation
       rect:
         serializedVersion: 2
-        x: 406
-        y: 311
+        x: 518
+        y: 1175
         width: 105
         height: 105
       alignment: 0
@@ -313,10 +348,30 @@ TextureImporter:
     - name: navigaton_knob
       rect:
         serializedVersion: 2
-        x: 513
-        y: 316
+        x: 625
+        y: 1180
         width: 100
         height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tiger_ideal_001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 766
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

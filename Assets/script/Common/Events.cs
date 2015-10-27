@@ -6,3 +6,4 @@ public delegate void readyForPlayingAction(bool instantPlay=false);
 public delegate void gameStart();
 public delegate void gamePaused(bool isPaused=true);
 public delegate void ToggleButtonChanged();
+public delegate void characterChanged(int index);

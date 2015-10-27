@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Cow
+  m_Controller: {fileID: 9100000, guid: e1b9078af1bd543769c07adbcca7ccb0, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 06238470caf8447d6bd6d1f7a723224e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e372c059b04c248e988fefb7c05bb58e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 456817addb2e342beacdff3cd54fb743, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 59dcf80253dc347f59158c3043faf7ef, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a5b972b98818344348a56981837a34d9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5c08ac6701b464e4486589a707647216, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fd7573e4f9c8442b4a089f892c69b61b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ee5658825e4db4c91984b0d20ccc8d45, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fadc85ac4ea4a4200a231b6e23616f40, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7e503945f50654d1a942855298de23fd, type: 2}
