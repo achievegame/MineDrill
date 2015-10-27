@@ -1,12 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/HUD/PauseScreen.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Soomla/Levelup/data/WorldStorage.cs">
     <Files>
-      <File FileName="Assets/script/HUD/HUD.cs" Line="39" Column="22" />
+      <File FileName="Assets/script/HUD/HUD.cs" Line="1" Column="1" />
       <File FileName="Assets/script/HUD/VirtualMoneyIndicator.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Game/CharacterManager.cs" Line="15" Column="35" />
-      <File FileName="Assets/script/HUD/PauseScreen.cs" Line="13" Column="22" />
+      <File FileName="Assets/script/Game/CharacterManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/HUD/PauseScreen.cs" Line="1" Column="1" />
       <File FileName="Assets/script/Common/Constants.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Soomla/Levelup/SoomlaLevelUp.cs" Line="202" Column="43" />
+      <File FileName="Assets/Plugins/Soomla/Levelup/data/WorldStorage.cs" Line="227" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

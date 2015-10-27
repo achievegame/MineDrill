@@ -224,11 +224,11 @@ namespace Soomla.Levelup
 		private static string keyLastCompletedInnerWorld(string worldId) {
 			return keyWorlds(worldId, "lastCompletedInnerWorld");
 		}
-
+#endif
 		public static string getKeyWorldPrefix() {
 			return DB_WORLD_KEY_PREFIX;
 		}
-#endif
+
 
 
 	}

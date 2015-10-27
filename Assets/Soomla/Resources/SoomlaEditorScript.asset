@@ -29,3 +29,5 @@ MonoBehaviour:
       value: True
     - name: AndroidPublicKey
       value: YOUR GOOGLE PLAY PUBLIC KEY
+    - name: NoneBP
+      value: False
