@@ -28,6 +28,6 @@ MonoBehaviour:
     - name: GPlayBP
       value: True
     - name: AndroidPublicKey
-      value: YOUR GOOGLE PLAY PUBLIC KEY
+      value: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiPFIJIqgS22YziAP+bzvuRP9hINzdV2O7JUs5W7koQHSW0oQEw+9ZZiZooMnxdYbtDPHzYquuAaF5a5+8GUPAJjLIh00eM5H/VLUND/QLwvKFdVAVuucs1g1VXpuHzYcrgjOKfABTnuqyRkHME+3SJzhl2kiiGky4NJ6vHjYkP1wSvgmMmCJeNkstDJd1pMVC3Naq5o/hMrT/974KE8gLOLZ4cGtmMRgxs+UcB0YolaqYXYVWZhbki/868PH8TZKRHnwYymZs3+6nHvrT4CSS+97GczKtjpag19mSRiy1XvFpYuaW+l7GMC60E1gqsYES/c/JSPX1UttGwl+20xduwIDAQAB
     - name: NoneBP
       value: False
