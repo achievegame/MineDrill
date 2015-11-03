@@ -21,6 +21,8 @@ public class ToggleButton : MonoBehaviour {
 	private Image targetGraphic;
 	private SpriteState sState;
 
+	public int index;
+
 	public bool isOn {
 		get {
 			return _isOn;
@@ -30,19 +32,30 @@ public class ToggleButton : MonoBehaviour {
 			targetGraphic.sprite = (_isOn)?toggleOn:toggleOff;
 			sState.pressedSprite = (_isOn)?toggleOnPressed:toggleOffPressed;
 			if(OnToggleButtonChanged!=null)
-				OnToggleButtonChanged();
+				OnToggleButtonChanged(index);
 		}
 	}
 
-	void Start(){
+	void Awake(){
 		targetGraphic = button.targetGraphic.GetComponent<Image>();
 		sState = button.spriteState;
-		button.onClick.AddListener (() => {
-			isOn=!isOn;
-		});
-
+		//		button.onClick.AddListener (() => {
+		//			isOn=!isOn;
+		//		});
+		
 		targetGraphic.sprite = (_isOn)?toggleOn:toggleOff;
 		sState.pressedSprite = (_isOn)?toggleOnPressed:toggleOffPressed;
 	}
+
+//	void Start(){
+//		targetGraphic = button.targetGraphic.GetComponent<Image>();
+//		sState = button.spriteState;
+////		button.onClick.AddListener (() => {
+////			isOn=!isOn;
+////		});
+//
+//		targetGraphic.sprite = (_isOn)?toggleOn:toggleOff;
+//		sState.pressedSprite = (_isOn)?toggleOnPressed:toggleOffPressed;
+//	}
 
 }

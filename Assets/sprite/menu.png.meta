@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e11db5ef20f7845f19462844c95b2496
-timeCreated: 1445788460
+timeCreated: 1446350503
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -48,6 +48,11 @@ TextureImporter:
     21300082: PlayBtnYellow
     21300084: ReloadBtn
     21300086: RibbonSmall
+    21300088: Arrow
+    21300090: BagIconSmall
+    21300092: BatteryIconSmall
+    21300094: MeterBase
+    21300096: MeterTop
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -98,17 +103,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 908
-        width: 599
-        height: 114
+        y: 1930
+        width: 601
+        height: 116
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AddBtn
       rect:
         serializedVersion: 2
-        x: 603
-        y: 969
+        x: 605
+        y: 1993
         width: 183
         height: 53
       alignment: 0
@@ -117,18 +122,28 @@ TextureImporter:
     - name: AddBtnDisable
       rect:
         serializedVersion: 2
-        x: 788
-        y: 969
+        x: 790
+        y: 1993
         width: 183
         height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1887
+        width: 87
+        height: 41
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: BackBtn
       rect:
         serializedVersion: 2
-        x: 2
-        y: 844
+        x: 91
+        y: 1866
         width: 61
         height: 62
       alignment: 0
@@ -137,38 +152,58 @@ TextureImporter:
     - name: BagIcon
       rect:
         serializedVersion: 2
-        x: 65
-        y: 832
+        x: 154
+        y: 1854
         width: 61
         height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BagIconSmall
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1891
+        width: 30
+        height: 37
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: BatteryIcon
       rect:
         serializedVersion: 2
-        x: 128
-        y: 790
+        x: 249
+        y: 1812
         width: 73
         height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BatteryIconSmall
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1877
+        width: 31
+        height: 51
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: BtnBaseBlue
       rect:
         serializedVersion: 2
-        x: 203
-        y: 847
+        x: 357
+        y: 1869
         width: 172
         height: 59
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 72, y: 20, z: 72, w: 20}
     - name: BtnBaseGreen
       rect:
         serializedVersion: 2
-        x: 377
-        y: 847
+        x: 531
+        y: 1869
         width: 172
         height: 59
       alignment: 0
@@ -177,18 +212,18 @@ TextureImporter:
     - name: ButtonBase
       rect:
         serializedVersion: 2
-        x: 551
-        y: 815
+        x: 705
+        y: 1837
         width: 283
         height: 91
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 104, y: 30, z: 104, w: 30}
     - name: BuyBtn
       rect:
         serializedVersion: 2
-        x: 836
-        y: 845
+        x: 2
+        y: 1749
         width: 172
         height: 61
       alignment: 0
@@ -197,8 +232,8 @@ TextureImporter:
     - name: CheckBtn
       rect:
         serializedVersion: 2
-        x: 2
-        y: 728
+        x: 176
+        y: 1750
         width: 60
         height: 60
       alignment: 0
@@ -207,8 +242,8 @@ TextureImporter:
     - name: CoinIcon
       rect:
         serializedVersion: 2
-        x: 64
-        y: 714
+        x: 238
+        y: 1736
         width: 65
         height: 74
       alignment: 0
@@ -217,8 +252,8 @@ TextureImporter:
     - name: CoinsIcon
       rect:
         serializedVersion: 2
-        x: 131
-        y: 687
+        x: 305
+        y: 1709
         width: 369
         height: 101
       alignment: 0
@@ -227,8 +262,8 @@ TextureImporter:
     - name: DrillerIcon
       rect:
         serializedVersion: 2
-        x: 502
-        y: 653
+        x: 676
+        y: 1675
         width: 121
         height: 135
       alignment: 0
@@ -237,8 +272,8 @@ TextureImporter:
     - name: Dynamite
       rect:
         serializedVersion: 2
-        x: 625
-        y: 739
+        x: 799
+        y: 1761
         width: 82
         height: 49
       alignment: 0
@@ -247,8 +282,8 @@ TextureImporter:
     - name: DynamiteIcon
       rect:
         serializedVersion: 2
-        x: 709
-        y: 712
+        x: 883
+        y: 1734
         width: 126
         height: 76
       alignment: 0
@@ -257,8 +292,8 @@ TextureImporter:
     - name: FanIcon
       rect:
         serializedVersion: 2
-        x: 837
-        y: 719
+        x: 2
+        y: 1604
         width: 141
         height: 69
       alignment: 0
@@ -267,8 +302,8 @@ TextureImporter:
     - name: HerosIcon
       rect:
         serializedVersion: 2
-        x: 2
-        y: 581
+        x: 145
+        y: 1603
         width: 81
         height: 70
       alignment: 0
@@ -277,8 +312,8 @@ TextureImporter:
     - name: LeaderboardBtn
       rect:
         serializedVersion: 2
-        x: 85
-        y: 540
+        x: 228
+        y: 1562
         width: 108
         height: 111
       alignment: 0
@@ -287,18 +322,38 @@ TextureImporter:
     - name: MenuBtn
       rect:
         serializedVersion: 2
-        x: 195
-        y: 530
+        x: 338
+        y: 1552
         width: 118
         height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MeterBase
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1438
+        width: 125
+        height: 235
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MeterTop
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1585
+        width: 47
+        height: 88
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MissionIcon
       rect:
         serializedVersion: 2
-        x: 315
-        y: 590
+        x: 634
+        y: 1612
         width: 61
         height: 61
       alignment: 0
@@ -307,8 +362,8 @@ TextureImporter:
     - name: NewBtnBG
       rect:
         serializedVersion: 2
-        x: 378
-        y: 527
+        x: 697
+        y: 1549
         width: 124
         height: 124
       alignment: 0
@@ -317,8 +372,8 @@ TextureImporter:
     - name: PanelBase
       rect:
         serializedVersion: 2
-        x: 504
-        y: 322
+        x: 2
+        y: 1107
         width: 361
         height: 329
       alignment: 0
@@ -327,8 +382,8 @@ TextureImporter:
     - name: PauseBtn
       rect:
         serializedVersion: 2
-        x: 867
-        y: 530
+        x: 365
+        y: 1315
         width: 118
         height: 121
       alignment: 0
@@ -337,8 +392,8 @@ TextureImporter:
     - name: PlayBtn
       rect:
         serializedVersion: 2
-        x: 2
-        y: 196
+        x: 485
+        y: 1312
         width: 124
         height: 124
       alignment: 0
@@ -347,8 +402,8 @@ TextureImporter:
     - name: PlayBtnYellow
       rect:
         serializedVersion: 2
-        x: 128
-        y: 199
+        x: 611
+        y: 1315
         width: 118
         height: 121
       alignment: 0
@@ -357,8 +412,8 @@ TextureImporter:
     - name: ReloadBtn
       rect:
         serializedVersion: 2
-        x: 248
-        y: 199
+        x: 731
+        y: 1315
         width: 118
         height: 121
       alignment: 0
@@ -367,8 +422,8 @@ TextureImporter:
     - name: Ribbon
       rect:
         serializedVersion: 2
-        x: 368
-        y: 225
+        x: 2
+        y: 1010
         width: 377
         height: 95
       alignment: 0
@@ -377,8 +432,8 @@ TextureImporter:
     - name: RibbonSmall
       rect:
         serializedVersion: 2
-        x: 2
-        y: 111
+        x: 381
+        y: 1022
         width: 306
         height: 83
       alignment: 0
@@ -387,8 +442,8 @@ TextureImporter:
     - name: SettingsBtn
       rect:
         serializedVersion: 2
-        x: 310
-        y: 76
+        x: 689
+        y: 987
         width: 115
         height: 118
       alignment: 0
@@ -397,8 +452,8 @@ TextureImporter:
     - name: StoreBase
       rect:
         serializedVersion: 2
-        x: 427
-        y: 160
+        x: 806
+        y: 1071
         width: 34
         height: 34
       alignment: 0
@@ -407,8 +462,8 @@ TextureImporter:
     - name: StoreBaseBW
       rect:
         serializedVersion: 2
-        x: 463
-        y: 160
+        x: 842
+        y: 1071
         width: 34
         height: 34
       alignment: 0
@@ -417,8 +472,8 @@ TextureImporter:
     - name: StoreSegmentedBtnBase
       rect:
         serializedVersion: 2
-        x: 499
-        y: 133
+        x: 2
+        y: 924
         width: 374
         height: 61
       alignment: 0
@@ -427,8 +482,8 @@ TextureImporter:
     - name: UpgradesBtn
       rect:
         serializedVersion: 2
-        x: 2
-        y: 20
+        x: 378
+        y: 931
         width: 183
         height: 54
       alignment: 0
@@ -437,8 +492,8 @@ TextureImporter:
     - name: UpgradesBtnDisable
       rect:
         serializedVersion: 2
-        x: 187
-        y: 20
+        x: 563
+        y: 931
         width: 183
         height: 54
       alignment: 0
@@ -447,8 +502,8 @@ TextureImporter:
     - name: UpgradesEmpty
       rect:
         serializedVersion: 2
-        x: 372
-        y: 60
+        x: 748
+        y: 971
         width: 160
         height: 14
       alignment: 0
@@ -457,8 +512,8 @@ TextureImporter:
     - name: UpgradesFill
       rect:
         serializedVersion: 2
-        x: 534
-        y: 61
+        x: 2
+        y: 909
         width: 159
         height: 13
       alignment: 0

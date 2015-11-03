@@ -194,7 +194,6 @@
      <Compile Include="Assets\Plugins\Soomla\Store\purchaseTypes\PurchaseWithVirtualItem.cs" />
      <Compile Include="Assets\Plugins\Soomla\Store\rewards\VirtualItemReward.cs" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sw\common_strings.xml" />
-     <None Include="Assets\script\data\UtilityShopDB.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-pt-rPT\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ru\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\version.xml" />
@@ -202,16 +201,20 @@
      <None Include="Assets\script\data\characterDB.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-hi\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-bg\common_strings.xml" />
+     <None Include="Assets\Resources\language\FR.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sv\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-el\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\common_colors.xml" />
+     <None Include="Assets\Resources\language\KO.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-am\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-en-rIN\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-th\common_strings.xml" />
+     <None Include="Assets\Resources\language\ES.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-zh-rTW\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-zh-rHK\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ja\common_strings.xml" />
+     <None Include="Assets\Resources\language\EN.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-zu\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\AndroidManifest.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\color\common_signin_btn_text_light.xml" />
@@ -225,6 +228,7 @@
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-sk\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-cs\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\wallet_styles.xml" />
+     <None Include="Assets\Resources\language\JA.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-es\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-da\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\README.txt" />
@@ -243,6 +247,7 @@
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-km-rKH\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-lt\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-mn-rMN\common_strings.xml" />
+     <None Include="Assets\script\data\StoreDB.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ko\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\color\wallet_secondary_text_holo_dark.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\color\common_signin_btn_text_dark.xml" />
@@ -250,6 +255,7 @@
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-fr\common_strings.xml" />
      <None Include="Assets\Plugins\WP8\IAPMock.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-fa\common_strings.xml" />
+     <None Include="Assets\Resources\language\RU.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-tl\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-be\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\wallet_attrs.xml" />
@@ -269,6 +275,7 @@
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-ro\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-vi\common_strings.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values\admob_ads_attrs.xml" />
+     <None Include="Assets\Resources\language\ZH.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\drawable\common_signin_btn_icon_dark.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\drawable\common_signin_btn_text_dark.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-pt\common_strings.xml" />
@@ -280,17 +287,11 @@
      <None Include="Assets\script\data\GoldFishShopDB.xml" />
      <None Include="Assets\script\data\HeartsShopDB.xml" />
      <None Include="Assets\WebPlayerTemplates\SoomlaConfig\android\android-profile-google\google-play-services_lib\res\values-nl\common_strings.xml" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="soomla-wp-core">
  <HintPath>/unityprojects/MineDrill/Assets/Plugins/soomla-wp-core.dll</HintPath>

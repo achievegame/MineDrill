@@ -11,6 +11,9 @@ public class PauseScreen : MonoBehaviour {
 
 	public void MainMenu(){
 		Time.timeScale = 1;
-		HUD.current.LoadAgain ();
+		Destroy (gameObject);
+		BrickManager.current.SaveGame ();
+		HUD.current.MainMenu ();
+		GameControl.current.GameOver ();
 	}
 }

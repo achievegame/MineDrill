@@ -8,6 +8,7 @@ public class GameControl : MonoBehaviour
 
 	#region event
 	public static event characterChanged OnCharecterChanged;
+	public static event gameOverAction OnGameOver;
 	#endregion event
 
 
@@ -27,6 +28,12 @@ public class GameControl : MonoBehaviour
 		// it will set avatar for character
 		if (OnCharecterChanged != null) {
 			OnCharecterChanged(index);		
+		}
+	}
+
+	public void GameOver(){
+		if (OnGameOver != null) {
+			OnGameOver();
 		}
 	}
 }

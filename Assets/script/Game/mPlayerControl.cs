@@ -26,6 +26,15 @@ public class mPlayerControl : MonoBehaviour
 		r2d = GetComponent<Rigidbody2D> ();
 	}
 
+	void Start(){
+		GameControl.OnGameOver += OnGameOver;
+	}
+
+	void OnGameOver ()
+	{
+		mTransform.position = new Vector2(0, -4);
+	}
+
 	void Update ()
 	{
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
@@ -50,10 +59,6 @@ public class mPlayerControl : MonoBehaviour
 
 		float h = knobV.x;
 		float v = knobV.y;
-
-
-
-
 
 
 		if (r2d.velocity.sqrMagnitude > maxSpeed * maxSpeed)
@@ -101,5 +106,24 @@ public class mPlayerControl : MonoBehaviour
 		Vector3 theScale = mTransform.localScale;
 		theScale.x *= -1;
 		mTransform.localScale = theScale;
+	}
+
+	public bool DynamiteBlast(){
+		bool canBlast = false;
+		if (grounded && r2d.velocity == Vector2.zero) {
+			int columnNo = Mathf.FloorToInt (mTransform.position.x * BrickManager.ONE_BY_GRID_WIDTH + 0.5f);
+			int rowNo = Mathf.FloorToInt (mTransform.position.y * BrickManager.ONE_BY_GRID_WIDTH + 3.5f) - 1;//beneath box row
+			canBlast = BrickManager.current.haveStone(-rowNo, columnNo);
+
+			if(canBlast){
+				BrickManager.current.Blast(-rowNo, columnNo);
+			}
+		}
+
+		return canBlast;
+	}
+
+	public void Blast(){
+
 	}
 }

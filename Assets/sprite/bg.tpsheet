@@ -4,11 +4,11 @@
 # To import these sprites into your Unity project, download "TexturePackerImporter":
 # http://www.codeandweb.com/texturepacker/unity
 #
-# Sprite sheet: bg.png (2048 x 2048)
-# $TexturePacker:SmartUpdate:7d0144e730740a53ff00caf94eddba68:768487385bda2ddd8de555efe18bcd28:ed4ecb476564f6b2eaa49de4ae7728b9$
+# Sprite sheet: bg.png (2048 x 1024)
+# $TexturePacker:SmartUpdate:0bf4804e4c5521723c156fb0e4b548f7:da02fc613b913d87d5476a414ef7cfdf:ed4ecb476564f6b2eaa49de4ae7728b9$
 #
 
-Bg_earth;2;1712;1208;334;0.5;0.5
-Bg_sky;2;910;1200;800;0.5;0.5
-cloud1;1204;1557;230;153;0.5;0.5
-cloud2;1436;1488;295;222;0.5;0.5
+Bg_earth;2;688;1208;334;0.5;0.5
+Bg_sky;1212;222;32;800;0.5;0.5
+cloud1;1246;869;230;153;0.5;0.5
+cloud2;1478;800;295;222;0.5;0.5

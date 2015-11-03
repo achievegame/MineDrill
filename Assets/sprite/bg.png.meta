@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3f9241fcf49904d88a5db8d477b6850e
-timeCreated: 1445745858
+timeCreated: 1446483866
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -11,7 +11,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -30,11 +30,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 4096
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -58,7 +58,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1712
+        y: 688
         width: 1208
         height: 334
       alignment: 0
@@ -67,18 +67,18 @@ TextureImporter:
     - name: Bg_sky
       rect:
         serializedVersion: 2
-        x: 2
-        y: 910
-        width: 1200
+        x: 1212
+        y: 222
+        width: 32
         height: 800
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 10, w: 0}
     - name: cloud1
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 1557
+        x: 1246
+        y: 869
         width: 230
         height: 153
       alignment: 0
@@ -87,8 +87,8 @@ TextureImporter:
     - name: cloud2
       rect:
         serializedVersion: 2
-        x: 1436
-        y: 1488
+        x: 1478
+        y: 800
         width: 295
         height: 222
       alignment: 0

@@ -45,6 +45,7 @@ GameObject:
   - 222: {fileID: 22231112}
   - 114: {fileID: 11471836}
   - 114: {fileID: 11400992}
+  - 114: {fileID: 11433160}
   m_Layer: 5
   m_Name: SelectedTxt
   m_TagString: Untagged
@@ -136,6 +137,7 @@ GameObject:
   - 222: {fileID: 22250388}
   - 114: {fileID: 11484426}
   - 114: {fileID: 11471678}
+  - 114: {fileID: 11492044}
   m_Layer: 5
   m_Name: PriceTxt
   m_TagString: Untagged
@@ -235,6 +237,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &11433160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4622c7b878dec4055bfc48a25b42dbb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textType: 0
+  langNode: 37
 --- !u!114 &11438690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -545,6 +560,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &11492044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4622c7b878dec4055bfc48a25b42dbb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textType: 0
+  langNode: 36
 --- !u!114 &11495982
 MonoBehaviour:
   m_ObjectHideFlags: 1

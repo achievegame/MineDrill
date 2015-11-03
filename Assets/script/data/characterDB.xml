@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <chrs length="5">
 	<chr name="Piggy" price="0" index="1" id="piggy_vg" />
-	<chr name="Cow" price="7000" index="2" id="cow_vg" />
+	<chr name="Cowy" price="7000" index="2" id="cow_vg" />
 	<chr name="Bearry" price="15000" index="3" id="bearry_vg" />
 	<chr name="Tigey" price="30000" index="4" id="tigey_vg" />
 	<chr name="Draggy" price="45000" index="5" id="draggy_vg" />	

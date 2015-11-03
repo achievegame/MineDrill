@@ -16,7 +16,7 @@ MonoBehaviour:
     - name: SoomlaSecret
       value: animine_001
     - name: DebugUnityMessages
-      value: True
+      value: False
     - name: FBPermissions
       value: email,user_birthday,user_photos,user_friends,read_stream
     - name: TwitterConsumerKey

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<store length="9" desc="yes">
+	<storeElement name="Add" storeType="0" />
+	<storeElement name="Battery" price="1500" storeType="1" desc="BatteryDesc1"  id="battery_vg" imageIndex="2" />
+	<storeElement name="Dynamite" price="600" storeType="1" desc="DynamiteDesc1" id="dynamite_vg" imageIndex="3" />
+	<storeElement name="Upgrades" storeType="0" />
+	<storeElement name="Driller" price="" storeType="1" desc="DrillerDesc2" upgrades="" id="driller_vg" imageIndex="0" />
+	<storeElement name="Fan" price="" storeType="1" desc="FanDesc2" upgrades="" id="fan_vg" imageIndex="1" />
+	<storeElement name="Battery" price="" storeType="1" desc="BatteryDesc2" upgrades="" id="battery_vg" imageIndex="2" />
+	<storeElement name="Dynamite" price="" storeType="1" desc="DynamiteDesc2" upgrades="" id="dynamite_vg" imageIndex="3" />
+	<storeElement name="Bag" price="" storeType="1" desc="BagDesc2" upgrades="" id="bag_vg" imageIndex="4" />
+</store>

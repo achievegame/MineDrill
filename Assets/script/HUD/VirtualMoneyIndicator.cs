@@ -21,12 +21,13 @@ public class VirtualMoneyIndicator : MonoBehaviour {
 
 	void Start(){
 		StoreEvents.OnCurrencyBalanceChanged += OnCurrencyBalanceChanged;
+
 		setIt ();
 	}
 
-	void OnEnable(){
-		setIt ();
-	}
+//	void OnEnable(){
+//		setIt ();
+//	}
 
 	private void OnCurrencyBalanceChanged(VirtualCurrency virtualCurrency, int balance,int amountAdded) {
 		setIt ();

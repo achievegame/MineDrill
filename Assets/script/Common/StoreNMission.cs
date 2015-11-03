@@ -92,7 +92,7 @@ public class StoreNMission : MonoBehaviour {
 
 	void Start(){
 		//CHECK_IN_FINAL_BUILD
-		PlayerPrefs.DeleteAll ();
+		//PlayerPrefs.DeleteAll ();
 		//StoreEvents.OnCurrencyBalanceChanged += onCurrencyBalanceChanged;
 		StoreEvents.OnSoomlaStoreInitialized += OnSoomlaStoreInitialized;
 		world = new World ("AnimineWorld");

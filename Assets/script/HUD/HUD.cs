@@ -16,6 +16,9 @@ public class HUD : MonoBehaviour {
 	[SerializeField]
 	private GameObject gamePlay;
 
+	public mPlayerControl player;
+
+	private bool busy = false;
 
 	public void LoadAgain(){
 		Application.LoadLevel (Application.loadedLevel);
@@ -28,6 +31,28 @@ public class HUD : MonoBehaviour {
 	public void OpenStore(){
 		LoadHUD (Constants.HUD_STORE);
 	}
+
+	public void OpenBag(){
+		LoadHUD (Constants.HUD_BAG);
+	}
+
+	public void OpenSettings(){
+		LoadHUD (Constants.HUD_SETTINGS);
+	}
+
+	public void OpenLanguages(){
+		LoadHUD (Constants.HUD_LANGUAGES);
+	}
+
+	public void MainMenu(){
+		gamePlay.SetActive (false);
+		mainMenu.SetActive (true);
+	}
+
+	public void StartNewGame(){
+		BrickManager.current.CreateNewMap ();
+		StartGame ();
+	}
 	
 	public void StartGame(){
 		gamePlay.SetActive (true);
@@ -39,11 +64,22 @@ public class HUD : MonoBehaviour {
 		Time.timeScale = 0;
 	}
 
+	public void DynamiteBlast(){
+		player.DynamiteBlast ();
+	}
+
 
 	public GameObject LoadHUD(string hudName){
 		GameObject hudPF = Resources.Load<GameObject> (Constants.RESOURCELOCATION_PREFAB+hudName);
 		GameObject hudGO = (GameObject)Instantiate (hudPF);
 		return hudGO;
+	}
+	public Text txt;
+	public Text txt1;
+	public void changeLanguage(){
+		Font font = Resources.Load<Font> ("font/Skranji-Bold");
+		txt.font = font;
+		txt1.font = font;
 	}
 
 }

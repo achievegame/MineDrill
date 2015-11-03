@@ -8,7 +8,7 @@ public class BrickManager : MonoBehaviour {
 	public const float GRID_WIDTH = 2f;
 	public const float GRID_HEIGHT = 2f;
 	public const float ONE_BY_GRID_WIDTH = 1 / GRID_WIDTH;
-	public const int ROW = 160;
+	public const int ROW = 161;
 	public const int COLUMN = 50;
 	public const int BRICK_TYPE_GROUP = 20;
 
@@ -18,14 +18,17 @@ public class BrickManager : MonoBehaviour {
 	private GameObject mineralPF; 
 
 	public Sprite S_Brick_Grass;
+	public Sprite S_Brick_Stone;
 	public Sprite[] NonDrilledBrick;
 	public Sprite[] DrilledBrick;
 
 	public Sprite[] Minerals;
 
-
+	public PlayerSave playerS;
 
 	private List<Brick> bricksList = new List<Brick>();
+
+	private GameObject container;
 
 	void Awake(){
 		if (current == null) {
@@ -38,31 +41,72 @@ public class BrickManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		playerS = PlayerSave.load ();
+		CreateMap ();
+			
+	}
+
+	void CreateMap(){
+
+		container = new GameObject ("BricksContainer");
+		container.transform.localPosition = this.transform.localPosition;
+		container.transform.SetParent (this.transform);
+
 		GameObject brickGO;
 		GameObject mineralGO;
 		Brick brick;
 		Mineral mnrl;
-		for (int i=0; i<ROW; i++) {
-			for(int j=0; j<COLUMN; j++){
-				brickGO = (GameObject)Instantiate(BrickFB);
-				brick = brickGO.GetComponent<Brick>();
-				brick.init(i*COLUMN+j,0,getBrickType(i), i*COLUMN+j<COLUMN ? "1011":"1111");
-				brickGO.transform.SetParent(this.transform);
-				brickGO.layer = gameObject.layer;
-				brickGO.transform.localPosition = new Vector2((j-COLUMN/2)*GRID_WIDTH,-i*GRID_HEIGHT);
-				bricksList.Add(brick);
+		MineralType mnrlType;
 
-				//add minerals
-				if(Random.value <0.1f){
-					mineralGO = (GameObject)Instantiate(mineralPF);
-					mineralGO.transform.SetParent(brickGO.transform.parent);
-					mineralGO.transform.localPosition = brickGO.transform.localPosition;
-					mnrl = mineralGO.GetComponent<Mineral>();
-					mnrl.init((MineralType)Random.Range(0,8));
-					brick.mineral = mineralGO;
-				}
+		foreach (BrickSave brkSv in playerS.bricks) {
+			//Debug.Log(brkSv.id+" "+(BrickType)brkSv.brickType+" "+brkSv.drilledAmount+" "+(MineralType)brkSv.mineralType+" "+brkSv.neighbourCode);
+			brickGO = (GameObject)Instantiate(BrickFB);
+			brick = brickGO.GetComponent<Brick>();
+			brick.init(brkSv.id, brkSv.drilledAmount, (BrickType)brkSv.brickType, brkSv.neighbourCode, brkSv.mineralType);
+			brickGO.transform.SetParent(container.transform);
+			brickGO.layer = gameObject.layer;
+			int i = Mathf.FloorToInt(brkSv.id/COLUMN);
+			int j = brkSv.id%COLUMN;
+			//Debug.Log("i:"+i+", j:"+j);
+			brickGO.transform.localPosition = new Vector2((j-COLUMN/2)*GRID_WIDTH,-i*GRID_HEIGHT);
+			if(brkSv.mineralType != MineralType.None && brkSv.mineralType != MineralType.NonBreakableStone){
+				mineralGO = (GameObject)Instantiate(mineralPF);
+				mineralGO.transform.SetParent(brickGO.transform.parent);
+				mineralGO.transform.localPosition = brickGO.transform.localPosition;
+				mnrl = mineralGO.GetComponent<Mineral>();
+				mnrl.init(brkSv.mineralType);
+				brick.mineral = mineralGO;
 			}
-		}	
+			
+			bricksList.Add(brick);
+			
+		}
+	}
+
+	public void CreateNewMap(){
+		bricksList.Clear ();
+		Destroy (container);
+		playerS = PlayerSave.loadNew ();
+		CreateMap ();
+	}
+
+
+
+	public bool haveStone(int row, int column){
+		int brickid = row * COLUMN + column + COLUMN / 2;
+		if (brickid < 0)
+			return false;
+
+		return bricksList [brickid].hasStone ();
+	}
+
+	public void Blast(int row, int column){
+		int brickid = row * COLUMN + column + COLUMN / 2;
+		if (brickid < 0)
+			return;
+		//Debug.Log ("brickid:"+brickid);
+		bricksList [brickid].Blast (RelativeDirection.Top);
 	}
 
 
@@ -125,5 +169,13 @@ public class BrickManager : MonoBehaviour {
 		} else
 			return BrickType.H;
 
+	}
+
+	public void SaveGame(){
+		playerS.save(bricksList);
+	}
+
+	public void SaveBrick(Brick bks){
+		playerS.saveBrick (bks);
 	}
 }
