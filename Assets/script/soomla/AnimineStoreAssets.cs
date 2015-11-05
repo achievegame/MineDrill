@@ -15,7 +15,7 @@ public class AnimineStoreAssets : IStoreAssets
 
 	public VirtualCurrency[] GetCurrencies ()
 	{
-		return new VirtualCurrency[]{GOLD_COIN_VC, HEART_VC};
+		return new VirtualCurrency[]{GOLD_COIN_VC};
 	}
 
 	public VirtualGood[] GetGoods ()
@@ -37,14 +37,9 @@ public class AnimineStoreAssets : IStoreAssets
 	public VirtualCurrencyPack[] GetCurrencyPacks ()
 	{
 		return new VirtualCurrencyPack[] {
-			NET_OF_FISH_VCP,
-			BAG_OF_FISH_VCP,
-			BOWL_OF_FISH_VCP,
-			TANK_OF_FISH_VCP,
-			POND_OF_FISH_VCP,
-			ROUND_OF_HEARTS_VCP,
-			BOX_OF_HEARTS_VCP,
-			CHEST_OF_HEARTS_VCP
+			STACK_OF_COINS_VCP,
+			BAG_OF_COINS_VCP,
+			VAULT_OF_COINS_VCP
 		};
 	}
 
@@ -74,94 +69,38 @@ public class AnimineStoreAssets : IStoreAssets
 		GOLD_COIN_VC_ITEM_ID 
 	);
 
-	VirtualCurrency HEART_VC = new VirtualCurrency (
-		"Heart",
-		"Heart Currency",
-		HEART_VC_ITEM_ID
-	);
-
 	//virtual currency pack	
-	public static VirtualCurrencyPack NET_OF_FISH_VCP = new VirtualCurrencyPack (
-		"net of fish",
+	public static VirtualCurrencyPack STACK_OF_COINS_VCP = new VirtualCurrencyPack (
+		"stack of coins",
 		"",
-		"net_of_fish_vcp",
-		7500,
-		GOLD_COIN_VC_ITEM_ID,
-		new PurchaseWithMarket (
-		"com.shnappy.net_of_fish",
-		1.99)
-	);
-	public static VirtualCurrencyPack BAG_OF_FISH_VCP = new VirtualCurrencyPack (
-		"bag of fish",
-		"",
-		"bag_of_fish_vcp",
+		"stack_of_coins_vcp",
 		15000,
 		GOLD_COIN_VC_ITEM_ID,
 		new PurchaseWithMarket (
-		"com.shnappy.bag_of_fish",
-		2.99)
+		"com.tetraalpha.stack_of_coins",
+		0.99)
 	);
-	public static VirtualCurrencyPack BOWL_OF_FISH_VCP = new VirtualCurrencyPack (
-		"bowl of fish",
+	public static VirtualCurrencyPack BAG_OF_COINS_VCP = new VirtualCurrencyPack (
+		"bag of coins",
 		"",
-		"bowl_of_fish_vcp",
+		"bag_of_fish_vcp",
 		45000,
 		GOLD_COIN_VC_ITEM_ID,
 		new PurchaseWithMarket (
-		"com.shnappy.bowl_of_fish",
-		7.99)
+		"com.tetralpha.bag_of_coins",
+		1.99)
 	);
-	public static VirtualCurrencyPack TANK_OF_FISH_VCP = new VirtualCurrencyPack (
-		"tank of fish",
+	public static VirtualCurrencyPack VAULT_OF_COINS_VCP = new VirtualCurrencyPack (
+		"vault of coins",
 		"",
-		"tank_of_fish_vcp",
+		"vault_of_coins_vcp",
 		90000,
 		GOLD_COIN_VC_ITEM_ID,
 		new PurchaseWithMarket (
-		"com.shnappy.tank_of_fish",
-		11.99)
-	);
-	public static VirtualCurrencyPack POND_OF_FISH_VCP = new VirtualCurrencyPack (
-		"pond of fish",
-		"",
-		"pond_of_fish_vcp",
-		180000,
-		GOLD_COIN_VC_ITEM_ID,
-		new PurchaseWithMarket (
-		"com.shnappy.pond_of_fish",
-		21.99)
-	);
-	VirtualCurrencyPack ROUND_OF_HEARTS_VCP = new VirtualCurrencyPack (
-		"round of hearts",
-		"",
-		"round_of_hearts_vcp",
-		10,
-		"HeartVC",
-		new PurchaseWithMarket (
-		"com.shnappy.round_of_hearts",
+		"com.shnappy.vault_of_coins",
 		2.99)
 	);
-	VirtualCurrencyPack BOX_OF_HEARTS_VCP = new VirtualCurrencyPack (
-		"box of hearts",
-		"",
-		"box_of_hearts_vcp",
-		50,
-		"HeartVC",
-		new PurchaseWithMarket (
-		"com.shnappy.box_of_hearts",
-		12.99)
-	);
-	VirtualCurrencyPack CHEST_OF_HEARTS_VCP = new VirtualCurrencyPack (
-		"chest of hearts",
-		"",
-		"chest_of_hearts_vcp",
-		250,
-		"HeartVC",
-		new PurchaseWithMarket (
-		"com.shnappy.chest_of_hearts",
-		35.99)
-	);
-
+	
 	//virtual goods
 	public static VirtualGood DYNAMITE_VG = new SingleUseVG (
 		"dynamite",
@@ -178,7 +117,7 @@ public class AnimineStoreAssets : IStoreAssets
 		DRILLER_VG_ITEM_ID,
 		new PurchaseWithVirtualItem (
 		GOLD_COIN_VC_ITEM_ID,
-		600)
+		0)
 	);
 	public static VirtualGood FAN_VG = new SingleUseVG (
 		"fan",
@@ -186,7 +125,7 @@ public class AnimineStoreAssets : IStoreAssets
 		FAN_VG_ITEM_ID,
 		new PurchaseWithVirtualItem (
 		GOLD_COIN_VC_ITEM_ID,
-		600)
+		0)
 	);
 	public static VirtualGood BATTERY_VG = new SingleUseVG (
 		"battery",
@@ -194,7 +133,7 @@ public class AnimineStoreAssets : IStoreAssets
 		BATTERY_VG_ITEM_ID,
 		new PurchaseWithVirtualItem (
 		GOLD_COIN_VC_ITEM_ID,
-		600)
+		500)
 	);
 	public static VirtualGood BAG_VG = new SingleUseVG (
 		"bag",
@@ -202,7 +141,7 @@ public class AnimineStoreAssets : IStoreAssets
 		BAG_VG_ITEM_ID,
 		new PurchaseWithVirtualItem (
 		GOLD_COIN_VC_ITEM_ID,
-		600)
+		0)
 	);
 	public static VirtualGood PIGGY_VG = new EquippableVG (
 		EquippableVG.EquippingModel.GLOBAL,
@@ -211,7 +150,7 @@ public class AnimineStoreAssets : IStoreAssets
 		PIGGY_VG_ITEM_ID,
 		new PurchaseWithVirtualItem (
 		GOLD_COIN_VC_ITEM_ID,
-		30000)
+		0)
 	);
 	public static VirtualGood COW_VG = new EquippableVG (
 		EquippableVG.EquippingModel.GLOBAL,

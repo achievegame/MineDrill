@@ -18,48 +18,39 @@ public class StoreNMission : MonoBehaviour {
 		DontDestroyOnLoad (gameObject);
 	}
 
-	public const int GROUP_LIMIT = 4;
+	public const int GROUP_LIMIT = 2;
 	public const string PENDING_WORK_KEY = "pendingWorkKey";
 	public World world;
 
 	public Score missionIndex;
 
-	public Score distanceScore;
-	public Score coinScore;
+	public Score gameScore;
+	//public Score coinScore;
 
-
-	private Score sharkHitScore;
-	private Score collectCoinScore;
-	private Score catchDashFishScore;
-	private Score enterAndExitCaveScore;
-	private Score reachDistanceScore;
-	private Score catchDolphinScore;
-	private Score dodgeFishHookScore;
-	private Score bounceScore;
-	private Score dodgeWallsScore;
-	private Score surviveInCaveScore;
-	private Score distanceWhenEnterinCaveScore;
+	private Score mineralCollectScore;
+	private Score brickDigScore;
+	private Score stoneBlastScore;
+	private Score tigeyAsHeroScore;
+	private Score collectCoalScore;
+	private Score collectGoldScore;
+	private Score collectDiamondScore;
+	private Score upgradeBatteryScore;
 
 	VirtualItemReward firstLaunchReward;
-
-	public delegate void SharkHitsWallDel();
-	public SharkHitsWallDel SharkHitsWall;
-	public delegate void CollectCoinsDel(int value);
-	public CollectCoinsDel CollectCoins;
+	//	public delegate void CollectCoinsDel(int value);
+	//	public CollectCoinsDel CollectCoins;
 	public delegate void ScoresDel (int distance);
 	public ScoresDel Scores;
-	public delegate void CatchDashFishDel();
-	public CatchDashFishDel CatchDashFish;
-	public delegate void CatchDolphinDel(bool comeFromLeft);
-	public CatchDolphinDel CatchDolphin;
-	public delegate void FishBounceDel();
-	public FishBounceDel FishBounce;
-	public delegate void EnternExitCaveDel(bool enterIncave, int currentDistance);
-	public EnternExitCaveDel EnternExitCave;
-	public delegate void DodgingWallsDel();
-	public DodgingWallsDel DodgingWalls;
-	public delegate void DodgingFishingHookDel();
-	public DodgingFishingHookDel DodgingFishHook;
+	public delegate void CollectMineralsDel(MineralType mnrlT);
+	public CollectMineralsDel CollectMinerals;
+	public delegate void DigBrickDel();
+	public DigBrickDel DigBrick;
+	public delegate void BlastStoneDel();
+	public BlastStoneDel BlastStone;
+	public delegate void TigeyAsHeroDel();
+	public TigeyAsHeroDel TigeyAsHero;
+	public delegate void UpgradeBatteryDel();
+	public UpgradeBatteryDel UpgradeBattery;
 
 	public delegate void MissionCompleteDel(Mission m);
 	public static event MissionCompleteDel MissionComplete;
@@ -77,18 +68,16 @@ public class StoreNMission : MonoBehaviour {
 	Mission m11;
 	Mission m12;
 	//CHECK_IN_FINAL_BUILD change to original values
-	double m1record = 500;//shark hits wall
-	double m2record = 1000;//collect coin
-	double m3record = 5;//dash fish
-	double m4record = 2;
-	double m5record = 2000;//reach
-	double m6record = 1;//dolphin
-	double m7record = 50;//fishing hook
-	double m8record = 10;//bounce
-	double m9record = 50;//dodge walls
-	double m10record = 1000;//servive in cave
-	double m11record = 2000;//collect 
-	double m12record = 4000;//reach
+	double m1record = 1000;//score points
+	double m2record = 500;//collect minerals
+	double m3record = 1000;//dig bricks
+	double m4record = 100;// blast 100 stones
+	double m5record = 1;//tigey as a hero
+	double m6record = 1000;//collect coal
+	double m7record = 1000;//collect Golds
+	double m8record = 1000;//collect diamonds
+	double m9record = 1;//upgrade battery
+	double m10record = 10000;//score points
 
 	void Start(){
 		//CHECK_IN_FINAL_BUILD
@@ -99,39 +88,26 @@ public class StoreNMission : MonoBehaviour {
 
 
 		missionIndex = new Score ("missionIndexScore", "mission Index", true);
-		distanceScore = new Score ("distanceScore", "distance travelled", true);
-		coinScore = new Score ("coinScore", "gold fish coin", true);
+		gameScore = new Score ("gameScore", "Game Score", true);
+		//coinScore = new Score ("coinScore", "gold coin", true);
 
-		sharkHitScore = new Score ("sharkHitScore", "sharkHitScore", true);
-		collectCoinScore = new Score ("collectCoinScore","collectCoinScore",true);
-		catchDashFishScore = new Score ("catchDashFishScore", "catchDashFishScore", true);
-		enterAndExitCaveScore = new Score ("enterAndExitCaveScore", "enterAndExitCaveScore", true);
-		reachDistanceScore = new Score ("reachDistanceScore", "reachDistanceScore", true);
-		catchDolphinScore = new Score ("catchDolphinScore", "catchDolphinScore", true);
-		dodgeFishHookScore = new Score ("dodgeFishHookScore", "dodgeFishHookScore", true);
-		bounceScore = new Score ("bounceScore", "bounceScore", true);
-		dodgeWallsScore = new Score ("dodgeFishingHookOrWallsScore", "dodgeFishingHookOrWallsScore", true);
-		surviveInCaveScore = new Score ("surviveInCaveScore", "surviveInCaveScore", true);
-		distanceWhenEnterinCaveScore = new Score ("distanceWhenEnterinCaveScore", "distanceWhenEnterinCaveScore", true);
-
-
+		mineralCollectScore = new Score ("mineralCollectScore", "mineralCollectScore", true);
+		brickDigScore = new Score ("brickDigScore", "brickDigScore", true);
+		stoneBlastScore = new Score ("stoneBlastScore", "stoneBlastScore", true);
+		collectCoalScore = new Score ("collectCoalScore", "collectCoalScore", true);
+		collectGoldScore = new Score ("collectGoldScore", "collectGoldScore", true);
+		collectDiamondScore = new Score ("collectDiamondScore", "collectDiamondScore", true);
+		tigeyAsHeroScore = new Score ("tigeyAsHero", "tigeyAsHero", true);
 
 		world.AddScore (missionIndex);
-		world.AddScore (distanceScore);
-		world.AddScore (coinScore);
-		world.AddScore (sharkHitScore);
-		world.AddScore (collectCoinScore);
-		world.AddScore (catchDashFishScore);
-		world.AddScore (enterAndExitCaveScore);
-		world.AddScore (reachDistanceScore);
-		world.AddScore (catchDolphinScore);
-		world.AddScore (dodgeFishHookScore);
-		world.AddScore (bounceScore);
-		world.AddScore (dodgeWallsScore);
-		world.AddScore (surviveInCaveScore);
-		world.AddScore (distanceWhenEnterinCaveScore);
-
-
+		world.AddScore (gameScore);
+		//world.AddScore (coinScore);
+		world.AddScore (mineralCollectScore);
+		world.AddScore (brickDigScore);
+		world.AddScore (stoneBlastScore);
+		world.AddScore (collectCoalScore);
+		world.AddScore (collectGoldScore);
+		world.AddScore (collectDiamondScore);
 
 		LevelUpEvents.OnMissionCompleted += onMissionCompleted;
 
@@ -150,30 +126,26 @@ public class StoreNMission : MonoBehaviour {
 		firstLaunchReward = new VirtualItemReward ("firstLaunchReward", "1 Piggy", AnimineStoreAssets.PIGGY_VG_ITEM_ID, 1);
 		Schedule mySch = new Schedule (1);
 
-		m1 = new RecordMission ("m1", "Shark hits wall – "+m1record+" times", new List<Reward> (){reward50Coins}, sharkHitScore.ID, m1record);//50
+		m1 = new RecordMission ("m1", "Score "+m1record+" points in one go", new List<Reward> (){reward50Coins}, gameScore.ID, m1record);//50
 		m1.Schedule = mySch; 
-		m2 = new RecordMission ("m2", "Collect "+m2record+" coins – 1 run", new List<Reward> (){reward100Coins}, collectCoinScore.ID, m2record);//1000
+		m2 = new RecordMission ("m2", "Collect "+m2record+" minerals in one go", new List<Reward> (){reward100Coins}, mineralCollectScore.ID, m2record);//1000
 		m2.Schedule = mySch;
-		m3 = new RecordMission ("m3", "Catch Dash fish – "+m3record+" times", new List<Reward> (){reward100Coins}, catchDashFishScore.ID, m3record);
+		m3 = new RecordMission ("m3", "Dig "+m3record+" Bricks in one go", new List<Reward> (){reward100Coins}, brickDigScore.ID, m3record);
 		m3.Schedule = mySch;
-		m4 = new RecordMission ("m4", "Enter and Exit Cave – In One go", new List<Reward> (){reward50Coins}, enterAndExitCaveScore.ID, m4record);
+		m4 = new RecordMission ("m4", "Blast "+m4record+" Stones in One go", new List<Reward> (){reward50Coins}, stoneBlastScore.ID, m4record);
 		m4.Schedule = mySch;
-		m5 = new RecordMission ("m5", "Reach "+m5record+"m milestone - 1 run", new List<Reward> (){reward100Coins}, reachDistanceScore.ID, m5record);
+		m5 = new RecordMission ("m5", "Use Tigey as a hero", new List<Reward> (){reward100Coins}, null, m5record);
 		m5.Schedule = new Schedule(1);
-		m6 = new RecordMission ("m6", "Catch Dolphin", new List<Reward> (){reward50Coins}, catchDolphinScore.ID, m6record);
+		m6 = new RecordMission ("m6", "Collect "+m6record+" coal in one go", new List<Reward> (){reward50Coins}, collectCoalScore.ID, m6record);
 		m6.Schedule = mySch;
-		m7 = new RecordMission ("m7", "Dodge "+m7record+" Fishing hook – near miss", new List<Reward> (){reward100Coins}, dodgeFishHookScore.ID, m7record);
+		m7 = new RecordMission ("m7", "Collect "+m7record+" Gold in one go", new List<Reward> (){reward100Coins}, collectGoldScore.ID, m7record);
 		m7.Schedule = mySch;
-		m8 = new RecordMission ("m8", "Bounce "+m8record+" times", new List<Reward> (){reward100Coins}, bounceScore.ID, m8record);
+		m8 = new RecordMission ("m8", "Collect "+m8record+" Diamond in one go", new List<Reward> (){reward100Coins}, collectDiamondScore.ID, m8record);
 		m8.Schedule = mySch;
-		m9 = new RecordMission ("m9", "Dodge "+m9record+" walls – near miss", new List<Reward> (){reward100Coins}, dodgeWallsScore.ID, m9record);
+		m9 = new RecordMission ("m9", "Upgrade Battery to its full power", new List<Reward> (){reward100Coins}, upgradeBatteryScore.ID, m9record);
 		m9.Schedule = mySch;
-		m10 = new RecordMission ("m10", "Survive in Cave – "+m10record+"m", new List<Reward> (){reward500Coins}, surviveInCaveScore.ID, m10record);
+		m10 = new RecordMission ("m10", "Score "+m10record+" points in one go", new List<Reward> (){reward500Coins}, gameScore.ID, m10record);
 		m10.Schedule = mySch;
-		m11 = new RecordMission ("m11", "Collect "+m11record+" coins – 1 run", new List<Reward> (){reward250Coins}, collectCoinScore.ID, m11record);//1000
-		m11.Schedule = mySch;
-		m12 = new RecordMission ("m12", "Reach "+m12record+"m milestone - 1 run", new List<Reward> (){reward300Coins}, reachDistanceScore.ID, m12record);
-		m12.Schedule = mySch;
 
 		world.AddMission (m1);
 		world.AddMission (m2);
@@ -185,8 +157,6 @@ public class StoreNMission : MonoBehaviour {
 		world.AddMission (m8);
 		world.AddMission (m9);
 		world.AddMission (m10);
-		world.AddMission (m11);
-		world.AddMission (m12);
 
 		SoomlaStore.Initialize (new AnimineStoreAssets());
 		SoomlaLevelUp.Initialize (world);
@@ -199,10 +169,10 @@ public class StoreNMission : MonoBehaviour {
 			StoreInventory.EquipVirtualGood (AnimineStoreAssets.PIGGY_VG_ITEM_ID);
 			missionIndex.SetTempScore(0);
 			missionIndex.Reset(true);
-			distanceScore.SetTempScore(0);
-			distanceScore.Reset(true);
-			coinScore.SetTempScore(0);
-			coinScore.Reset(true);
+			gameScore.SetTempScore(0);
+			gameScore.Reset(true);
+//			coinScore.SetTempScore(0);
+//			coinScore.Reset(true);
 
 			//CHECK_IN_FINAL_BUILD :delete these 2 line in final build
 			StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,1500000);
@@ -215,22 +185,18 @@ public class StoreNMission : MonoBehaviour {
 		Invoke ("setAllMissionDelegate", 1f);
 	}
 
-	public void SetDistanceAndCoin(int dist, int goldCoin){
+	public void SetGameScoreAndCoin(int gScore, int goldCoin){
 		StoreInventory.GiveItem (AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,goldCoin);
-		coinScore.SetTempScore (goldCoin);
-		distanceScore.SetTempScore (dist);
-		distanceScore.Reset (true);
-		coinScore.Reset (true);
+		//coinScore.SetTempScore (goldCoin);
+		gameScore.SetTempScore (gScore);
+		gameScore.Reset (true);
+		//coinScore.Reset (true);
 		//all other score mission related
 		ResetScores ();
 	}
 
 	public void ResetScores(){
 		CompletePendingWork ();
-
-		if(missionIndex.Record >= GROUP_LIMIT*2 && missionIndex.Record <GROUP_LIMIT*2 && distanceWhenEnterinCaveScore.GetTempScore() != 0 && !m10.IsCompleted()){
-			Scores -= mission10;
-		}
 
 		world.ResetScores (false);
 		Invoke ("setAllMissionDelegate", 1f);
@@ -274,158 +240,102 @@ public class StoreNMission : MonoBehaviour {
 	}
 	void blankCall1(int value=0){
 	}
-	void blankCall2 (bool value, int value1){
-	}
-	void blankCall3(bool value){
+	void blankCall2(MineralType mnrl){
 	}
 
 
-	void mission1(){
-		sharkHitScore.Inc (1);	
-		if (sharkHitScore.HasTempReached (m1record)) {
+
+	void mission1(int value){
+		gameScore.SetTempScore (value);	
+		if (gameScore.HasTempReached (m1record)) {
 			onMissionCompleted(1);
-			//sharkHitScore.Reset(true);
-			SharkHitsWall -= mission1;
+			Scores -= mission1;
 		}
 	}
 
-	void mission2(int value){
-		//Debug.Log ("collect coin mission 2!!!");
-		collectCoinScore.SetTempScore (value);	
-		if (collectCoinScore.HasTempReached (m2record)) {
+	void mission2(MineralType mnrl){
+		mineralCollectScore.Inc (1);
+		if (mineralCollectScore.HasTempReached (m2record)) {
 			onMissionCompleted(2);
-			//collectCoinScore.Reset(true);
-			CollectCoins -= mission2;
+			CollectMinerals -= mission2;
 		}
 	}
 
 	void mission3(){
-		catchDashFishScore.Inc (1);		
-		if (catchDashFishScore.HasTempReached (m3record)) {
+		brickDigScore.Inc (1);		
+		if (brickDigScore.HasTempReached (m3record)) {
 			onMissionCompleted(3);
-			//catchDashFishScore.Reset(true);
-			CatchDashFish -= mission3;
+			DigBrick -= mission3;
 		}
 	}
 
-	void mission4(bool isInTopSea, int currentDistance){
-		if (!isInTopSea) {
-			enterAndExitCaveScore.SetTempScore(1);
-		} else {
-			if(enterAndExitCaveScore.GetTempScore() == 1){
-				enterAndExitCaveScore.Inc(1);
-				onMissionCompleted(4);
-				//enterAndExitCaveScore.Reset(true);
-				EnternExitCave -= mission4;
-			}else{
-				enterAndExitCaveScore.Reset(false);
-			}
+	void mission4(){
+		stoneBlastScore.Inc (1);		
+		if (stoneBlastScore.HasTempReached (m4record)) {
+			onMissionCompleted(4);
+			BlastStone -= mission4;
 		}
 	}
 
-	void mission5(int value){
-		reachDistanceScore.SetTempScore (value);
-		if (reachDistanceScore.HasTempReached (m5record)) {
-			onMissionCompleted(5);
-			//reachDistanceScore.Reset(true);
-			Scores -= mission5;
-		}
+	void mission5(){
+		onMissionCompleted(5);
+		TigeyAsHero -= mission5;
 	}
 
-	void mission6(bool comeFromLeft){
-		if (comeFromLeft)
+	void mission6(MineralType mnrl){
+		if (mnrl != MineralType.Coal)
 			return;
-		catchDolphinScore.Inc (1);	
-		if (catchDolphinScore.HasTempReached (m6record)) {
+		collectCoalScore.Inc (1);
+		if (collectCoalScore.HasTempReached (m6record)) {
 			onMissionCompleted(6);
-			//catchDolphinScore.Reset(true);
-			CatchDolphin -= mission6;
-		}
-	}
-	void mission7(){
-		dodgeFishHookScore.Inc (1);
-		StartCoroutine (mission7Wait());
-	}
-	IEnumerator mission7Wait(){
-		yield return new WaitForSeconds (1.5f);
-		if (dodgeFishHookScore.HasTempReached (m7record)) {
-			onMissionCompleted(7);
-			//dodgeFishHookScore.Reset(true);
-			DodgingFishHook -= mission7;
-		}
-	}
-	void mission8(){
-		bounceScore.Inc (1);		
-		if (bounceScore.HasTempReached (m8record)) {
-			onMissionCompleted(8);
-			//bounceScore.Reset(true);
-			FishBounce -= mission8;
-		}
-	}
-	void mission9(){
-		dodgeWallsScore.Inc (1);
-		StartCoroutine (mission9Wait());
-	}
-	IEnumerator mission9Wait(){
-		yield return new WaitForSeconds (1.5f);
-		if (dodgeWallsScore.HasTempReached (m9record)) {
-			onMissionCompleted(9);
-			//dodgeWallsScore.Reset(true);
-			DodgingWalls -= mission9;
-		}
-	}
-	void mission10condition(bool isInTopSea, int currentDistance){
-		if (!isInTopSea) {
-			distanceWhenEnterinCaveScore.SetTempScore (currentDistance);
-			Scores += mission10;
-		} else {
-			distanceWhenEnterinCaveScore.Reset(false);
-			surviveInCaveScore.Reset(false);
-		}
-	}
-	void mission10(int value){
-		surviveInCaveScore.SetTempScore (value-distanceWhenEnterinCaveScore.GetTempScore());	
-		if (surviveInCaveScore.HasTempReached (m10record)) {
-			distanceWhenEnterinCaveScore.Reset(false);
-			onMissionCompleted(10);
-			//surviveInCaveScore.Reset(true);
-			Scores -= mission10;
-			EnternExitCave -= mission10condition;
-		}
-	}
-	void mission11(int value){
-		//Debug.Log ("collect coin mission 2!!!");
-		collectCoinScore.SetTempScore (value);	
-		if (collectCoinScore.HasTempReached (m11record)) {
-			onMissionCompleted(11);
-			//collectCoinScore.Reset(true);
-			CollectCoins -= mission11;
+			CollectMinerals -= mission6;
 		}
 	}
 
-	void mission12(int value){
-		reachDistanceScore.SetTempScore (value);
-		if (reachDistanceScore.HasTempReached (m12record)) {
-			onMissionCompleted(12);
-			//reachDistanceScore.Reset(true);
-			Scores -= mission12;
+	void mission7(MineralType mnrl){
+		if (mnrl != MineralType.Gold)
+			return;
+		collectGoldScore.Inc (1);
+		if (collectGoldScore.HasTempReached (m7record)) {
+			onMissionCompleted(7);
+			CollectMinerals -= mission7;
 		}
 	}
+
+	void mission8(MineralType mnrl){
+		collectDiamondScore.Inc (1);
+		if (collectDiamondScore.HasTempReached (m8record)) {
+			onMissionCompleted(8);
+			CollectMinerals -= mission8;
+		}
+	}
+
+	void mission9(){
+		onMissionCompleted(9);
+		UpgradeBattery -= mission5;
+	}
+
+	void mission10(int value){
+		gameScore.SetTempScore (value);	
+		if (gameScore.HasTempReached (m10record)) {
+			onMissionCompleted(10);
+			Scores -= mission10;
+		}
+	}
+
 
 	void setBlankCall ()
 	{
-		SharkHitsWall += blankCall;
-		CollectCoins += blankCall1;
 		Scores += blankCall1;
-		CatchDashFish += blankCall;
-		CatchDolphin += blankCall3;
-		FishBounce += blankCall;
-		EnternExitCave += blankCall2;
-		DodgingWalls += blankCall;
-		DodgingFishHook += blankCall;
+		CollectMinerals += blankCall2;
+		DigBrick += blankCall;
+		BlastStone += blankCall;
+		TigeyAsHero += blankCall;
+		UpgradeBattery += blankCall;
+
 	}
 
-	private bool[] sectionCheck = new bool[]{false,false,false};
+	private bool[] sectionCheck = new bool[]{false,false,false,false,false};
 	void setAllMissionDelegate(){
 		int section = (int)missionIndex.Record / GROUP_LIMIT;
 		if (sectionCheck [section])
@@ -433,59 +343,45 @@ public class StoreNMission : MonoBehaviour {
 		sectionCheck [section] = true;
 		switch (section) {
 		case 0:
-//			Debug.Log("m1 "+m1.IsCompleted ());
-//			Debug.Log("m2 "+m2.IsCompleted ());
-//			Debug.Log("m3 "+m3.IsCompleted ());
-//			Debug.Log("m4 "+m4.IsCompleted ());
 			if (!m1.IsCompleted ()) {
-				SharkHitsWall += mission1;
+				Scores += mission1;
 			}
 			if (!m2.IsCompleted ()) {					
-				CollectCoins += mission2;
-			}
-			if (!m3.IsCompleted ()) {
-				CatchDashFish += mission3;
-			}
-			if (!m4.IsCompleted ()) {
-				EnternExitCave += mission4;	
+				CollectMinerals += mission2;
 			}
 			break;
 		case 1:
-//			Debug.Log("m5 "+m5.IsCompleted ());
-//			Debug.Log("m6 "+m6.IsCompleted ());
-//			Debug.Log("m7 "+m7.IsCompleted ());
-//			Debug.Log("m8 "+m8.IsCompleted ());
+			if (!m3.IsCompleted ()) {
+				DigBrick += mission3;
+			}
+			if (!m4.IsCompleted ()) {
+				BlastStone += mission4;	
+			}
+			break;
+		case 3:
 			if (!m5.IsCompleted ()) {					
-				Scores += mission5;
+				TigeyAsHero += mission5;
 			}
 				
 			if (!m6.IsCompleted ()) {
-				CatchDolphin += mission6;
-			}
-			if (!m7.IsCompleted ()) {
-				DodgingFishHook += mission7;
-			}
-			if (!m8.IsCompleted ()) {
-				FishBounce += mission8;
+				CollectMinerals += mission6;
 			}
 			break;
-		case 2:
-			//Debug.Log("m9 "+m9.IsCompleted ());
-		//	Debug.Log("m10 "+m10.IsCompleted ());
-//			Debug.Log("m11 "+m11.IsCompleted ());
-//			Debug.Log("m12 "+m12.IsCompleted ());
+		case 4:
+			if (!m7.IsCompleted ()) {
+				CollectMinerals += mission7;
+			}
+			if (!m8.IsCompleted ()) {
+				CollectMinerals += mission8;
+			}
+			break;
+		case 5:
 			if (!m9.IsCompleted ()) {
-				DodgingWalls += mission9;
+				UpgradeBattery += mission9;
 			}
 			if (!m10.IsCompleted ()) {
-				EnternExitCave += mission10condition;
-			}
-			if (!m11.IsCompleted ()) {				
-				CollectCoins += mission11;
-			}
-			if (!m12.IsCompleted ()) {				
-				Scores += mission12;
-			}
+				Scores += mission10;
+			}		
 			break;
 		}
 	}

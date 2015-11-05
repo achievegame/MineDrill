@@ -51,6 +51,22 @@ TextureImporter:
     21300088: tiger_ideal_001
     21300090: Stone
     21300092: brick_stone
+    21300094: blast_01
+    21300096: blast_02
+    21300098: blast_03
+    21300100: blast_04
+    21300102: blast_05
+    21300104: blast_06
+    21300106: blast_07
+    21300108: blast_08
+    21300110: blast_09
+    21300112: blast_10
+    21300114: blast_11
+    21300116: blast_12
+    21300118: blast_13
+    21300120: blast_14
+    21300122: blast_15
+    21300124: blast_16
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -197,11 +213,171 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: brick
+    - name: blast_01
       rect:
         serializedVersion: 2
         x: 260
-        y: 1663
+        y: 1735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_02
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_03
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_04
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_05
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_06
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1477
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_07
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1477
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_08
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1477
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_09
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1477
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_10
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1477
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_11
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1477
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_12
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1477
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1347
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1347
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_15
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1347
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_16
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1347
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: brick
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1275
         width: 200
         height: 200
       alignment: 0
@@ -210,8 +386,8 @@ TextureImporter:
     - name: brick_back
       rect:
         serializedVersion: 2
-        x: 462
-        y: 1663
+        x: 594
+        y: 1275
         width: 200
         height: 200
       alignment: 0
@@ -220,8 +396,8 @@ TextureImporter:
     - name: brick_drilled_0
       rect:
         serializedVersion: 2
-        x: 664
-        y: 1663
+        x: 796
+        y: 1275
         width: 200
         height: 200
       alignment: 0
@@ -231,7 +407,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1405
+        y: 1073
         width: 200
         height: 200
       alignment: 0
@@ -241,7 +417,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 204
-        y: 1405
+        y: 1073
         width: 200
         height: 200
       alignment: 0
@@ -251,7 +427,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 406
-        y: 1405
+        y: 1073
         width: 200
         height: 200
       alignment: 0
@@ -261,7 +437,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 608
-        y: 1405
+        y: 1073
         width: 200
         height: 200
       alignment: 0
@@ -271,7 +447,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 810
-        y: 1405
+        y: 1073
         width: 200
         height: 200
       alignment: 0
@@ -281,7 +457,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1203
+        y: 871
         width: 200
         height: 200
       alignment: 0
@@ -291,7 +467,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 204
-        y: 1203
+        y: 871
         width: 200
         height: 200
       alignment: 0
@@ -301,7 +477,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 406
-        y: 1203
+        y: 871
         width: 200
         height: 200
       alignment: 0
@@ -311,7 +487,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 608
-        y: 1203
+        y: 871
         width: 200
         height: 200
       alignment: 0
@@ -321,7 +497,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 810
-        y: 1203
+        y: 871
         width: 200
         height: 200
       alignment: 0
@@ -331,7 +507,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1001
+        y: 669
         width: 200
         height: 200
       alignment: 0
@@ -341,7 +517,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 204
-        y: 945
+        y: 613
         width: 256
         height: 256
       alignment: 0
@@ -351,7 +527,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 462
-        y: 945
+        y: 613
         width: 256
         height: 256
       alignment: 0
@@ -361,7 +537,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 720
-        y: 1096
+        y: 764
         width: 105
         height: 105
       alignment: 0
@@ -371,7 +547,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 827
-        y: 1101
+        y: 769
         width: 100
         height: 100
       alignment: 0
@@ -381,7 +557,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 687
+        y: 355
         width: 256
         height: 256
       alignment: 0
@@ -391,7 +567,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 260
-        y: 687
+        y: 355
         width: 256
         height: 256
       alignment: 0

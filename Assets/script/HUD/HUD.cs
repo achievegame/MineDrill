@@ -68,18 +68,13 @@ public class HUD : MonoBehaviour {
 		player.DynamiteBlast ();
 	}
 
+	public void ShowLeaderboard(){
+		mGameCenter.current.ShowLeaderboard ();
+	}
 
 	public GameObject LoadHUD(string hudName){
 		GameObject hudPF = Resources.Load<GameObject> (Constants.RESOURCELOCATION_PREFAB+hudName);
 		GameObject hudGO = (GameObject)Instantiate (hudPF);
 		return hudGO;
 	}
-	public Text txt;
-	public Text txt1;
-	public void changeLanguage(){
-		Font font = Resources.Load<Font> ("font/Skranji-Bold");
-		txt.font = font;
-		txt1.font = font;
-	}
-
 }

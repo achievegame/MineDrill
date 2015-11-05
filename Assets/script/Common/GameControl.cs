@@ -23,6 +23,9 @@ public class GameControl : MonoBehaviour
 		Input.multiTouchEnabled = false;
 	}
 
+
+
+
 	public void CharacterChanged(int index){
 		//characterIndex = index;
 		// it will set avatar for character
@@ -32,6 +35,7 @@ public class GameControl : MonoBehaviour
 	}
 
 	public void GameOver(){
+		mGameCenter.current.ReportScore ();
 		if (OnGameOver != null) {
 			OnGameOver();
 		}
