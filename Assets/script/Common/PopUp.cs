@@ -3,6 +3,23 @@ using System.Collections;
 
 public class PopUp : MonoBehaviour {
 
+	private bool busy = false;
+	private void setBusyFalse(){
+		busy = false;
+	}
+	
+	protected bool isBusy{
+		get{
+			if (busy) {
+				return true;
+			}
+			
+			busy = true;
+			Invoke ("setBusyFalse",0.5f);
+			return false;
+		}
+	}
+
 	public void Close(){
 		Destroy (gameObject);
 	}

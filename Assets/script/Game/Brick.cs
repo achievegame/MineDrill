@@ -48,6 +48,11 @@ public class Brick : MonoBehaviour {
 	}
 
 	public void Blast(RelativeDirection drilledPostion){
+		StartCoroutine ("IE_Blast", drilledPostion);
+	}
+
+	private IEnumerator IE_Blast(RelativeDirection drilledPostion){
+		yield return new WaitForSeconds (1.2f);
 		if (mineral && mineralType == MineralType.Stone) {
 			Destroy(mineral);
 			//brick drilled
@@ -55,6 +60,8 @@ public class Brick : MonoBehaviour {
 			setNeighCode(drilledPostion);
 			Drilled();
 			BrickManager.current.NeighbourChanged(id);
+			StoreNMission.current.BlastStone();
+			GameControl.current.SetScore(Constants.STONE_BLAST_SCORE);
 		}
 	}
 
@@ -72,6 +79,8 @@ public class Brick : MonoBehaviour {
 			setNeighCode(drilledPostion);
 			Drilled();
 			BrickManager.current.NeighbourChanged(id);
+			StoreNMission.current.DigBrick();
+			GameControl.current.SetScore(Constants.BRICK_DIGGING_SCORE[(int)brickType]);
 		}
 	}
 

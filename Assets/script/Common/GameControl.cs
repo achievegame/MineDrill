@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Soomla.Store;
 
 public class GameControl : MonoBehaviour 
 {
@@ -25,19 +26,43 @@ public class GameControl : MonoBehaviour
 
 
 
+	private int score;
+	private int coin;
+
+
+
+	public void SetScore(int value){
+		score += value;
+		HUD.current.SetScore (score.ToString());
+	}
+
+	public void SetScoreNCoin(int scoreValue, int coinValue){
+		SetScore (scoreValue);
+		coin += coinValue;
+	}
+
+	public void GameStart(){
+		score = 0;
+		coin = 0;
+		SetScore (0);
+	}
+
+	public void GameOver(bool isWin= false){
+		//if (isWin) {
+			StoreNMission.current.SetGameScoreAndCoin (score,coin);
+			mGameCenter.current.ReportScore ();
+		//}
+
+		if (OnGameOver != null) {
+			OnGameOver();
+		}
+	}
 
 	public void CharacterChanged(int index){
 		//characterIndex = index;
 		// it will set avatar for character
 		if (OnCharecterChanged != null) {
 			OnCharecterChanged(index);		
-		}
-	}
-
-	public void GameOver(){
-		mGameCenter.current.ReportScore ();
-		if (OnGameOver != null) {
-			OnGameOver();
 		}
 	}
 }

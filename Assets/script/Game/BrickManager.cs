@@ -105,8 +105,12 @@ public class BrickManager : MonoBehaviour {
 		int brickid = row * COLUMN + column + COLUMN / 2;
 		if (brickid < 0)
 			return;
-		//Debug.Log ("brickid:"+brickid);
-		bricksList [brickid].Blast (RelativeDirection.Top);
+		Brick brk = bricksList [brickid];
+		//add dynamite blast animation
+		GameObject dynamite = Instantiate<GameObject>(Resources.Load<GameObject> (Constants.RESOURCELOCATION_PREFAB + "Blast"));
+		dynamite.transform.SetParent (brk.transform.parent);
+		dynamite.transform.localPosition = brk.transform.localPosition;
+		brk.Blast (RelativeDirection.Top);
 	}
 
 

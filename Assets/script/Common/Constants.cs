@@ -32,6 +32,11 @@ public class Constants {
 
 	public static readonly string[] AWARD_ANIMATION_NAME = {"GoldFishDash","BagOfFish","DolphinSwim"};
 	public static readonly string[] AWARD_NAME = {"Dash Fish","Bag Of Fish","Dolphin"};
+
+	//prices & scores
+	public static readonly int[] MINERAL_PRICE = {100,250,400,550,700,850,1000,1500};
+	public static readonly int[] BRICK_DIGGING_SCORE = {10,20,30,40,50,60,70,80};
+	public const int STONE_BLAST_SCORE = 1000;
 }
 
 public enum AudioName{

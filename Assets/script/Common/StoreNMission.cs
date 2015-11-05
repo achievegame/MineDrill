@@ -63,7 +63,7 @@ public class StoreNMission : MonoBehaviour {
 	Mission m6;
 	Mission m7;
 	Mission m8;
-	public Mission m9;
+	Mission m9;
 	Mission m10;
 	Mission m11;
 	Mission m12;
@@ -98,6 +98,7 @@ public class StoreNMission : MonoBehaviour {
 		collectGoldScore = new Score ("collectGoldScore", "collectGoldScore", true);
 		collectDiamondScore = new Score ("collectDiamondScore", "collectDiamondScore", true);
 		tigeyAsHeroScore = new Score ("tigeyAsHero", "tigeyAsHero", true);
+		upgradeBatteryScore = new Score ("upgradeBatteryScore", "upgradeBatteryScore", true);
 
 		world.AddScore (missionIndex);
 		world.AddScore (gameScore);
@@ -175,7 +176,7 @@ public class StoreNMission : MonoBehaviour {
 //			coinScore.Reset(true);
 
 			//CHECK_IN_FINAL_BUILD :delete these 2 line in final build
-			StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,1500000);
+			StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,10000);
 			//StoreInventory.GiveItem(ShnappyStoreAssets.HEART_VC_ITEM_ID,20); 
 		}
 
