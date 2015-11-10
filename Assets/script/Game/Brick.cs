@@ -52,7 +52,9 @@ public class Brick : MonoBehaviour {
 	}
 
 	private IEnumerator IE_Blast(RelativeDirection drilledPostion){
-		yield return new WaitForSeconds (1.2f);
+		yield return new WaitForSeconds (1f);
+		MAudioManager.current.PlayFx (AudioName.Explosion);
+		yield return new WaitForSeconds (0.2f);
 		if (mineral && mineralType == MineralType.Stone) {
 			Destroy(mineral);
 			//brick drilled

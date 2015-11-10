@@ -1,18 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Common/StoreNMission.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/HUD/BatteryMeter.cs">
     <Files>
-      <File FileName="Assets/script/Common/StoreNMission.cs" Line="179" Column="70" />
-      <File FileName="Assets/script/HUD/HUD.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Common/GameControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Game/BrickManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Game/mPlayerControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Game/Brick.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Common/DestroyAfterSometime.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Game/Mineral.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Common/Constants.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/HUD/HUD.cs" Line="108" Column="19" />
+      <File FileName="Assets/script/Common/GameControl.cs" Line="62" Column="41" />
+      <File FileName="Assets/script/HUD/GameComplete.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Common/PopUp.cs" Line="1" Column="1" />
       <File FileName="Assets/script/HUD/PauseScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/GameCenter/mGameCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Common/Constants.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/HUD/QuitScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Game/BrickManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Game/mPlayerControl.cs" Line="133" Column="27" />
+      <File FileName="Assets/script/HUD/BagHUDManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Common/StoreNMission.cs" Line="181" Column="6" />
+      <File FileName="Assets/script/HUD/BagMeter.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/HUD/BatteryMeter.cs" Line="6" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

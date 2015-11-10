@@ -6,10 +6,16 @@ public class MAudioManager : MonoBehaviour {
 
 	public static MAudioManager current;	//a reference to our game control so we can access it statically
 
+	[SerializeField]
 	public AudioSource sfxSource;
+	[SerializeField]
 	public AudioSource musicSource;
-	public AudioSource addOn1MusicSource;
-	public AudioSource addOn2MusicSource;
+	[SerializeField]
+	public AudioSource DiggingMusicSource;
+	[SerializeField]
+	public AudioSource FanMusicSource;
+	[SerializeField]
+	public AudioSource AlertMusicSource;
 
 	private bool isMusicOn = true;
 	private bool isSoundOn = true;
@@ -38,7 +44,6 @@ public class MAudioManager : MonoBehaviour {
 		isMusicOn = PlayerPrefs.GetInt (musicToggle, 1)==1;
 		isSoundOn = PlayerPrefs.GetInt (soundToggle, 1)==1;
 
-
 	}
 	private Dictionary<string,AudioClip> audioDict=new Dictionary<string, AudioClip>(Constants.AUDIO_NAME.Length);
 
@@ -61,15 +66,6 @@ public class MAudioManager : MonoBehaviour {
 		}
 	}
 
-	public void PlayThemeMusic(AudioName aName = AudioName.ThemeMenuMusic){
-		if (isMusicOn) {
-			StopGameThemeMusic ();
-			
-			musicSource.clip = audioDict [aName.ToString()];
-			musicSource.loop = true;
-			musicSource.Play ();
-		}
-	}
 
 	public void StopThemeMusic(){
 		musicSource.Stop ();
@@ -79,12 +75,8 @@ public class MAudioManager : MonoBehaviour {
 
 	public void PlayGameThemeMusic(){
 		if (isMusicOn) {
-			StopThemeMusic ();			
-
-			musicSource.clip = audioDict [AudioName.ThemeGameMusic.ToString ()];
-			musicSource.loop = true;
+			musicSource.Play();
 		}
-
 	}
 
 	public void StopGameThemeMusic(){
@@ -96,7 +88,39 @@ public class MAudioManager : MonoBehaviour {
 	}
 
 	public void ResumeGameThemeMusic(){
-		musicSource.Play ();
+		if (isMusicOn) {
+			musicSource.Play();
+		}
+	}
+
+
+
+
+	public void PlayDigSound(){
+		if (DiggingMusicSource.isPlaying) {
+			return;
+		}
+		DiggingMusicSource.Play ();
+	}
+	
+	public void PlayFanSound(){
+		if (FanMusicSource.isPlaying) {
+			return;
+		}
+		FanMusicSource.Play ();
+	}
+	
+	public void pauseSFX(){
+		FanMusicSource.Pause ();
+		DiggingMusicSource.Pause ();
+	}
+
+
+	public void PlayTimeAlert(){
+		AlertMusicSource.Play ();
+	}
+	public void StopTimeAlert(){
+		AlertMusicSource.Stop ();
 	}
 
 
@@ -107,12 +131,7 @@ public class MAudioManager : MonoBehaviour {
 		set {
 
 			isMusicOn = value;
-			PlayerPrefs.SetInt(musicToggle,isMusicOn?1:0);
-			if(isMusicOn){
-				PlayThemeMusic();
-			}else{
-				StopThemeMusic();
-			}
+			PlayerPrefs.SetInt(musicToggle,isMusicOn?1:0);		
 		}
 	}
 	

@@ -40,7 +40,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrickFB: {fileID: 139844, guid: f96c47d007a6d49c8acbeb161be88b5d, type: 2}
+  mineralPF: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
   S_Brick_Grass: {fileID: 21300056, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  S_Brick_Stone: {fileID: 21300092, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
   NonDrilledBrick:
   - {fileID: 21300034, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
   - {fileID: 21300048, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
@@ -54,24 +56,34 @@ MonoBehaviour:
   - {fileID: 21300042, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
   - {fileID: 21300044, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
   - {fileID: 21300046, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick: {fileID: 21300034, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_DT_1: {fileID: 21300048, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_DT_2: {fileID: 21300050, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_DT_3: {fileID: 21300052, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_DT_4: {fileID: 21300054, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_D_0: {fileID: 21300038, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_D_1: {fileID: 21300040, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_D_2: {fileID: 21300042, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_D_2a: {fileID: 21300044, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_D_3: {fileID: 21300046, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
-  S_Brick_Back: {fileID: 21300036, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  Minerals:
+  - {fileID: 21300064, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300074, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300066, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300078, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300070, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300072, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300076, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300068, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  - {fileID: 21300090, guid: cc95afb20fdb04d1980a5b684118fa61, type: 3}
+  playerS:
+    bricks: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: mineralPF
+      value: 
+      objectReference: {fileID: 166876, guid: 6be40f39708f64df2b6df7b2dafe8a71, type: 2}
+    - target: {fileID: 0}
+      propertyPath: S_Brick_Stone
+      value: 
+      objectReference: {fileID: 21300092, guid: cc95afb20fdb04d1980a5b684118fa61,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114246}

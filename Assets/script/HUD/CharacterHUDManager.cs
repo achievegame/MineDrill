@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.Xml;
 using Soomla.Store;
 
-public class CharacterHUDManager : MonoBehaviour {
+public class CharacterHUDManager : PopUp {
 
 	public GameObject CHRPrefab;
 

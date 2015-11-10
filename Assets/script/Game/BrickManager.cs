@@ -57,7 +57,6 @@ public class BrickManager : MonoBehaviour {
 		GameObject mineralGO;
 		Brick brick;
 		Mineral mnrl;
-		MineralType mnrlType;
 
 		foreach (BrickSave brkSv in playerS.bricks) {
 			//Debug.Log(brkSv.id+" "+(BrickType)brkSv.brickType+" "+brkSv.drilledAmount+" "+(MineralType)brkSv.mineralType+" "+brkSv.neighbourCode);
@@ -88,6 +87,12 @@ public class BrickManager : MonoBehaviour {
 		bricksList.Clear ();
 		Destroy (container);
 		playerS = PlayerSave.loadNew ();
+		CreateMap ();
+	}
+
+	public void RevertMap(){
+		bricksList.Clear ();
+		Destroy (container);	
 		CreateMap ();
 	}
 

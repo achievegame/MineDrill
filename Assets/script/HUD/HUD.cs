@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using Soomla.Store;
 public class HUD : MonoBehaviour {
 	public static HUD current;	
 	void Awake(){
@@ -17,6 +18,8 @@ public class HUD : MonoBehaviour {
 	private GameObject gamePlay;
 	[SerializeField]
 	private Text scoreText;
+	[SerializeField]
+	private Text dynamiteCount;
 
 	public mPlayerControl player;
 
@@ -51,6 +54,16 @@ public class HUD : MonoBehaviour {
 		LoadHUD (Constants.HUD_STORE);
 	}
 
+	public void OpenMission(){
+		if (isBusy)return;
+		LoadHUD (Constants.HUD_MISSION);
+	}
+
+	public void OpenEarnCoin(){
+		if (isBusy)return;
+		LoadHUD (Constants.HUD_EARN_COIN);
+	}
+
 	public void OpenBag(){
 		if (isBusy)return;
 		LoadHUD (Constants.HUD_BAG);
@@ -83,6 +96,7 @@ public class HUD : MonoBehaviour {
 		GameControl.current.GameStart ();
 		gamePlay.SetActive (true);
 		mainMenu.SetActive (false);
+		dynamiteCount.text = StoreInventory.GetItemBalance (AnimineStoreAssets.DYNAMITE_VG_ITEM_ID)+"";
 	}
 
 	public void PauseGame(){
@@ -90,9 +104,22 @@ public class HUD : MonoBehaviour {
 		Time.timeScale = 0;
 	}
 
+	public void GameComplete(){
+		if (player.isOnTop ()) {
+			LoadHUD (Constants.HUD_GAME_COMPLETE);
+		} else {
+			LoadHUD(Constants.HUD_GAME_OVER);
+		}
+	}
+
 	public void DynamiteBlast(){
 		if (isBusy)return;
-		player.DynamiteBlast ();
+		if (StoreInventory.GetItemBalance (AnimineStoreAssets.DYNAMITE_VG_ITEM_ID) > 0) {
+			if(player.DynamiteBlast ()){
+				StoreInventory.TakeItem(AnimineStoreAssets.DYNAMITE_VG_ITEM_ID,1);
+				dynamiteCount.text = StoreInventory.GetItemBalance (AnimineStoreAssets.DYNAMITE_VG_ITEM_ID)+"";
+			}
+		}
 	}
 
 	public void ShowLeaderboard(){

@@ -8,13 +8,9 @@ public class PauseScreen : PopUp {
 		Destroy (gameObject);
 	}
 
-	public void MainMenu(){
-		if (isBusy)
-			return;
-		Time.timeScale = 1;
-		BrickManager.current.SaveGame ();
-		HUD.current.MainMenu ();
-		GameControl.current.GameOver ();
+	public void WantToQuit(){
+		LoadHUD (Constants.HUD_WANT_TO_QUIT);
 		Destroy (gameObject);
 	}
+
 }

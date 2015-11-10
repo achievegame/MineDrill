@@ -69,7 +69,7 @@ public class StoreNMission : MonoBehaviour {
 	Mission m12;
 	//CHECK_IN_FINAL_BUILD change to original values
 	double m1record = 1000;//score points
-	double m2record = 500;//collect minerals
+	double m2record = 10;//500;//collect minerals
 	double m3record = 1000;//dig bricks
 	double m4record = 100;// blast 100 stones
 	double m5record = 1;//tigey as a hero
@@ -81,7 +81,7 @@ public class StoreNMission : MonoBehaviour {
 
 	void Start(){
 		//CHECK_IN_FINAL_BUILD
-		//PlayerPrefs.DeleteAll ();
+		PlayerPrefs.DeleteAll ();
 		//StoreEvents.OnCurrencyBalanceChanged += onCurrencyBalanceChanged;
 		StoreEvents.OnSoomlaStoreInitialized += OnSoomlaStoreInitialized;
 		world = new World ("AnimineWorld");
@@ -177,7 +177,9 @@ public class StoreNMission : MonoBehaviour {
 
 			//CHECK_IN_FINAL_BUILD :delete these 2 line in final build
 			StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,10000);
-			//StoreInventory.GiveItem(ShnappyStoreAssets.HEART_VC_ITEM_ID,20); 
+			StoreInventory.GiveItem(AnimineStoreAssets.DYNAMITE_VG_ITEM_ID,2);
+			//StoreInventory.GiveItem(AnimineStoreAssets.BATTERY_VG_ITEM_ID,2);
+
 		}
 
 		compMList = PlayerPrefs.GetString (PENDING_WORK_KEY, "");
@@ -222,6 +224,7 @@ public class StoreNMission : MonoBehaviour {
 	}
 
 	void onMissionCompleted(Mission mission) {
+		Debug.Log ("missionCompleted:"+mission.ID);
 		missionIndex.Inc(missionIndex.Record+1);
 		missionIndex.Reset(true);
 	}

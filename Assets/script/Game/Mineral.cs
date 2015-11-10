@@ -15,9 +15,11 @@ public class Mineral : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {	
 		if (coll.gameObject.CompareTag (Constants.TAG_PLAYER)) {
+			MAudioManager.current.PlayFx(AudioName.MineralGrabSound);
 			StoreNMission.current.CollectMinerals(mineralType);
-			GameControl.current.SetScoreNCoin(Constants.MINERAL_PRICE[(int)mineralType],Constants.MINERAL_PRICE[(int)mineralType]);
-			Destroy(gameObject);
+			if(GameControl.current.AddMineral(mineralType)){
+				Destroy(gameObject);
+			}
 		}
 	} 
 }

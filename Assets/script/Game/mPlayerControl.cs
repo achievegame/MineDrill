@@ -52,6 +52,7 @@ public class mPlayerControl : MonoBehaviour
 		Vector2 knobV = NK.velocity ();
 		if (knobV == Vector2.zero) {
 			r2d.velocity = new Vector2(0,r2d.velocity.y);
+			MAudioManager.current.pauseSFX();
 			anim.SetTrigger("Default");
 			return;
 		}
@@ -76,23 +77,28 @@ public class mPlayerControl : MonoBehaviour
 		if (grounded && r2d.velocity == Vector2.zero) {
 			int columnNo = Mathf.FloorToInt(mTransform.position.x*BrickManager.ONE_BY_GRID_WIDTH+0.5f);
 			int rowNo = Mathf.FloorToInt(mTransform.position.y*BrickManager.ONE_BY_GRID_WIDTH+3.5f)-1;//beneath box row
-			//Debug.Log("rowNo:"+rowNo+" columnNo:"+columnNo);
 			if(v == -1 && h == 0){
 				mTransform.position = new Vector2(columnNo*BrickManager.GRID_WIDTH, mTransform.position.y);
 				BrickManager.current.Drilling(-rowNo,columnNo, RelativeDirection.Top);
 				anim.SetTrigger ("frontDrilling");
+				MAudioManager.current.PlayDigSound();
 			}else if(v==0 && h==1){
 				BrickManager.current.Drilling(-rowNo-1,columnNo+1, RelativeDirection.Left);
 				anim.SetTrigger ("sideDrilling");
+				MAudioManager.current.PlayDigSound();
 			}else if(v==0 && h==-1){
 				BrickManager.current.Drilling(-rowNo-1,columnNo-1, RelativeDirection.Right);
 				anim.SetTrigger ("sideDrilling");
+				MAudioManager.current.PlayDigSound();
 			}			
 		} else if (!grounded && v !=-1) {
 			anim.SetTrigger ("Flying");
+			MAudioManager.current.PlayFanSound();
 		}else if (h != 0 && grounded) {
 			anim.SetTrigger ("Walking");
+			MAudioManager.current.pauseSFX();
 		}else {
+			MAudioManager.current.pauseSFX();
 			anim.SetTrigger("Default");
 		}	
 	}
@@ -119,11 +125,12 @@ public class mPlayerControl : MonoBehaviour
 				BrickManager.current.Blast(-rowNo, columnNo);
 			}
 		}
-
 		return canBlast;
 	}
 
-	public void Blast(){
-
+	public bool isOnTop(){
+		int rowNo = Mathf.FloorToInt (mTransform.position.y * BrickManager.ONE_BY_GRID_WIDTH + 3.5f) - 1;//beneath box row
+		Debug.Log ("rowNo: " + -rowNo);
+		return -rowNo <= 0;
 	}
 }

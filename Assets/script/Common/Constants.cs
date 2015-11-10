@@ -16,10 +16,15 @@ public class Constants {
 	public const string HUD_HEROES = "Heroes";
 	public const string HUD_BAG = "Bag";
 	public const string HUD_STORE = "Store";
+	public const string HUD_MISSION = "Mission";
+	public const string HUD_EARN_COIN = "EarnCoin";
 	public const string HUD_HUD = "HUD";
 	public const string HUD_PAUSE_SCREEN = "PauseScreen";
 	public const string HUD_SETTINGS = "Settings";
 	public const string HUD_LANGUAGES = "LanguageSelector";
+	public const string HUD_WANT_TO_QUIT = "QuitMessage";
+	public const string HUD_GAME_COMPLETE = "GameComplete";
+	public const string HUD_GAME_OVER = "GameOver";
 
 
 	public const float GRID_WIDTH = 1.74f;
@@ -27,21 +32,28 @@ public class Constants {
 
 	public static readonly string[] AUDIO_NAME={
 		AudioName.ThemeGameMusic.ToString(),
-		AudioName.ThemeMenuMusic.ToString()
+		AudioName.TimeOverAlert.ToString(),
+		AudioName.FanSound.ToString(),
+		AudioName.DiggingSound.ToString(),
+		AudioName.Explosion.ToString(),
+		AudioName.ButtonClick.ToString(),
+		AudioName.MineralGrabSound.ToString()
 	};
 
-	public static readonly string[] AWARD_ANIMATION_NAME = {"GoldFishDash","BagOfFish","DolphinSwim"};
-	public static readonly string[] AWARD_NAME = {"Dash Fish","Bag Of Fish","Dolphin"};
-
 	//prices & scores
-	public static readonly int[] MINERAL_PRICE = {100,250,400,550,700,850,1000,1500};
-	public static readonly int[] BRICK_DIGGING_SCORE = {10,20,30,40,50,60,70,80};
-	public const int STONE_BLAST_SCORE = 1000;
+	public static readonly int[] MINERAL_PRICE = {10,25,40,55,70,85,100,150};
+	public static readonly int[] BRICK_DIGGING_SCORE = {1,2,3,4,5,6,7,8};
+	public const int STONE_BLAST_SCORE = 100;
 }
 
 public enum AudioName{
 	ThemeGameMusic,
-	ThemeMenuMusic
+	TimeOverAlert,
+	FanSound,
+	DiggingSound,
+	Explosion,
+	ButtonClick,
+	MineralGrabSound
 }
 
 public enum RelativeDirection{
@@ -63,11 +75,20 @@ public enum BrickType{
 	H
 }
 
+public enum ToolType{
+	None=-1,
+	Driller,
+	Fan,
+	Battery,
+	Dynamite,
+	Bag
+}
+
 public enum MineralType{
 	None=-1,
 	Coal,
-	Copper,
 	Iron,
+	Copper,
 	Silver,
 	Emerald,
 	Gold,
