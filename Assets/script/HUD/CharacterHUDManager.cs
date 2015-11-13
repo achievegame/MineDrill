@@ -37,7 +37,7 @@ public class CharacterHUDManager : PopUp {
 		{
 			chrGO = (GameObject)Instantiate(CHRPrefab);
 			chrElmnt = chrGO.GetComponent<CharacterElement>();
-			chrElmnt.init(chrInfo.Attributes["id"].Value,i,LanguageManager.current.getText(chrInfo.Attributes["name"].Value),chrInfo.Attributes["price"].Value,chImages[i++]);
+			chrElmnt.init(chrInfo.Attributes["id"].Value,i,LanguageManager.current.getText(chrInfo.Attributes["name"].Value),int.Parse(chrInfo.Attributes["index"].Value),chImages[i++]);
 			chrElmentList.Add(chrElmnt);
 			chrGO.transform.SetParent(gridGroup.transform);
 			chrGO.transform.localScale = Vector3.one;

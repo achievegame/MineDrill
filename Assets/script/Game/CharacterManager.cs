@@ -23,8 +23,6 @@ public class CharacterManager : MonoBehaviour {
 	void HandleOnCharecterChanged (int index)
 	{
 		PlayerPrefs.SetInt (CHARACTER_KEY, index);
-		//SpriteRenderer spr = GetComponent<SpriteRenderer> ();
-		//spr.sprite = sprites [index];
 		Animator animator = GetComponent<Animator>();		
 		animator.runtimeAnimatorController = animators[index];
 	}

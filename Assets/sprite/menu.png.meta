@@ -61,6 +61,9 @@ TextureImporter:
     21300108: SoundBtnOn
     21300110: XBtn
     21300112: AcceptBtn
+    21300114: BagOfCoins
+    21300116: PileOfCoins
+    21300118: StackOfCoins
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -107,91 +110,31 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: UpgradesFill
+    - name: ANIMINE
       rect:
         serializedVersion: 2
         x: 2
-        y: 1009
-        width: 159
-        height: 13
+        y: 1930
+        width: 601
+        height: 116
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UpgradesEmpty
+    - name: AcceptBtn
       rect:
         serializedVersion: 2
-        x: 163
-        y: 1008
-        width: 160
-        height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: StoreBaseBW
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 988
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 10, y: 10, z: 10, w: 10}
-    - name: StoreBase
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 988
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 10, y: 10, z: 10, w: 10}
-    - name: BagIconSmall
-      rect:
-        serializedVersion: 2
-        x: 397
-        y: 985
-        width: 30
-        height: 37
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Arrow
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 981
-        width: 87
-        height: 41
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Dynamite
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 973
-        width: 82
-        height: 49
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BatteryIconSmall
-      rect:
-        serializedVersion: 2
-        x: 602
-        y: 971
-        width: 31
-        height: 51
+        x: 605
+        y: 1945
+        width: 98
+        height: 101
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: AddBtn
       rect:
         serializedVersion: 2
-        x: 635
-        y: 969
+        x: 705
+        y: 1993
         width: 183
         height: 53
       alignment: 0
@@ -200,10 +143,450 @@ TextureImporter:
     - name: AddBtnDisable
       rect:
         serializedVersion: 2
-        x: 820
-        y: 969
+        x: 2
+        y: 1875
         width: 183
         height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1887
+        width: 87
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BackBtn
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1866
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BagIcon
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1854
+        width: 61
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BagIconSmall
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1891
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BagOfCoins
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1787
+        width: 194
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BatteryIcon
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1812
+        width: 73
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BatteryIconSmall
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1877
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BtnBaseBlue
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1869
+        width: 172
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 72, y: 20, z: 72, w: 20}
+    - name: BtnBaseGreen
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1726
+        width: 172
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonBase
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1694
+        width: 283
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 104, y: 30, z: 104, w: 30}
+    - name: BuyBtn
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1724
+        width: 172
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CheckBtn
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1725
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CheckBtnBlank
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1725
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinIcon
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1711
+        width: 65
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinsIcon
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1591
+        width: 369
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DrillerIcon
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1557
+        width: 121
+        height: 135
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dynamite
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1643
+        width: 82
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DynamiteIcon
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1616
+        width: 126
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FanIcon
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1623
+        width: 141
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HerosIcon
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1622
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LeaderboardBtn
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1444
+        width: 108
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lock
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1474
+        width: 65
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuBtn
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1434
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MeterBase
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1320
+        width: 125
+        height: 235
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MeterTop
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1467
+        width: 47
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MissionIcon
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1494
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MusicBtnOff
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1434
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MusicBtnOn
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1434
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewBtnBG
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1431
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PanelBase
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 989
+        width: 361
+        height: 329
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 150, y: 140, z: 140, w: 140}
+    - name: PauseBtn
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1197
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PileOfCoins
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1212
+        width: 220
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayBtn
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1194
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayBtnYellow
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1197
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ReloadBtn
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 866
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ribbon
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 892
+        width: 377
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RibbonSmall
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 904
+        width: 306
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SettingsBtn
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 869
+        width: 115
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SoundBtnOff
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 743
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SoundBtnOn
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 743
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: StackOfCoins
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 692
+        width: 177
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: StoreBase
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 830
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+    - name: StoreBaseBW
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 830
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+    - name: StoreSegmentedBtnBase
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 803
+        width: 374
+        height: 61
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,7 +594,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 913
+        y: 636
         width: 183
         height: 54
       alignment: 0
@@ -221,392 +604,42 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 187
-        y: 913
+        y: 636
         width: 183
         height: 54
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BtnBaseBlue
+    - name: UpgradesEmpty
       rect:
         serializedVersion: 2
         x: 372
-        y: 908
-        width: 172
-        height: 59
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 72, y: 20, z: 72, w: 20}
-    - name: BtnBaseGreen
-      rect:
-        serializedVersion: 2
-        x: 546
-        y: 908
-        width: 172
-        height: 59
+        y: 676
+        width: 160
+        height: 14
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CheckBtnBlank
+    - name: UpgradesFill
       rect:
         serializedVersion: 2
-        x: 720
-        y: 907
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CheckBtn
-      rect:
-        serializedVersion: 2
-        x: 782
-        y: 907
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MissionIcon
-      rect:
-        serializedVersion: 2
-        x: 844
-        y: 906
-        width: 61
-        height: 61
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: StoreSegmentedBtnBase
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 843
-        width: 374
-        height: 61
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BuyBtn
-      rect:
-        serializedVersion: 2
-        x: 378
-        y: 843
-        width: 172
-        height: 61
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BackBtn
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 842
-        width: 61
-        height: 62
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FanIcon
-      rect:
-        serializedVersion: 2
-        x: 615
-        y: 835
-        width: 141
-        height: 69
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: HerosIcon
-      rect:
-        serializedVersion: 2
-        x: 758
-        y: 834
-        width: 81
-        height: 70
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CoinIcon
-      rect:
-        serializedVersion: 2
-        x: 841
-        y: 830
-        width: 65
-        height: 74
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BagIcon
-      rect:
-        serializedVersion: 2
-        x: 908
-        y: 830
-        width: 61
-        height: 74
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: DynamiteIcon
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 752
-        width: 126
-        height: 76
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Lock
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 747
-        width: 65
-        height: 81
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RibbonSmall
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 745
-        width: 306
-        height: 83
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MeterTop
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 740
-        width: 47
-        height: 88
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ButtonBase
-      rect:
-        serializedVersion: 2
-        x: 554
-        y: 737
-        width: 283
-        height: 91
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 104, y: 30, z: 104, w: 30}
-    - name: Ribbon
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 640
-        width: 377
-        height: 95
+        x: 534
+        y: 677
+        width: 159
+        height: 13
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: XBtn
       rect:
         serializedVersion: 2
-        x: 381
-        y: 635
+        x: 695
+        y: 590
         width: 98
         height: 100
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CoinsIcon
-      rect:
-        serializedVersion: 2
-        x: 481
-        y: 634
-        width: 369
-        height: 101
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: AcceptBtn
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 634
-        width: 98
-        height: 101
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LeaderboardBtn
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 521
-        width: 108
-        height: 111
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ANIMINE
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 516
-        width: 601
-        height: 116
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BatteryIcon
-      rect:
-        serializedVersion: 2
-        x: 715
-        y: 516
-        width: 73
-        height: 116
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SettingsBtn
-      rect:
-        serializedVersion: 2
-        x: 790
-        y: 514
-        width: 115
-        height: 118
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SoundBtnOn
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuBtn
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MusicBtnOn
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SoundBtnOff
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MusicBtnOff
-      rect:
-        serializedVersion: 2
-        x: 482
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PlayBtnYellow
-      rect:
-        serializedVersion: 2
-        x: 602
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PauseBtn
-      rect:
-        serializedVersion: 2
-        x: 722
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ReloadBtn
-      rect:
-        serializedVersion: 2
-        x: 842
-        y: 391
-        width: 118
-        height: 121
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: NewBtnBG
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 265
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PlayBtn
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 265
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: DrillerIcon
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 254
-        width: 121
-        height: 135
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MeterBase
-      rect:
-        serializedVersion: 2
-        x: 377
-        y: 154
-        width: 125
-        height: 235
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PanelBase
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 60
-        width: 361
-        height: 329
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 150, y: 140, z: 140, w: 140}
   spritePackingTag: 
   userData: 
   assetBundleName: 

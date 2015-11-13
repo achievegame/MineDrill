@@ -11,10 +11,10 @@ public class EarnHUDManager : PopUp {
 	}
 	int goldFishCount;
 	public void SetVideoAd(){
-		goldFishCount=Random.Range(1,4)*50;
+		goldFishCount=Random.Range(1,4)*25;
 	
 		AdManager.current.goldCoinCount = goldFishCount;
-		prizeCount.text = "GET " + goldFishCount;
+		prizeCount.text = LanguageManager.current.getSentance(LanguageNode.GetCoins_Sentance,goldFishCount.ToString());
 	}
 
 	private bool watchingVideo=false;

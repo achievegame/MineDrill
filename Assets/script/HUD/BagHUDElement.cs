@@ -21,4 +21,8 @@ public class BagHUDElement : MonoBehaviour {
 	public void init(bool isLocked){
 		lockGO.SetActive (isLocked);
 	}
+
+	public void setCount(int count){
+		e_count.text = count.ToString();
+	}
 }

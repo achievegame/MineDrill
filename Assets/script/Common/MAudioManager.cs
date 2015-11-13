@@ -97,6 +97,8 @@ public class MAudioManager : MonoBehaviour {
 
 
 	public void PlayDigSound(){
+		if (!isSoundOn)
+			return;
 		if (DiggingMusicSource.isPlaying) {
 			return;
 		}
@@ -104,6 +106,8 @@ public class MAudioManager : MonoBehaviour {
 	}
 	
 	public void PlayFanSound(){
+		if (!isSoundOn)
+			return;
 		if (FanMusicSource.isPlaying) {
 			return;
 		}
@@ -111,15 +115,21 @@ public class MAudioManager : MonoBehaviour {
 	}
 	
 	public void pauseSFX(){
+		if (!isSoundOn)
+			return;
 		FanMusicSource.Pause ();
 		DiggingMusicSource.Pause ();
 	}
 
 
 	public void PlayTimeAlert(){
+		if (!isSoundOn)
+			return;
 		AlertMusicSource.Play ();
 	}
 	public void StopTimeAlert(){
+		if (!isSoundOn)
+			return;
 		AlertMusicSource.Stop ();
 	}
 

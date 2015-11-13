@@ -3,12 +3,10 @@ using System.Collections;
 using UnityEngine.UI;
 using Soomla.Store;
 
-public class VirtualMoneyIndicator : MonoBehaviour {
+public class VirtualMoneyIndicator : PopUp {
 	public static VirtualMoneyIndicator current;
 	[SerializeField]
-	private Text goldFish;
-	[SerializeField]
-	private Text heart;
+	private Text coinCount;
 
 	void Awake(){
 		current = this;
@@ -25,16 +23,16 @@ public class VirtualMoneyIndicator : MonoBehaviour {
 		setIt ();
 	}
 
-//	void OnEnable(){
-//		setIt ();
-//	}
 
 	private void OnCurrencyBalanceChanged(VirtualCurrency virtualCurrency, int balance,int amountAdded) {
 		setIt ();
 	}
 
 	void setIt(){
-		goldFish.text = ""+StoreInventory.GetItemBalance (AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID);
-		//heart.text = ""+StoreInventory.GetItemBalance (AnimineStoreAssets.HEART_VC_ITEM_ID);
+		coinCount.text = ""+StoreInventory.GetItemBalance (AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID);
+	}
+
+	public void OpenShop(){
+		LoadHUD (Constants.HUD_SHOP);
 	}
 }

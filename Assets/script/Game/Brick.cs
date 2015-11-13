@@ -74,7 +74,7 @@ public class Brick : MonoBehaviour {
 			return;
 		if (drilledAmount < 100) {
 			canSave = true;
-			drilledAmount+=Mathf.Max(0,DRILLED_RATE[(int)brickType])+2;//calculated by brick strength && drill machine strength
+			drilledAmount+=Mathf.Max(0,DRILLED_RATE[(int)brickType])+GameControl.current.drillerStrenght;//calculated by brick strength && drill machine strength
 			int nonDrilledSpriteIndex = Mathf.Min(drilledAmount,100)/17;//may be 17,18,19
 			spr.sprite = BrickManager.current.NonDrilledBrick[nonDrilledSpriteIndex];
 		} else {
@@ -92,11 +92,18 @@ public class Brick : MonoBehaviour {
 		mineralType = MineralType.None;
 		Destroy(GetComponent<BoxCollider2D>());
 		setDrilledSprite ();
-		//if has minarls then drop it
 		if (mineral) {
-			Rigidbody2D r2d = (Rigidbody2D)mineral.GetComponent<Rigidbody2D> ();
-			r2d.isKinematic = false;
+			Mineral mnrl = mineral.GetComponent<Mineral>();
+			mnrl.Active();
 		}
+
+
+
+		//if has minarls then drop it
+//		if (mineral) {
+//			Rigidbody2D r2d = (Rigidbody2D)mineral.GetComponent<Rigidbody2D> ();
+//			r2d.isKinematic = false;
+//		}
 	}
 
 	public void NeighbourChanged(RelativeDirection neighD){

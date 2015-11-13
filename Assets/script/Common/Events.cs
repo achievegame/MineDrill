@@ -9,3 +9,4 @@ public delegate void ToggleButtonChanged(int index);
 public delegate void characterChanged(int index);
 public delegate void mineralAdded();
 public delegate void LanguageChanged();
+public delegate void ElementBuy();

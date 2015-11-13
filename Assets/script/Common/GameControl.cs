@@ -48,6 +48,7 @@ public class GameControl : MonoBehaviour
 	public void SetScore(int value){
 		score += value;
 		HUD.current.SetScore (score.ToString());
+		StoreNMission.current.Scores (score);
 	}
 
 	public void SetScoreNCoin(int scoreValue, int coinValue){
@@ -59,16 +60,16 @@ public class GameControl : MonoBehaviour
 		score = 0;
 		coin = 0;
 		SetScore (0);
-		//CHECK_IN_FINAL_BUILD :delete these 1 line in final build
-		StoreInventory.GiveItem (AnimineStoreAssets.BATTERY_VG_ITEM_ID, 2);
+		SetDrillerStrength ();
+		SetFanSpeed ();
 		MAudioManager.current.PlayGameThemeMusic ();
 	}
 
 	public void GameOver(bool isWin= false){
 		MAudioManager.current.StopGameThemeMusic ();
+		StoreNMission.current.SetGameScoreAndCoin (score, coin);
 		if (isWin) {
 			BrickManager.current.SaveGame ();
-			StoreNMission.current.SetGameScoreAndCoin (score, coin);
 			mGameCenter.current.ReportScore ();
 		} else {
 			BrickManager.current.RevertMap();
@@ -121,6 +122,10 @@ public class GameControl : MonoBehaviour
 		return added;
 	}
 
+
+
+	#region Bag
+
 	public List<BagElement> bagL = new List<BagElement> ();
 	private int totalMineral = 0;
 	private int bagCapacity;
@@ -129,9 +134,20 @@ public class GameControl : MonoBehaviour
 			return (float)totalMineral/bagCapacity;
 		}
 	}
-	public void refreashBag(){
+	public void refreashBag(bool checkBagUpgrade=false){
 		bagL [(int)ToolType.Battery].count = StoreInventory.GetItemBalance (AnimineStoreAssets.BATTERY_VG_ITEM_ID);
 		bagL [(int)ToolType.Dynamite].count = StoreInventory.GetItemBalance (AnimineStoreAssets.DYNAMITE_VG_ITEM_ID);
+		if (checkBagUpgrade) {
+			int bagUpgradeLevel = StoreInventory.GetGoodUpgradeLevel(AnimineStoreAssets.BAG_VG_ITEM_ID);
+			bagCapacity = (bagUpgradeLevel*2+2)*10;
+			BagElement bgE;
+			for (int i = 4; i < bagUpgradeLevel*2+6; i++) {
+				bgE = bagL[i];
+				bgE.isLocked = false;
+				bgE.count=0;
+			}
+		}
+
 	}
 	private void SetBag ()
 	{
@@ -144,15 +160,16 @@ public class GameControl : MonoBehaviour
 			bgE.count = 1;
 			bagL.Add (bgE);
 		}
-
-		bagCapacity = 2 * 10;
-		for (int i = 4; i < 6; i++) {
+		
+		int bagUpgradeLevel = StoreInventory.GetGoodUpgradeLevel(AnimineStoreAssets.BAG_VG_ITEM_ID);
+		bagCapacity = (bagUpgradeLevel*2+2)*10;
+		for (int i = 4; i < bagUpgradeLevel*2+6; i++) {
 			bgE = new BagElement ();
 			bgE.isLocked = false;
-			bgE.count = 0;
 			bagL.Add (bgE);
 		}
-		for (int i = 6; i < 16; i++) {
+
+		for (int i = bagUpgradeLevel*2+6; i < 16 ; i++) {
 			bgE = new BagElement ();
 			bgE.isLocked = true;
 			bagL.Add (bgE);
@@ -162,18 +179,34 @@ public class GameControl : MonoBehaviour
 	}
 
 	private void resetBag(){
-		BagElement bgE;
-		for (int i = 4; i < 6; i++) {
-			bgE = bagL[i];
-			bgE.isLocked = false;
-			bgE.count = 0;
-			bagL.Add (bgE);
-		}
-		for (int i = 6; i < 16; i++) {
-			bgE = bagL[i];
-			bgE.isLocked = true;
-			bagL.Add (bgE);
-		}
-		refreashBag ();
+		refreashBag (true);
 	}
+
+	#endregion
+
+	#region Driller
+	private int _drillerStrength = 2;
+	public int drillerStrenght{
+		get{
+			return _drillerStrength;
+		}
+	}
+	private void SetDrillerStrength(){
+		int drillerUpgradeLevel = StoreInventory.GetGoodUpgradeLevel (AnimineStoreAssets.DRILLER_VG_ITEM_ID);
+		_drillerStrength = Constants.DRILLER_STRENGTH[drillerUpgradeLevel];
+	}
+	#endregion
+
+	#region Fan
+	private int _fanSpeed = 8;
+	public int fanSpeed{
+		get{
+			return _fanSpeed;
+		}
+	}
+	private void SetFanSpeed(){
+		int fanUpgradeLevel = StoreInventory.GetGoodUpgradeLevel (AnimineStoreAssets.FAN_VG_ITEM_ID);
+		_fanSpeed = Constants.FAN_SPEED[fanUpgradeLevel];
+	}
+	#endregion
 }

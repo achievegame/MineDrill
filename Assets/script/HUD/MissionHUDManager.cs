@@ -20,7 +20,8 @@ public class MissionHUDManager : PopUp {
 		foreach (Mission m in StoreNMission.current.world.Missions) {
 			missionGO = (GameObject)Instantiate(missionPF);
 			mElmnt = missionGO.GetComponent<Toggle>();
-			mElmnt.gameObject.GetComponentInChildren<Text>().text = m.Name;
+			mElmnt.gameObject.GetComponentInChildren<Text>().text = LanguageManager.current.getSentance(m.Name,m.Description)+
+				", "+LanguageManager.current.getText(LanguageNode.Prize)+": "+m.Rewards[0].Name+" "+LanguageManager.current.getText(LanguageNode.Coins);
 			mElmnt.isOn = StoreNMission.current.isMissionCompleted(i);
 			mElmentList.Add(mElmnt);
 			missionGO.transform.SetParent(gridGroup.transform);

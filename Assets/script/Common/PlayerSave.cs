@@ -46,7 +46,7 @@ public class PlayerSave
         PlayerSave result;
         if (File.Exists(Application.persistentDataPath + "/" + Constants.USER_DATA_FILE))
         {
-            Debug.Log("BinaryFormatter bf = new BinaryFormatter();");
+            Debug.Log("load for save file");
             BinaryFormatter bf = new BinaryFormatter();
             //Debug.Log("FileStream file = File.Open(Application.persistentDataPath" + "/" + Constants.USER_DATA_FILE + ", FileMode.Open);");
             FileStream file = File.Open(Application.persistentDataPath + "/" + Constants.USER_DATA_FILE, FileMode.Open);
@@ -75,19 +75,25 @@ public class PlayerSave
 		BrickSave brick;
 		int ROW = 161;
 		int COLUMN = 50;
+		int brkType;
+		float rand;
 		for (int i=0; i<ROW; i++) {
 			for(int j=0; j<COLUMN; j++){
 				brick = new BrickSave();
 				brick.id = i*COLUMN+j;
-				brick.brickType = (BrickType)getBrickType(i);
+				brkType = getBrickType(i);
+				brick.brickType = (BrickType)brkType;
 				brick.drilledAmount = 0;
 				brick.neighbourCode = i*COLUMN+j<COLUMN ? "1011":"1111";				
 				//add minerals
 				if(i==ROW-1 || (i == 0 && j >= 22 && j <= 27)){
 					//last row, cant be drilled
 					brick.mineralType = MineralType.NonBreakableStone;
-				}else if(UnityEngine.Random.value <0.1f){
-					brick.mineralType = (MineralType)UnityEngine.Random.Range(0,9);
+				}else{
+					rand = UnityEngine.Random.value;
+					if(rand <0.2f){
+						brick.mineralType = (MineralType)(rand>0.18? brkType+1: (rand> 0.13? (int)MineralType.Stone:brkType));
+					}
 				}
 				s.bricks.Add(brick);
 			}

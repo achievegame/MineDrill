@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LanguageManager : MonoBehaviour {
 	public static LanguageManager current;
 	const string LANG_KEY = "lang_key";
+	const string SEARCH_KEY = "#";
 	TextAsset xmlData;
 	XmlDocument xmlDoc;
 	XmlNodeList dataList;
@@ -64,6 +65,17 @@ public class LanguageManager : MonoBehaviour {
 		if (dataList == null)
 			return "";
 		return dataList.Item ((int)langNode).InnerText;
+	}
+
+	public string getSentance(string langNode, string value){
+		return getSentance ((LanguageNode)System.Enum.Parse (typeof(LanguageNode), langNode), value);
+	}
+
+	public string getSentance(LanguageNode langNode, string value){
+		if (dataList == null)
+			return "";
+		string sentance = dataList.Item ((int)langNode).InnerText;
+		return sentance.Replace (SEARCH_KEY, value);
 	}
 
 	public Font getFont(){
@@ -180,5 +192,28 @@ public enum LanguageNode{
 	Spanish,
 	Chinese,
 	French,
-	Russian
+	Russian,
+	RestorePurchase,
+	Store,
+	AddBattery,
+	AddDynamite,
+	IncreaseDrillPower_Sentance,
+	IncreaseFanPower_Sentance,
+	IncreaseBatteryPower_Sentance,
+	ExapndBag_Sentance,
+	Coins,
+	TotalCoins,
+	WatchVideo,
+	ScorePoints_Sentance,
+	CollectMinerals_Sentance,
+	CollectCoal_Sentance,
+	CollectCopper_Sentance,
+	CollectGold_Sentance,
+	CollectDiamond_Sentance,
+	DigBricks_Sentance,
+	BlastStone_Sentance,
+	GetCoins_Sentance,
+	GameComplete,
+	FullUpgraded,
+	WantToQuit
 }

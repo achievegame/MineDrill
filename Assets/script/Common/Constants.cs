@@ -25,6 +25,8 @@ public class Constants {
 	public const string HUD_WANT_TO_QUIT = "QuitMessage";
 	public const string HUD_GAME_COMPLETE = "GameComplete";
 	public const string HUD_GAME_OVER = "GameOver";
+	public const string HUD_MESSAGE_POPUP = "MessagePopup";
+	public const string HUD_SHOP = "InAppPurchase";
 
 
 	public const float GRID_WIDTH = 1.74f;
@@ -44,6 +46,9 @@ public class Constants {
 	public static readonly int[] MINERAL_PRICE = {10,25,40,55,70,85,100,150};
 	public static readonly int[] BRICK_DIGGING_SCORE = {1,2,3,4,5,6,7,8};
 	public const int STONE_BLAST_SCORE = 100;
+	public static readonly float[] BATTERY_DURATION = {60f,120f,180f,240f,300f,360f};
+	public static readonly int[] DRILLER_STRENGTH = {2,5,8,11,14,17};
+	public static readonly int[] FAN_SPEED = {8,12,16,20,25,30};
 }
 
 public enum AudioName{
@@ -62,6 +67,14 @@ public enum RelativeDirection{
 	Top,
 	Left,
 	Bottom
+}
+
+public enum Hero{
+	Piggy,
+	Cowy,
+	Beary,
+	Tigey,
+	Draggy
 }
 
 public enum BrickType{

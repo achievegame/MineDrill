@@ -27,14 +27,14 @@ public class StoreNMission : MonoBehaviour {
 	public Score gameScore;
 	//public Score coinScore;
 
+	private Score missionGameScore;
 	private Score mineralCollectScore;
 	private Score brickDigScore;
 	private Score stoneBlastScore;
-	private Score tigeyAsHeroScore;
 	private Score collectCoalScore;
+	private Score collectCopperScore;
 	private Score collectGoldScore;
 	private Score collectDiamondScore;
-	private Score upgradeBatteryScore;
 
 	VirtualItemReward firstLaunchReward;
 	//	public delegate void CollectCoinsDel(int value);
@@ -47,10 +47,6 @@ public class StoreNMission : MonoBehaviour {
 	public DigBrickDel DigBrick;
 	public delegate void BlastStoneDel();
 	public BlastStoneDel BlastStone;
-	public delegate void TigeyAsHeroDel();
-	public TigeyAsHeroDel TigeyAsHero;
-	public delegate void UpgradeBatteryDel();
-	public UpgradeBatteryDel UpgradeBattery;
 
 	public delegate void MissionCompleteDel(Mission m);
 	public static event MissionCompleteDel MissionComplete;
@@ -69,19 +65,19 @@ public class StoreNMission : MonoBehaviour {
 	Mission m12;
 	//CHECK_IN_FINAL_BUILD change to original values
 	double m1record = 1000;//score points
-	double m2record = 10;//500;//collect minerals
-	double m3record = 1000;//dig bricks
-	double m4record = 100;// blast 100 stones
-	double m5record = 1;//tigey as a hero
-	double m6record = 1000;//collect coal
-	double m7record = 1000;//collect Golds
-	double m8record = 1000;//collect diamonds
-	double m9record = 1;//upgrade battery
-	double m10record = 10000;//score points
+	double m2record = 20;//collect minerals
+	double m3record = 300;//dig bricks
+	double m4record = 5;// blast 100 stones
+	double m5record = 20;//collect coal
+	double m6record = 20;//collect copper
+	double m7record = 30;//collect Golds
+	double m8record = 30;//collect diamonds
+	double m9record = 50;//collect minerals
+	double m10record = 4000;//score points
 
 	void Start(){
 		//CHECK_IN_FINAL_BUILD
-		PlayerPrefs.DeleteAll ();
+		//PlayerPrefs.DeleteAll ();
 		//StoreEvents.OnCurrencyBalanceChanged += onCurrencyBalanceChanged;
 		StoreEvents.OnSoomlaStoreInitialized += OnSoomlaStoreInitialized;
 		world = new World ("AnimineWorld");
@@ -91,61 +87,74 @@ public class StoreNMission : MonoBehaviour {
 		gameScore = new Score ("gameScore", "Game Score", true);
 		//coinScore = new Score ("coinScore", "gold coin", true);
 
+		missionGameScore = new Score ("missionGameScore", "missionGameScore", true);
 		mineralCollectScore = new Score ("mineralCollectScore", "mineralCollectScore", true);
 		brickDigScore = new Score ("brickDigScore", "brickDigScore", true);
 		stoneBlastScore = new Score ("stoneBlastScore", "stoneBlastScore", true);
 		collectCoalScore = new Score ("collectCoalScore", "collectCoalScore", true);
+		collectCopperScore = new Score ("collectCopperScore", "collectCopperScore", true);
 		collectGoldScore = new Score ("collectGoldScore", "collectGoldScore", true);
 		collectDiamondScore = new Score ("collectDiamondScore", "collectDiamondScore", true);
-		tigeyAsHeroScore = new Score ("tigeyAsHero", "tigeyAsHero", true);
-		upgradeBatteryScore = new Score ("upgradeBatteryScore", "upgradeBatteryScore", true);
+
 
 		world.AddScore (missionIndex);
 		world.AddScore (gameScore);
 		//world.AddScore (coinScore);
+		world.AddScore (missionGameScore);
 		world.AddScore (mineralCollectScore);
 		world.AddScore (brickDigScore);
 		world.AddScore (stoneBlastScore);
 		world.AddScore (collectCoalScore);
+		world.AddScore (collectCopperScore);
 		world.AddScore (collectGoldScore);
 		world.AddScore (collectDiamondScore);
 
 		LevelUpEvents.OnMissionCompleted += onMissionCompleted;
 
 
-		VirtualItemReward reward50Coins = new VirtualItemReward ("rwd1", "50 coins", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 50);
+		VirtualItemReward reward50Coins = new VirtualItemReward ("rwd1", "50", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 50);
 		reward50Coins.Schedule = Schedule.AnyTimeUnLimited ();
-		VirtualItemReward reward100Coins = new VirtualItemReward ("rwd2", "100 coins", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 100);
+		VirtualItemReward reward100Coins = new VirtualItemReward ("rwd2", "100 ", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 100);
 		reward100Coins.Schedule = Schedule.AnyTimeUnLimited ();
-		VirtualItemReward reward250Coins = new VirtualItemReward ("rwd3", "250 coins", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 250);
+		VirtualItemReward reward250Coins = new VirtualItemReward ("rwd3", "250", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 250);
 		reward250Coins.Schedule = Schedule.AnyTimeUnLimited ();
-		VirtualItemReward reward300Coins = new VirtualItemReward ("rwd4", "300 coins", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 300);
+		VirtualItemReward reward300Coins = new VirtualItemReward ("rwd4", "300", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 300);
 		reward300Coins.Schedule = Schedule.AnyTimeUnLimited ();
-		VirtualItemReward reward500Coins = new VirtualItemReward ("rwd5", "500 coins", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 500);
+		VirtualItemReward reward500Coins = new VirtualItemReward ("rwd5", "500", AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID, 500);
 		reward500Coins.Schedule = Schedule.AnyTimeUnLimited ();
 
 		firstLaunchReward = new VirtualItemReward ("firstLaunchReward", "1 Piggy", AnimineStoreAssets.PIGGY_VG_ITEM_ID, 1);
 		Schedule mySch = new Schedule (1);
 
-		m1 = new RecordMission ("m1", "Score "+m1record+" points in one go", new List<Reward> (){reward50Coins}, gameScore.ID, m1record);//50
+		m1 = new RecordMission ("m1", "ScorePoints_Sentance", new List<Reward> (){reward50Coins}, missionGameScore.ID, m1record);//50
+		m1.Description = m1record.ToString ();
 		m1.Schedule = mySch; 
-		m2 = new RecordMission ("m2", "Collect "+m2record+" minerals in one go", new List<Reward> (){reward100Coins}, mineralCollectScore.ID, m2record);//1000
+		m2 = new RecordMission ("m2", "CollectMinerals_Sentance", new List<Reward> (){reward100Coins}, mineralCollectScore.ID, m2record);//1000
+		m2.Description = m2record.ToString ();
 		m2.Schedule = mySch;
-		m3 = new RecordMission ("m3", "Dig "+m3record+" Bricks in one go", new List<Reward> (){reward100Coins}, brickDigScore.ID, m3record);
+		m3 = new RecordMission ("m3", "DigBricks_Sentance", new List<Reward> (){reward100Coins}, brickDigScore.ID, m3record);
+		m3.Description = m3record.ToString ();
 		m3.Schedule = mySch;
-		m4 = new RecordMission ("m4", "Blast "+m4record+" Stones in One go", new List<Reward> (){reward50Coins}, stoneBlastScore.ID, m4record);
+		m4 = new RecordMission ("m4", "BlastStone_Sentance", new List<Reward> (){reward50Coins}, stoneBlastScore.ID, m4record);
+		m4.Description = m4record.ToString ();
 		m4.Schedule = mySch;
-		m5 = new RecordMission ("m5", "Use Tigey as a hero", new List<Reward> (){reward100Coins}, null, m5record);
-		m5.Schedule = new Schedule(1);
-		m6 = new RecordMission ("m6", "Collect "+m6record+" coal in one go", new List<Reward> (){reward50Coins}, collectCoalScore.ID, m6record);
+		m5 = new RecordMission ("m5", "CollectCoal_Sentance", new List<Reward> (){reward50Coins}, collectCoalScore.ID, m5record);
+		m5.Description = m5record.ToString ();
+		m5.Schedule = mySch;
+		m6 = new RecordMission ("m6", "CollectCopper_Sentance", new List<Reward> (){reward50Coins}, collectCopperScore.ID, m6record);
+		m6.Description = m6record.ToString ();
 		m6.Schedule = mySch;
-		m7 = new RecordMission ("m7", "Collect "+m7record+" Gold in one go", new List<Reward> (){reward100Coins}, collectGoldScore.ID, m7record);
+		m7 = new RecordMission ("m7", "CollectGold_Sentance", new List<Reward> (){reward100Coins}, collectGoldScore.ID, m7record);
+		m7.Description = m7record.ToString ();
 		m7.Schedule = mySch;
-		m8 = new RecordMission ("m8", "Collect "+m8record+" Diamond in one go", new List<Reward> (){reward100Coins}, collectDiamondScore.ID, m8record);
+		m8 = new RecordMission ("m8", "CollectDiamond_Sentance", new List<Reward> (){reward100Coins}, collectDiamondScore.ID, m8record);
+		m8.Description = m8record.ToString ();
 		m8.Schedule = mySch;
-		m9 = new RecordMission ("m9", "Upgrade Battery to its full power", new List<Reward> (){reward100Coins}, upgradeBatteryScore.ID, m9record);
+		m9 = new RecordMission ("m9", "CollectMinerals_Sentance", new List<Reward> (){reward100Coins}, mineralCollectScore.ID, m9record);//1000
+		m9.Description = m9record.ToString ();
 		m9.Schedule = mySch;
-		m10 = new RecordMission ("m10", "Score "+m10record+" points in one go", new List<Reward> (){reward500Coins}, gameScore.ID, m10record);
+		m10 = new RecordMission ("m10", "ScorePoints_Sentance", new List<Reward> (){reward500Coins}, missionGameScore.ID, m10record);
+		m10.Description = m10record.ToString ();
 		m10.Schedule = mySch;
 
 		world.AddMission (m1);
@@ -161,7 +170,6 @@ public class StoreNMission : MonoBehaviour {
 
 		SoomlaStore.Initialize (new AnimineStoreAssets());
 		SoomlaLevelUp.Initialize (world);
-
 	}
 
 	void OnSoomlaStoreInitialized(){
@@ -176,8 +184,8 @@ public class StoreNMission : MonoBehaviour {
 //			coinScore.Reset(true);
 
 			//CHECK_IN_FINAL_BUILD :delete these 2 line in final build
-			StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,10000);
-			StoreInventory.GiveItem(AnimineStoreAssets.DYNAMITE_VG_ITEM_ID,2);
+			StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,1000000);
+			//StoreInventory.GiveItem(AnimineStoreAssets.DYNAMITE_VG_ITEM_ID,2);		
 			//StoreInventory.GiveItem(AnimineStoreAssets.BATTERY_VG_ITEM_ID,2);
 
 		}
@@ -247,8 +255,6 @@ public class StoreNMission : MonoBehaviour {
 	void blankCall2(MineralType mnrl){
 	}
 
-
-
 	void mission1(int value){
 		gameScore.SetTempScore (value);	
 		if (gameScore.HasTempReached (m1record)) {
@@ -281,16 +287,23 @@ public class StoreNMission : MonoBehaviour {
 		}
 	}
 
-	void mission5(){
-		onMissionCompleted(5);
-		TigeyAsHero -= mission5;
+	void mission5(MineralType mnrl){
+		if (mnrl != MineralType.Coal)
+			return;
+		Debug.Log ("coal found");
+		collectCoalScore.Inc (1);
+		if (collectCoalScore.HasTempReached (m5record)) {
+			Debug.Log ("coal found completed");
+			onMissionCompleted(5);
+			CollectMinerals -= mission5;
+		}
 	}
 
 	void mission6(MineralType mnrl){
-		if (mnrl != MineralType.Coal)
+		if (mnrl != MineralType.Copper)
 			return;
-		collectCoalScore.Inc (1);
-		if (collectCoalScore.HasTempReached (m6record)) {
+		collectCopperScore.Inc (1);
+		if (collectCopperScore.HasTempReached (m6record)) {
 			onMissionCompleted(6);
 			CollectMinerals -= mission6;
 		}
@@ -307,6 +320,8 @@ public class StoreNMission : MonoBehaviour {
 	}
 
 	void mission8(MineralType mnrl){
+		if (mnrl != MineralType.Diamond)
+			return;
 		collectDiamondScore.Inc (1);
 		if (collectDiamondScore.HasTempReached (m8record)) {
 			onMissionCompleted(8);
@@ -314,9 +329,12 @@ public class StoreNMission : MonoBehaviour {
 		}
 	}
 
-	void mission9(){
-		onMissionCompleted(9);
-		UpgradeBattery -= mission5;
+	void mission9(MineralType mnrl){
+		mineralCollectScore.Inc (1);
+		if (mineralCollectScore.HasTempReached (m9record)) {
+			onMissionCompleted(9);
+			CollectMinerals -= mission9;
+		}
 	}
 
 	void mission10(int value){
@@ -334,14 +352,12 @@ public class StoreNMission : MonoBehaviour {
 		CollectMinerals += blankCall2;
 		DigBrick += blankCall;
 		BlastStone += blankCall;
-		TigeyAsHero += blankCall;
-		UpgradeBattery += blankCall;
-
 	}
 
 	private bool[] sectionCheck = new bool[]{false,false,false,false,false};
 	void setAllMissionDelegate(){
 		int section = (int)missionIndex.Record / GROUP_LIMIT;
+		Debug.Log ("section:"+section);
 		if (sectionCheck [section])
 			return;
 		sectionCheck [section] = true;
@@ -362,16 +378,16 @@ public class StoreNMission : MonoBehaviour {
 				BlastStone += mission4;	
 			}
 			break;
-		case 3:
+		case 2:
 			if (!m5.IsCompleted ()) {					
-				TigeyAsHero += mission5;
+				CollectMinerals += mission5;
 			}
 				
 			if (!m6.IsCompleted ()) {
 				CollectMinerals += mission6;
 			}
 			break;
-		case 4:
+		case 3:
 			if (!m7.IsCompleted ()) {
 				CollectMinerals += mission7;
 			}
@@ -379,9 +395,9 @@ public class StoreNMission : MonoBehaviour {
 				CollectMinerals += mission8;
 			}
 			break;
-		case 5:
+		case 4:
 			if (!m9.IsCompleted ()) {
-				UpgradeBattery += mission9;
+				CollectMinerals += mission9;
 			}
 			if (!m10.IsCompleted ()) {
 				Scores += mission10;

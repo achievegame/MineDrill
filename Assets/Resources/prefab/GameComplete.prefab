@@ -333,8 +333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4622c7b878dec4055bfc48a25b42dbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textType: 2
-  langNode: 22
+  textType: 0
+  langNode: 82
 --- !u!114 &11483010
 MonoBehaviour:
   m_ObjectHideFlags: 1

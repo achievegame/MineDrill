@@ -25,11 +25,14 @@ public class CharacterElement : MonoBehaviour {
 	[HideInInspector]
 	public string id;
 
-	public void init(string id, int index, string name, string price, Sprite img){
+	//private int heroIndex;
+
+	public void init(string id, int index, string name, int heroIndex, Sprite img){
 		this.index = index;
 		this.id = id;
+		//this.heroIndex = heroIndex;
 		ch_name.text = name;
-		ch_price.text = price;
+		ch_price.text = AnimineStoreAssets.HEROS_PRICE[heroIndex]+"";
 		ch_img.sprite = img;
 		buy.onClick.AddListener(()=>{
 				OnElementBuy();

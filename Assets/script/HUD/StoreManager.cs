@@ -38,12 +38,14 @@ public class StoreManager : PopUp {
 				txtEl.text = LanguageManager.current.getText(eleInfo.Attributes["name"].Value);
 			}else if(pfI==1){
 				strElmnt = eleGO.GetComponent<StoreElement>();
+				int toolIndex = int.Parse(eleInfo.Attributes["imageIndex"].Value);
 				strElmnt.init(
 					eleInfo.Attributes["id"].Value,
 					i,
 					LanguageManager.current.getText(eleInfo.Attributes["name"].Value),
-					eleInfo.Attributes["price"].Value,
-					ElEImages[int.Parse(eleInfo.Attributes["imageIndex"].Value)],
+					LanguageManager.current.getSentance(eleInfo.Attributes["desc"].Value,"20"),
+					(ToolType)toolIndex,
+					ElEImages[toolIndex],
 					(eleInfo.Attributes["upgrades"] != null)
 				);
 				elmentList.Add(strElmnt);

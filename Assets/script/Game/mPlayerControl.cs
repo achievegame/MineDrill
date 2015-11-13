@@ -63,7 +63,7 @@ public class mPlayerControl : MonoBehaviour
 
 
 		if (r2d.velocity.sqrMagnitude > maxSpeed * maxSpeed)
-			r2d.velocity = knobV * maxSpeed;
+			r2d.velocity = knobV * (grounded?maxSpeed:GameControl.current.fanSpeed);
 		else {
 			if (!grounded && v ==0) {
 				knobV.x=0;
@@ -130,7 +130,7 @@ public class mPlayerControl : MonoBehaviour
 
 	public bool isOnTop(){
 		int rowNo = Mathf.FloorToInt (mTransform.position.y * BrickManager.ONE_BY_GRID_WIDTH + 3.5f) - 1;//beneath box row
-		Debug.Log ("rowNo: " + -rowNo);
+		//Debug.Log ("rowNo: " + -rowNo);
 		return -rowNo <= 0;
 	}
 }

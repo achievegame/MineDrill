@@ -13,5 +13,6 @@ public class QuitScreen : PopUp {
 
 	public void Back(){
 		LoadHUD (Constants.HUD_PAUSE_SCREEN);
+		Destroy (gameObject);
 	}
 }
