@@ -12,7 +12,7 @@ public class UpgradeMeter : MonoBehaviour {
 			return upgdMeter.fillAmount;
 		}
 		set{
-			upgdMeter.fillAmount = value;
+			upgdMeter.fillAmount = 1-value;
 		}
 	}
 }

@@ -128,23 +128,23 @@ public class AnimineStoreAssets : IStoreAssets
 		INAPP_PRICE[0])
 	);
 	public static VirtualCurrencyPack BAG_OF_COINS_VCP = new VirtualCurrencyPack (
-		"bag of coins",
+		"pile of coins",
 		"",
-		"bag_of_fish_vcp",
+		"pile_of_coins_vcp",
 		INAPP_COIN_AMOUNT[1],
 		GOLD_COIN_VC_ITEM_ID,
 		new PurchaseWithMarket (
-		"com.tetralpha.bag_of_coins",
+		"com.tetralpha.pile_of_coins",
 		INAPP_PRICE[1])
 	);
 	public static VirtualCurrencyPack VAULT_OF_COINS_VCP = new VirtualCurrencyPack (
-		"vault of coins",
+		"bag of coins",
 		"",
-		"vault_of_coins_vcp",
+		"bag_of_coins_vcp",
 		INAPP_COIN_AMOUNT[2],
 		GOLD_COIN_VC_ITEM_ID,
 		new PurchaseWithMarket (
-		"com.shnappy.vault_of_coins",
+		"com.tetralpha.bag_of_coins",
 		INAPP_PRICE[2])
 	);
 	

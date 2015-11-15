@@ -43,7 +43,7 @@ public class Constants {
 	};
 
 	//prices & scores
-	public static readonly int[] MINERAL_PRICE = {10,25,40,55,70,85,100,150};
+	public static readonly int[] MINERAL_PRICE = {20,30,50,80,110,150,180,200};
 	public static readonly int[] BRICK_DIGGING_SCORE = {1,2,3,4,5,6,7,8};
 	public const int STONE_BLAST_SCORE = 100;
 	public static readonly float[] BATTERY_DURATION = {60f,120f,180f,240f,300f,360f};

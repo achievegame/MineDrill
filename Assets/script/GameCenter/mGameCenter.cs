@@ -9,10 +9,9 @@ using Soomla.Levelup;
 public class mGameCenter : MonoBehaviour {
 	public static mGameCenter current;
 #if UNITY_ANDROID
-	readonly string COIN_LEADERBOARD_ID = "CgkIwLa_4twOEAIQAQ";
+	readonly string SCORE_LEADERBOARD_ID = "CgkIwLa_4twOEAIQAQ";
 #else 
-	readonly string SCORE_LEADERBOARD_ID = "com.shnappy.distancetraveled";
-	readonly string COIN_LEADERBOARD_ID = "com.shnappy.goldfishcoin";
+	readonly string SCORE_LEADERBOARD_ID = "com.tetraalpha.score";
 #endif
 	void Awake(){
 		current = this;
@@ -51,7 +50,7 @@ public class mGameCenter : MonoBehaviour {
 			Social.localUser.Authenticate ((bool success) => {
 				if(success){
 					double score = StoreNMission.current.gameScore.Record;
-					Social.ReportScore ((long)score, COIN_LEADERBOARD_ID, (bool success1) => {});
+					Social.ReportScore ((long)score, SCORE_LEADERBOARD_ID, (bool success1) => {});
 					Social.ShowLeaderboardUI ();
 				}					
 			});
@@ -61,7 +60,7 @@ public class mGameCenter : MonoBehaviour {
 	public void ReportScore(){
 		if (Social.localUser.authenticated) {
 			double score = StoreNMission.current.gameScore.Record;
-			Social.ReportScore ((long)score, COIN_LEADERBOARD_ID, (bool success) => {});
+			Social.ReportScore ((long)score, SCORE_LEADERBOARD_ID, (bool success) => {});
 		} 
 	}
 

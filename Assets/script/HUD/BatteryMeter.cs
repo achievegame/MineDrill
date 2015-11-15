@@ -18,6 +18,7 @@ public class BatteryMeter : Meter {
 
 	void OnDisable(){
 		StopAllCoroutines ();
+		MAudioManager.current.StopTimeAlert ();
 	}
 
 	private IEnumerator countdown(float duartion){

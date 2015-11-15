@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <coinShop length="3" countPostFix="Coins">
 	<shopElement name="StackOfCoins" index="0" id="stack_of_coins_vcp" />
-	<shopElement name="PileOfCoins" index="1"  id="bag_of_fish_vcp" />
-	<shopElement name="BagOfCoins" index="2"  id="vault_of_coins_vcp" />	
+	<shopElement name="PileOfCoins" index="1"  id="pile_of_coins_vcp" />
+	<shopElement name="BagOfCoins" index="2"  id="bag_of_coins_vcp" />	
 </coinShop>
