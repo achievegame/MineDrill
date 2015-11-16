@@ -7,7 +7,8 @@ public class QuitScreen : PopUp {
 		if (isBusy)
 			return;
 		Time.timeScale = 1;
-		GameControl.current.GameOver (false);
+		HUD.current.GameComplete ();
+		//GameControl.current.GameOver (false);
 		Destroy (gameObject);
 	}
 

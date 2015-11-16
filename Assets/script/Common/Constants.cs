@@ -27,6 +27,7 @@ public class Constants {
 	public const string HUD_GAME_OVER = "GameOver";
 	public const string HUD_MESSAGE_POPUP = "MessagePopup";
 	public const string HUD_SHOP = "InAppPurchase";
+	public const string HUD_TUTORIAL = "Tutorial";
 
 
 	public const float GRID_WIDTH = 1.74f;

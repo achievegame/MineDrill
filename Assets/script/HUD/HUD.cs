@@ -99,6 +99,12 @@ public class HUD : MonoBehaviour {
 		mainMenu.SetActive (true);
 	}
 
+	public void OpenTutorial(){
+		if (isBusy)return;
+		LoadHUD (Constants.HUD_TUTORIAL);
+		mainMenu.SetActive (false);
+	}
+
 	public void StartNewGame(){
 		if (isBusy)return;
 		BrickManager.current.CreateNewMap ();
@@ -145,10 +151,8 @@ public class HUD : MonoBehaviour {
 	}
 
 	public void ShowLeaderboard(){
-		#if UNITY_ANDROID
 		if (isBusy)return;
 		mGameCenter.current.ShowLeaderboard ();
-		#endif
 	}
 
 	public void SetScore(string value){

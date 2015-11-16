@@ -84,5 +84,9 @@
 	<string name="GetCoins_Sentance">获取 # 硬币</string>
 	<string name="GameComplete">游戏完整</string>
 	<string name="FullUpgraded">全面升级</string>
-	<string name="WantToQuit">你真的要退出吗?</string>		
+	<string name="WantToQuit">你真的要退出吗?</string>	
+	<string name="Tutorial_Handle_Message">移动控导航英雄来回钻砖</string>	
+	<string name="Tutorial_Dynamite_Message">点击炸药按钮打破石头</string>	
+	<string name="Tutorial_Battery_Message">在还剩20秒小青报警，你必须去在上面的砖层，以节省硬币。</string>	
+	<string name="Tutorial_Bag_Message">点击袋计开袋屏幕</string>	
 </strings>

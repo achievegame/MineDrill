@@ -84,5 +84,9 @@
 	<string name="GetCoins_Sentance"># 동전 을 가져 오기</string>
 	<string name="GameComplete">전체 게임</string>
 	<string name="FullUpgraded">전체 업그레이드</string>
-	<string name="WantToQuit">당신이 정말로 종료 하시겠습니까?</string>		
+	<string name="WantToQuit">당신이 정말로 종료 하시겠습니까?</string>	
+	<string name="Tutorial_Handle_Message">영웅 이리저리 드릴링 벽돌 을 이동 핸들 으로 이동</string>	
+	<string name="Tutorial_Dynamite_Message">돌을 깰 다이너 마이트 버튼 을 누릅니다</string>	
+	<string name="Tutorial_Battery_Message">20초 가 알람 을 재생 떠날 때 , 당신은 동전 을 저장 상단 벽돌 층 에 가야한다</string>	
+	<string name="Tutorial_Bag_Message">가방 화면을 엽니 가방 게이지를 누릅니다.</string>	
 </strings>

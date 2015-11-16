@@ -67,9 +67,9 @@ public class GameControl : MonoBehaviour
 
 	public void GameOver(bool isWin= false){
 		MAudioManager.current.StopGameThemeMusic ();
-		StoreNMission.current.SetGameScoreAndCoin (score, coin);
 		if (isWin) {
 			BrickManager.current.SaveGame ();
+			StoreNMission.current.SetGameScoreAndCoin (score, coin);
 			mGameCenter.current.ReportScore ();
 		} else {
 			BrickManager.current.RevertMap();

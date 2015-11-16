@@ -230,6 +230,7 @@
      <Compile Include="Assets\script\HUD\CharacterHUDManager.cs" />
      <Compile Include="Assets\script\HUD\EarnHUDManager.cs" />
      <Compile Include="Assets\script\HUD\GameComplete.cs" />
+     <Compile Include="Assets\script\HUD\GameOver.cs" />
      <Compile Include="Assets\script\HUD\HUD.cs" />
      <Compile Include="Assets\script\HUD\InAppPurchaseElement.cs" />
      <Compile Include="Assets\script\HUD\InAppPurchaseHUDManager.cs" />
@@ -244,6 +245,7 @@
      <Compile Include="Assets\script\HUD\StoreElement.cs" />
      <Compile Include="Assets\script\HUD\StoreManager.cs" />
      <Compile Include="Assets\script\HUD\ToggleButton.cs" />
+     <Compile Include="Assets\script\HUD\Tutorial.cs" />
      <Compile Include="Assets\script\HUD\UpgradeMeter.cs" />
      <Compile Include="Assets\script\HUD\VirtualMoneyIndicator.cs" />
      <Compile Include="Assets\script\mCameraFollow.cs" />

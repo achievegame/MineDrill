@@ -10,6 +10,7 @@ public class BrickManager : MonoBehaviour {
 	public const float ONE_BY_GRID_WIDTH = 1 / GRID_WIDTH;
 	public const int ROW = 161;
 	public const int COLUMN = 50;
+	public const int COLUMN_BY_2 = 25;
 	public const int BRICK_TYPE_GROUP = 20;
 
 	[SerializeField]
@@ -99,7 +100,7 @@ public class BrickManager : MonoBehaviour {
 
 
 	public bool haveStone(int row, int column){
-		int brickid = row * COLUMN + column + COLUMN / 2;
+		int brickid = row * COLUMN + column + COLUMN_BY_2;
 		if (brickid < 0)
 			return false;
 
@@ -107,7 +108,7 @@ public class BrickManager : MonoBehaviour {
 	}
 
 	public void Blast(int row, int column){
-		int brickid = row * COLUMN + column + COLUMN / 2;
+		int brickid = row * COLUMN + column + COLUMN_BY_2;
 		if (brickid < 0)
 			return;
 		Brick brk = bricksList [brickid];
@@ -121,8 +122,9 @@ public class BrickManager : MonoBehaviour {
 
 	public void Drilling(int row, int column, RelativeDirection drilledPosition){
 		//Debug.Log ("[BrickManager]: row:"+row+" column:"+column);
-		int brickid = row * COLUMN + column + COLUMN / 2;
-		if (brickid < 0)
+		Debug.Log ("column:" + column);
+		int brickid = row * COLUMN + column + COLUMN_BY_2;
+		if (brickid < 0 || column == 25 || column == -26)
 			return;
 		//Debug.Log ("brickid:"+brickid);
 		bricksList [brickid].StratDrilling (drilledPosition);

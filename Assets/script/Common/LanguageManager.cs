@@ -215,5 +215,9 @@ public enum LanguageNode{
 	GetCoins_Sentance,
 	GameComplete,
 	FullUpgraded,
-	WantToQuit
+	WantToQuit,
+	Tutorial_Handle_Message,
+	Tutorial_Dynamite_Message,
+	Tutorial_Battery_Message,
+	Tutorial_Bag_Message
 }

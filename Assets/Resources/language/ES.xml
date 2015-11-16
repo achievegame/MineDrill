@@ -84,5 +84,9 @@
 	<string name="GetCoins_Sentance">Consigue # monedas</string>
 	<string name="GameComplete">Juego completo</string>
 	<string name="FullUpgraded">Mejorado completa</string>
-	<string name="WantToQuit">¿De verdad quiere dejar de fumar ?</string>		
+	<string name="WantToQuit">¿De verdad quiere dejar de fumar ?</string>
+	<string name="Tutorial_Handle_Message">Mueva la palanca de navegar Hero y Ladrillos perforación lado a otro .</string>	
+	<string name="Tutorial_Dynamite_Message">Toca Botón dinamita para romper la piedra.</string>	
+	<string name="Tutorial_Battery_Message">Cuando 20 segundos en el reloj de alarma que desempeña , debe ir en la capa de ladrillo encima de ahorrar monedas.</string>	
+	<string name="Tutorial_Bag_Message">Toque de calibre Bolsa para abrir la pantalla del bolso .</string>		
 </strings>

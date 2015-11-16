@@ -84,5 +84,9 @@
 	<string name="GetCoins_Sentance">Get # Coins</string>
 	<string name="GameComplete">Game Complete</string>
 	<string name="FullUpgraded">Full Upgraded</string>
-	<string name="WantToQuit">Do you really Want to Quit?</string>	
+	<string name="WantToQuit">Do you really Want to Quit?</string>
+	<string name="Tutorial_Handle_Message">Move Handle to navigate Hero and fro drilling Bricks</string>	
+	<string name="Tutorial_Dynamite_Message">Tap Dynamite Button to break the stone</string>	
+	<string name="Tutorial_Battery_Message">When 20 seconds Left it plays alarm, you must go on top brick layer to save coins.</string>	
+	<string name="Tutorial_Bag_Message">Tap Bag gauge to open Bag Screen</string>	
 </strings>

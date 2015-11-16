@@ -84,5 +84,9 @@
 	<string name="GetCoins_Sentance"># コインをゲット</string>
 	<string name="GameComplete">完全なゲーム</string>
 	<string name="FullUpgraded">完全なアップグレード</string>
-	<string name="WantToQuit">あなたが本当に終了しますか？</string>		
+	<string name="WantToQuit">あなたが本当に終了しますか？</string>
+	<string name="Tutorial_Handle_Message">ヒーローとあちこち掘削レンガをナビゲートするためにハンドルに移動します。</string>	
+	<string name="Tutorial_Dynamite_Message">石を破壊するダイナマイトボタンをタップします。</string>	
+	<string name="Tutorial_Battery_Message">20秒はそれがアラームを果たして去ったとき、あなたはコインを保存するには、トップレンガ層の上に行く必要があります。</string>	
+	<string name="Tutorial_Bag_Message">バッグ画面を開くには、バッグゲージをタップします。</string>		
 </strings>
