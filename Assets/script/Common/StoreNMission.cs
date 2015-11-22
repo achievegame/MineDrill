@@ -77,7 +77,7 @@ public class StoreNMission : MonoBehaviour {
 
 	void Start(){
 		//CHECK_IN_FINAL_BUILD
-		//PlayerPrefs.DeleteAll ();
+		PlayerPrefs.DeleteAll ();
 		//StoreEvents.OnCurrencyBalanceChanged += onCurrencyBalanceChanged;
 		StoreEvents.OnSoomlaStoreInitialized += OnSoomlaStoreInitialized;
 		world = new World ("AnimineWorld");
@@ -184,7 +184,7 @@ public class StoreNMission : MonoBehaviour {
 //			coinScore.Reset(true);
 
 			//CHECK_IN_FINAL_BUILD :delete these 2 line in final build
-			//StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,150000);
+			StoreInventory.GiveItem(AnimineStoreAssets.GOLD_COIN_VC_ITEM_ID,550000);
 			//StoreInventory.GiveItem(AnimineStoreAssets.DYNAMITE_VG_ITEM_ID,2);		
 			StoreInventory.GiveItem(AnimineStoreAssets.BATTERY_VG_ITEM_ID,1);
 

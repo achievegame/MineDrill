@@ -29,6 +29,8 @@ public class Constants {
 	public const string HUD_SHOP = "InAppPurchase";
 	public const string HUD_TUTORIAL = "Tutorial";
 
+	public const string CHARACTER_KEY = "animine_character_key";
+
 
 	public const float GRID_WIDTH = 1.74f;
 	public const float GRID_HEIGHT = 1.65f;
@@ -47,9 +49,10 @@ public class Constants {
 	public static readonly int[] MINERAL_PRICE = {20,30,50,80,110,150,180,200};
 	public static readonly int[] BRICK_DIGGING_SCORE = {1,2,3,4,5,6,7,8};
 	public const int STONE_BLAST_SCORE = 100;
-	public static readonly float[] BATTERY_DURATION = {60f,120f,180f,240f,300f,360f};
-	public static readonly int[] DRILLER_STRENGTH = {2,5,8,11,14,17};
-	public static readonly int[] FAN_SPEED = {8,12,16,20,25,30};
+	public static readonly float[] BATTERY_DURATION = {60f,80f,100f,120f,140f,180f};
+	public static readonly int[] INTIAL_DRILLER_STRENGTH = {3,1,0,-2,-5,-6,-8,-10};
+	public static readonly int[] FAN_SPEED = {3,6,9,12,14,18};
+	public static readonly float[] HEROES_SPEED = {2.5f,3.75f,5.5f,6.75f,8f};
 }
 
 public enum AudioName{

@@ -102,7 +102,7 @@ public class HUD : MonoBehaviour {
 	public void OpenTutorial(){
 		if (isBusy)return;
 		LoadHUD (Constants.HUD_TUTORIAL);
-		mainMenu.SetActive (false);
+		//mainMenu.SetActive (false);
 	}
 
 	public void StartNewGame(){

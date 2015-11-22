@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class Brick : MonoBehaviour {
-	private static readonly int[] DRILLED_RATE = {3,1,-1,-3,-5,-7,-9,-11};
 	private static readonly float[] BRICK_COLOR = {1f,0.92f,0.84f,0.76f,0.68f,0.60f,0.52f,0.44f};
 
 	public bool canSave = false;
@@ -74,7 +73,7 @@ public class Brick : MonoBehaviour {
 			return;
 		if (drilledAmount < 100) {
 			canSave = true;
-			drilledAmount+=Mathf.Max(0,DRILLED_RATE[(int)brickType])+GameControl.current.drillerStrenght;//calculated by brick strength && drill machine strength
+			drilledAmount+=GameControl.current.drillerStrenght(brickType);//calculated by brick strength && drill machine strength
 			int nonDrilledSpriteIndex = Mathf.Min(drilledAmount,100)/17;//may be 17,18,19
 			spr.sprite = BrickManager.current.NonDrilledBrick[nonDrilledSpriteIndex];
 		} else {

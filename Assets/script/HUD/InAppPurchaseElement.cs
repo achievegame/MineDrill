@@ -27,7 +27,7 @@ public class InAppPurchaseElement : MonoBehaviour {
 		this.id = id;
 		//this.heroIndex = heroIndex;
 		in_name.text = name;
-		in_coin_count.text = AnimineStoreAssets.INAPP_COIN_AMOUNT[index]+""+LanguageManager.current.getText(LanguageNode.Coins);
+		in_coin_count.text = AnimineStoreAssets.INAPP_COIN_AMOUNT[index]+" "+LanguageManager.current.getText(LanguageNode.Coins);
 		in_price.text = "$ "+AnimineStoreAssets.INAPP_PRICE[index]+"";
 		in_img.sprite = img;
 		buy.onClick.AddListener(()=>{

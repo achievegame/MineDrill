@@ -7,9 +7,7 @@ public class CharacterManager : MonoBehaviour {
 
 	[SerializeField]
 	private List<AnimatorOverrideController> animators = new List<AnimatorOverrideController>();
-//	[SerializeField]
-//	private List<Sprite> sprites = new List<Sprite>();
-	const string CHARACTER_KEY = "animine_character_key";
+
 
 	void OnDestroy(){
 		GameControl.OnCharecterChanged -= HandleOnCharecterChanged;
@@ -17,12 +15,11 @@ public class CharacterManager : MonoBehaviour {
 
 	void Start(){
 		GameControl.OnCharecterChanged += HandleOnCharecterChanged;
-		HandleOnCharecterChanged (PlayerPrefs.GetInt(CHARACTER_KEY,0));
+		HandleOnCharecterChanged (GameControl.current.characterIndex);
 	}
 
 	void HandleOnCharecterChanged (int index)
 	{
-		PlayerPrefs.SetInt (CHARACTER_KEY, index);
 		Animator animator = GetComponent<Animator>();		
 		animator.runtimeAnimatorController = animators[index];
 	}

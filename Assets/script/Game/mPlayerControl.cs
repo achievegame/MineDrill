@@ -50,8 +50,8 @@ public class mPlayerControl : MonoBehaviour
 
 
 		Vector2 knobV = NK.velocity ();
-		if (knobV == Vector2.zero) {
-			r2d.velocity = new Vector2(0,r2d.velocity.y);
+		if (knobV == Vector2.zero || (!grounded && knobV.y == -1 && knobV.x == 0)) {
+			r2d.velocity = new Vector2(0,Mathf.Max(-25f,r2d.velocity.y));
 			MAudioManager.current.pauseSFX();
 			anim.SetTrigger("Default");
 			return;
@@ -61,13 +61,13 @@ public class mPlayerControl : MonoBehaviour
 		float h = knobV.x;
 		float v = knobV.y;
 
-
+		maxSpeed = grounded ? GameControl.current.heroSpeed : GameControl.current.fanSpeed;
 		if (r2d.velocity.sqrMagnitude > maxSpeed * maxSpeed)
-			r2d.velocity = knobV * (grounded?maxSpeed:GameControl.current.fanSpeed);
+			r2d.velocity = knobV * maxSpeed;
 		else {
-			if (!grounded && v ==0) {
-				knobV.x=0;
-			}
+//			if (!grounded && v ==0) {
+//				knobV.x=0;
+//			}
 			r2d.AddForce (knobV * moveForce);
 		}
 

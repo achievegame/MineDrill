@@ -60,6 +60,7 @@ public class GameControl : MonoBehaviour
 		score = 0;
 		coin = 0;
 		SetScore (0);
+		SetHeroSpeed ();
 		SetDrillerStrength ();
 		SetFanSpeed ();
 		MAudioManager.current.PlayGameThemeMusic ();
@@ -85,10 +86,19 @@ public class GameControl : MonoBehaviour
 	}
 
 	public void CharacterChanged(int index){
-		//characterIndex = index;
+		characterIndex = index;
 		// it will set avatar for character
 		if (OnCharecterChanged != null) {
 			OnCharecterChanged(index);		
+		}
+	}
+
+	public int characterIndex{
+		get{
+			return PlayerPrefs.GetInt(Constants.CHARACTER_KEY,0);
+		}
+		set{
+			PlayerPrefs.SetInt(Constants.CHARACTER_KEY,value);
 		}
 	}
 
@@ -185,15 +195,27 @@ public class GameControl : MonoBehaviour
 	#endregion
 
 	#region Driller
-	private int _drillerStrength = 2;
-	public int drillerStrenght{
-		get{
-			return _drillerStrength;
-		}
+	private int[] DRILLER_RATE =  {5,2,1,0,0,0,0,0};
+	public int drillerStrenght(BrickType bkType){
+		return DRILLER_RATE[(int)bkType];
 	}
 	private void SetDrillerStrength(){
-		int drillerUpgradeLevel = StoreInventory.GetGoodUpgradeLevel (AnimineStoreAssets.DRILLER_VG_ITEM_ID);
-		_drillerStrength = Constants.DRILLER_STRENGTH[drillerUpgradeLevel];
+		int drillerUpgradeLevel = StoreInventory.GetGoodUpgradeLevel (AnimineStoreAssets.DRILLER_VG_ITEM_ID);	
+		for (int i=0; i<8; i++) {
+			int strength = Mathf.Min (7 + drillerUpgradeLevel, (int)(Constants.INTIAL_DRILLER_STRENGTH [i] + (drillerUpgradeLevel * (drillerUpgradeLevel + 1)) * 0.5f));				
+			DRILLER_RATE [i] = Mathf.Max(0,strength);
+		}
+	}
+	#endregion
+	#region Hero Speed 
+	private float _heroSpeed = 8;
+	public float heroSpeed{
+		get{
+			return _heroSpeed;
+		}
+	}
+	private void SetHeroSpeed(){
+		_heroSpeed = Constants.HEROES_SPEED[characterIndex];
 	}
 	#endregion
 
